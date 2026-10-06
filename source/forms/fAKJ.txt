@@ -1,0 +1,1554 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1743025725
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularCharSet =204
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =31383
+    DatasheetFontHeight =11
+    ItemSuffix =41
+    Top =600
+    Right =15435
+    Bottom =7875
+    DatasheetGridlinesColor =15062992
+    Filter ="([1AKJ trade report].[ISIN]=\"DE000A0H08M3\")"
+    RecSrcDt = Begin
+        0x79fc2c4b7309e540
+    End
+    GUID = Begin
+        0xdb3315963faea549838084574dd09ce2
+    End
+    RecordSource ="1AKJ trade report"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin FormHeader
+            Height =1072
+            BackColor =16768194
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0x87d015322bf51943beac8c3a155391c5
+            End
+            AutoHeight =1
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1288
+                    Top =60
+                    Width =2894
+                    Height =569
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Auto_Title0"
+                    Caption ="1AKJ trade report"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x162f5a69518f0a42b4ddd19a8a05e391
+                    End
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =1288
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =4182
+                    LayoutCachedHeight =629
+                End
+                Begin Label
+                    OverlapFlags =119
+                    Left =60
+                    Top =672
+                    Width =1493
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta1"
+                    Caption ="TicketID"
+                    GUID = Begin
+                        0x3110cb275304e8418acf17bdc272de09
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =1553
+                    LayoutCachedHeight =1032
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =1620
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta3"
+                    Caption ="TD"
+                    GUID = Begin
+                        0x3f25fb3e72dd3d46a1b70489dba26b5c
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =1620
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =3108
+                    LayoutCachedHeight =1032
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3180
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta5"
+                    Caption ="SD"
+                    GUID = Begin
+                        0x1062676ebbdb2e4cacf02e1a9e008b60
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =3180
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =4668
+                    LayoutCachedHeight =1032
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =4740
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta7"
+                    Caption ="Account"
+                    GUID = Begin
+                        0x09974fbeec19ff4e9cebb89e69bc7b19
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =4740
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =6228
+                    LayoutCachedHeight =1032
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =6300
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta9"
+                    Caption ="AccountName"
+                    GUID = Begin
+                        0xe7f52cb1e2482f44b5196fde7d9d24b0
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =6300
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =7788
+                    LayoutCachedHeight =1032
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =7860
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta11"
+                    Caption ="ClearingAgent"
+                    GUID = Begin
+                        0x66796652bcdb0e448482ec2ede07b1f2
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =7860
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =9348
+                    LayoutCachedHeight =1032
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9420
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta13"
+                    Caption ="Market"
+                    GUID = Begin
+                        0xd497dd1997991142af4f130db8266345
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =9420
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =10908
+                    LayoutCachedHeight =1032
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =10980
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta15"
+                    Caption ="Currency"
+                    GUID = Begin
+                        0x070ecdefbb24f043a7719e589bb7e6ce
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =10980
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =12468
+                    LayoutCachedHeight =1032
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =12540
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta17"
+                    Caption ="ISIN"
+                    GUID = Begin
+                        0xa8f36c5614c76642a0e5cbb36f4ff8d2
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =12540
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =14028
+                    LayoutCachedHeight =1032
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =14100
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta19"
+                    Caption ="Side"
+                    GUID = Begin
+                        0x9da8bc749668bc4a80359d3d7ff96965
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =14100
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =15588
+                    LayoutCachedHeight =1032
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =15660
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta21"
+                    Caption ="SYM"
+                    GUID = Begin
+                        0x026650484a72d24aa6088418e89ef9b4
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =15660
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =17148
+                    LayoutCachedHeight =1032
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =17220
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta23"
+                    Caption ="Cusip"
+                    GUID = Begin
+                        0x8cfdc736cbd93743872bf3e73c75efe4
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =17220
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =18708
+                    LayoutCachedHeight =1032
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =18780
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta25"
+                    Caption ="Quantity"
+                    GUID = Begin
+                        0xefa2eaf067eaad4dba2c729ea700f2a8
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =18780
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =20268
+                    LayoutCachedHeight =1032
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =20340
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta27"
+                    Caption ="Price"
+                    GUID = Begin
+                        0x5c4212142b4e18448c4ff657a6858de7
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =20340
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =21828
+                    LayoutCachedHeight =1032
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =21900
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta29"
+                    Caption ="Trade Volume"
+                    GUID = Begin
+                        0xf1a88516b7c2a042971864f7dcc62f19
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =21900
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =23388
+                    LayoutCachedHeight =1032
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =23460
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta31"
+                    Caption ="Commission"
+                    GUID = Begin
+                        0x123b5e10bdfd894d930d273eff00159d
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =23460
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =24948
+                    LayoutCachedHeight =1032
+                    ColumnStart =15
+                    ColumnEnd =15
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =25020
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta33"
+                    Caption ="Tax"
+                    GUID = Begin
+                        0x606a979e41343c44b521669e61f519f2
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =25020
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =26508
+                    LayoutCachedHeight =1032
+                    ColumnStart =16
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =26580
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta35"
+                    Caption ="Net Amount"
+                    GUID = Begin
+                        0xb89db37c02d92d4cb38f5eef68618a87
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =26580
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =28068
+                    LayoutCachedHeight =1032
+                    ColumnStart =17
+                    ColumnEnd =17
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =28140
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta37"
+                    Caption ="ClientRef"
+                    GUID = Begin
+                        0x041625feb5b1d94bb31e3b403cbbe3ac
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =28140
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =29628
+                    LayoutCachedHeight =1032
+                    ColumnStart =18
+                    ColumnEnd =18
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =29700
+                    Top =672
+                    Width =1488
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Etichetta39"
+                    Caption ="Bloomberg Identifier"
+                    GUID = Begin
+                        0x48074305a366234f8d42a3b8c78f4b95
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =29700
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =31188
+                    LayoutCachedHeight =1032
+                    ColumnStart =19
+                    ColumnEnd =19
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+            End
+        End
+        Begin Section
+            Height =623
+            Name ="Corpo"
+            GUID = Begin
+                0xfbb35c59d502fc479210ecb455a0ebb7
+            End
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =60
+                    Top =36
+                    Width =1493
+                    Height =420
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="TicketID"
+                    ControlSource ="TicketID"
+                    GUID = Begin
+                        0xe81fc7818f966541b83d8f8da41cce7f
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =1553
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1620
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =1
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="TD"
+                    ControlSource ="TD"
+                    GUID = Begin
+                        0x61f224279145ad4688bd8fd395de9b17
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =1620
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3108
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3180
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =2
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="SD"
+                    ControlSource ="SD"
+                    GUID = Begin
+                        0x1be36e5c3aa80049ab7cfcbc972c2f6f
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =3180
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =4668
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4740
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =3
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Account"
+                    ControlSource ="Account"
+                    GUID = Begin
+                        0x8e3ea06a3181014a833a4e7e3905c8be
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =4740
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =6228
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6300
+                    Top =36
+                    Width =1488
+                    Height =420
+                    ColumnWidth =1575
+                    TabIndex =4
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="AccountName"
+                    ControlSource ="AccountName"
+                    GUID = Begin
+                        0xb401fa48d140804dbe1e1e005c4d3657
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =6300
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7788
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =7860
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =5
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="ClearingAgent"
+                    ControlSource ="ClearingAgent"
+                    GUID = Begin
+                        0x20be198b49d3b745addef416d9b13c97
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =7860
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9348
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9420
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =6
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Market"
+                    ControlSource ="Market"
+                    GUID = Begin
+                        0xd6942fcdd3912f458321ebd914801ecf
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =9420
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =10908
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10980
+                    Top =36
+                    Width =1488
+                    Height =420
+                    ColumnWidth =825
+                    TabIndex =7
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Currency"
+                    ControlSource ="Currency"
+                    GUID = Begin
+                        0x63044be741b27b42bb2dd639d36b59ea
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =10980
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12468
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =12540
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =8
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="ISIN"
+                    ControlSource ="ISIN"
+                    GUID = Begin
+                        0x73fdc6d9ea371b43a9e67d910f1e4280
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =12540
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =14028
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =14100
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =9
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Side"
+                    ControlSource ="Side"
+                    GUID = Begin
+                        0xbdd3c4a21ca9a146afd9eeb4482b3a92
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =14100
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =15588
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =15660
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =10
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="SYM"
+                    ControlSource ="SYM"
+                    GUID = Begin
+                        0xf06febd53704474a850efd381ceee78a
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =15660
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =17148
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =17220
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Cusip"
+                    ControlSource ="Cusip"
+                    GUID = Begin
+                        0xb410e158629fcd41a8e510d63878ee90
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =17220
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =18708
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =18780
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =12
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Quantity"
+                    ControlSource ="Quantity"
+                    GUID = Begin
+                        0x8a42476aab548d40b50b7b71a228b6ab
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =18780
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =20268
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =20340
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =13
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Price"
+                    ControlSource ="Price"
+                    GUID = Begin
+                        0xbb36d2ae0705a04683fbbf85496f5c7a
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =20340
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =21828
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =21900
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =14
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Trade Volume"
+                    ControlSource ="Trade Volume"
+                    EventProcPrefix ="Trade_Volume"
+                    GUID = Begin
+                        0x3ad7ef76935d86468c65c12fb12c4d45
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =21900
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =23388
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =23460
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =15
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Commission"
+                    ControlSource ="Commission"
+                    GUID = Begin
+                        0x878f7714a02527409607c56b86280670
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =23460
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =24948
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =15
+                    ColumnEnd =15
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =25020
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =16
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Tax"
+                    ControlSource ="Tax"
+                    GUID = Begin
+                        0xa114f3bde1dc2e4baf26a46ff5fe2804
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =25020
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =26508
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =16
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =26580
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =17
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Net Amount"
+                    ControlSource ="Net Amount"
+                    EventProcPrefix ="Net_Amount"
+                    GUID = Begin
+                        0x636672ed2cd94a4daa4c88867c644f1e
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =26580
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =28068
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =17
+                    ColumnEnd =17
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =28140
+                    Top =36
+                    Width =1488
+                    Height =420
+                    TabIndex =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="ClientRef"
+                    ControlSource ="ClientRef"
+                    GUID = Begin
+                        0x6ff3b005f3b32f469babb5417f2c18d8
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =28140
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =29628
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =18
+                    ColumnEnd =18
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =29700
+                    Top =36
+                    Width =1488
+                    Height =420
+                    ColumnWidth =2190
+                    TabIndex =19
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Bloomberg Identifier"
+                    ControlSource ="Bloomberg Identifier"
+                    EventProcPrefix ="Bloomberg_Identifier"
+                    GUID = Begin
+                        0x843ac429476bd940aad4046da374b9f7
+                    End
+                    GroupTable =1
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    GridlineColor =-2147483609
+
+                    LayoutCachedLeft =29700
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =31188
+                    LayoutCachedHeight =456
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =19
+                    ColumnEnd =19
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+            End
+        End
+        Begin FormFooter
+            Height =850
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0xd7356094185c9b428d00d3de0c89268d
+            End
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =30047
+                    Top =226
+                    Width =576
+                    Height =576
+                    Name ="cmdEsci"
+                    Caption ="Comando40"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Chiudi maschera"
+                    GUID = Begin
+                        0xb6cdb46d8858d94e9a4540bc0f8916e0
+                    End
+
+                    LayoutCachedLeft =30047
+                    LayoutCachedTop =226
+                    LayoutCachedWidth =30623
+                    LayoutCachedHeight =802
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub cmdEsci_Click()
+On Error GoTo Err_cmdEsci_Click
+
+
+    If Me.Dirty Then Me.Dirty = False
+    DoCmd.Close
+
+Exit_cmdEsci_Click:
+    Exit Sub
+
+Err_cmdEsci_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdEsci_Click
+    
+End Sub

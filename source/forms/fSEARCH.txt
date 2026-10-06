@@ -1,0 +1,600 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1076164
+Begin Form
+    RecordSelectors = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =204
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6860
+    DatasheetFontHeight =11
+    ItemSuffix =49
+    Left =8130
+    Top =-960
+    Right =15240
+    Bottom =3960
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x669598a2b711e540
+    End
+    GUID = Begin
+        0xe9c1127cbf23c341af1cb6e16397caf5
+    End
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    OnLoad ="[Event Procedure]"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =12632256
+        End
+        Begin FormHeader
+            Height =793
+            BackColor =16768194
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0xb3550560e30fe04194499c0a70237ecf
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2267
+                    Top =113
+                    Width =1935
+                    Height =540
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Auto_Title0"
+                    Caption ="Data search"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xcbca45a65ed45f40b457b0e131d6916e
+                    End
+                    GridlineColor =-2147483616
+                    HorizontalAnchor =2
+                    LayoutCachedLeft =2267
+                    LayoutCachedTop =113
+                    LayoutCachedWidth =4202
+                    LayoutCachedHeight =653
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =2891
+            BackColor =15986404
+            Name ="Corpo"
+            GUID = Begin
+                0x5577dfee9d0f544ebd7642cafe0ce54a
+            End
+            AlternateBackColor =15986404
+            Begin
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =1644
+                    Top =1757
+                    Width =2835
+                    Height =855
+                    Name ="cmdIsin"
+                    Caption ="SEARCH"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x3d5e32f8d2de54409d3888315beb716d
+                    End
+
+                    LayoutCachedLeft =1644
+                    LayoutCachedTop =1757
+                    LayoutCachedWidth =4479
+                    LayoutCachedHeight =2612
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =795
+                    Top =403
+                    Width =1078
+                    Height =315
+                    TabIndex =1
+                    Name ="txtYear"
+                    GUID = Begin
+                        0x74fb91e96edce9438ce773a175793340
+                    End
+
+                    LayoutCachedLeft =795
+                    LayoutCachedTop =403
+                    LayoutCachedWidth =1873
+                    LayoutCachedHeight =718
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =93
+                            Left =795
+                            Top =120
+                            Width =855
+                            Height =315
+                            Name ="Etichetta40"
+                            Caption ="YEAR:"
+                            GUID = Begin
+                                0xbf56a62fdeb2d14ba20b3ecf80be7b66
+                            End
+                            LayoutCachedLeft =795
+                            LayoutCachedTop =120
+                            LayoutCachedWidth =1650
+                            LayoutCachedHeight =435
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =2504
+                    Top =403
+                    Width =1078
+                    Height =315
+                    TabIndex =2
+                    Name ="txtMonth"
+                    GUID = Begin
+                        0x60e5d3a498d2df4a93e4d6b1facd580d
+                    End
+
+                    LayoutCachedLeft =2504
+                    LayoutCachedTop =403
+                    LayoutCachedWidth =3582
+                    LayoutCachedHeight =718
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =93
+                            Left =2504
+                            Top =120
+                            Width =855
+                            Height =315
+                            Name ="Etichetta42"
+                            Caption ="MONTH:"
+                            GUID = Begin
+                                0xf8945e14bb3ebf4e8926fbff360f7375
+                            End
+                            LayoutCachedLeft =2504
+                            LayoutCachedTop =120
+                            LayoutCachedWidth =3359
+                            LayoutCachedHeight =435
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =4213
+                    Top =403
+                    Width =1078
+                    Height =315
+                    TabIndex =3
+                    Name ="txtDay"
+                    GUID = Begin
+                        0x2a204f9d138d924ba6554a46160399e6
+                    End
+
+                    LayoutCachedLeft =4213
+                    LayoutCachedTop =403
+                    LayoutCachedWidth =5291
+                    LayoutCachedHeight =718
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =93
+                            Left =4213
+                            Top =120
+                            Width =855
+                            Height =315
+                            Name ="Etichetta44"
+                            Caption ="DAY:"
+                            GUID = Begin
+                                0x041c4fca0f71c34f978598e0dae7a211
+                            End
+                            LayoutCachedLeft =4213
+                            LayoutCachedTop =120
+                            LayoutCachedWidth =5068
+                            LayoutCachedHeight =435
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    TextFontCharSet =162
+                    IMESentenceMode =3
+                    Left =2554
+                    Top =907
+                    Width =1543
+                    Height =405
+                    FontSize =14
+                    TabIndex =4
+                    Name ="txtDataCerca"
+                    Format ="General Date"
+                    GUID = Begin
+                        0x2cb5a0dc74da4b4381ef5e8087086668
+                    End
+
+                    LayoutCachedLeft =2554
+                    LayoutCachedTop =907
+                    LayoutCachedWidth =4097
+                    LayoutCachedHeight =1312
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =1984
+                            Top =963
+                            Width =570
+                            Height =315
+                            Name ="Etichetta46"
+                            Caption ="Data:"
+                            GUID = Begin
+                                0xef4053e3526b6440833fb1782d6e8cdc
+                            End
+                            LayoutCachedLeft =1984
+                            LayoutCachedTop =963
+                            LayoutCachedWidth =2554
+                            LayoutCachedHeight =1278
+                        End
+                    End
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    Left =4025
+                    Top =1814
+                    Width =2835
+                    Height =855
+                    TabIndex =5
+                    Name ="cmdCash"
+                    Caption ="Cash"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xd022c3bbfa605d4aa01084dbf57c55c3
+                    End
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    LayoutCachedLeft =4025
+                    LayoutCachedTop =1814
+                    LayoutCachedWidth =6860
+                    LayoutCachedHeight =2669
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+            End
+        End
+        Begin FormFooter
+            Height =1247
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x8accd9f44637bc4fbfc945871bafcdf5
+            End
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6066
+                    Top =510
+                    Width =576
+                    Height =576
+                    Name ="cmdEsci"
+                    Caption ="Comando29"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Chiudi maschera"
+                    GUID = Begin
+                        0x92c347853582524cb81338e7a6b4f31d
+                    End
+
+                    LayoutCachedLeft =6066
+                    LayoutCachedTop =510
+                    LayoutCachedWidth =6642
+                    LayoutCachedHeight =1086
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub cmdCash_Click()
+
+ Dim stDocName As String
+ Dim stLinkCriteria As String
+
+
+sDataCerca = 0
+If Not IsNull(txtDataCerca) Then
+
+    sDataCerca = Format(txtDataCerca, "YYYY-MM-DD")
+Else
+    MsgBox ("Insert date!!!!")
+    Exit Sub
+End If
+
+'Ricalolo il valore dalla tabella in base alla data di ricerca
+RicavoGeneraleData
+GuadagnoGeneraleData
+
+    stDocName = "fGuadagnoGeneraleData"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+
+
+End Sub
+
+Private Sub cmdEsci_Click()
+On Error GoTo Err_cmdEsci_Click
+
+
+'    If Me.Dirty Then Me.Dirty = False
+    DoCmd.Close
+
+Exit_cmdEsci_Click:
+    Exit Sub
+
+Err_cmdEsci_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdEsci_Click
+    
+End Sub
+
+Private Sub Foglio()
+'Dim rs As DAO.Recordset
+'Dim ex As Excel.Application
+'Dim wb As Excel.Workbook
+'Dim ws As Excel.Worksheet
+Dim i As Integer
+
+Dim sAnno As String
+Dim sMese As String
+Dim sGiorno As String
+
+'pulisco le variabili
+sAnno = 0
+sMese = 0
+sGiorno = 0
+
+'assegno le variabili
+
+sAnno = txtYear
+sMese = txtMonth
+sGiorno = txtDay
+
+
+'apre excel
+'Set ex = New Excel.Application
+'ex.Visible = True 'metti false se non vuoi vedere excel a video
+
+'apre il file xls
+'Set wb = ex.Workbooks.Open("C:\Portfolio\db\Data.xlsx")
+
+'seleziona il foglio 1
+'Set ws = wb.Worksheets(1)
+
+'apre un recordset con la tabella da esportare
+'Set rsR = db.OpenRecordset("Tabella", DAO.dbOpenDynaset)
+
+Set db = CurrentDb
+
+'sqlc = "SELECT [1ISIN].ISIN, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] as Cambio " & _
+        "FROM Change INNER JOIN 1ISIN ON Change.IdC = [1ISIN].IdC " & _
+        "WHERE ((([1ISIN].ISIN)='" & ProductId.Column(0) & "'));"
+
+
+
+    Set rsR = db.OpenRecordset("FormulaData", dbOpenSnapshot)
+    
+'pulisco le variabili
+
+
+
+
+
+
+
+'loop sui record
+Do Until rsR.EOF
+'aggiorna un contatore
+i = i + 1
+
+'imposta la colonna A e B per la riga = i
+'ws.Cells(i, 4) = sAnno 'rsR("Simbolo")
+'ws.Cells(i, 5) = sMese  'rsR("Data")
+'ws.Cells(i, 6) = sGiorno '" =RLTKHist('IBM'; 'Close'; 'Daily1'; SYSDATE(DATA(2018;1;18)); '1'; '1'; SYSDATE(DATA(2018;1;18)); 'False'; 'False'; 'False'; '9:30'; '15:30'; 'False')"
+
+
+'=RLTKHist("IBM"; "Close"; "Daily1"; SYSDATE(DATA(2018;1;18)); "1"; "1"; SYSDATE(DATA(2018;1;18)); "False"; "False"; "False"; "9:30"; "15:30"; "False")
+
+'prossimo record
+rsR.MoveNext
+Loop
+
+'chiude recordset
+rsR.Close
+
+'salva file
+'wb.Save
+
+'chiude file
+'wb.Close
+
+'esce da excel
+'ex.Quit
+
+'cancella variabili oggetto
+Set rsR = Nothing
+'Set ex = Nothing
+'Set wb = Nothing
+'Set ws = Nothing
+End Sub
+Private Sub ControllaData()
+Dim stDocName As String
+Dim stLinkCriteria As String
+
+    Set db = CurrentDb
+    
+' Verifico se alla data cercata esistono dei prezzi
+    sDataCerca = 0
+
+
+sqlc = "SELECT HistoricPrice.Date, HistoricPrice.Close, HistoricPrice.ISIN " & _
+        "FROM HistoricPrice " & _
+        "WHERE (((HistoricPrice.Date)=#" & Format(txtDataCerca, "yyyy-mm-dd") & "#));"
+
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+ 
+    
+     ' Apro il secondo rs legato alla form fifostock
+
+
+    If Not rsR.EOF Then
+      '  sDataCerca = 0
+        rsR.Close
+        Set rsR = Nothing
+        sDataCerca = Format(txtDataCerca, "YYYY-MM-DD")
+        stDocName = "MFFifoData"
+        DoCmd.OpenForm stDocName, , , stLinkCriteria
+        
+    Else
+         MsgBox ("Date is not correct!")
+    
+    End If
+    
+            
+   
+'    Set cn = Nothing
+End Sub
+
+Private Sub cmdIsin_Click()
+ControllaData
+
+End Sub
+
+Private Sub Form_Load()
+AggiornaPrice2
+
+End Sub

@@ -1,0 +1,2162 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =-307105101
+Begin Report
+    LayoutForPrint = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =48
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15720
+    DatasheetFontHeight =10
+    ItemSuffix =242
+    Left =1395
+    Top =90
+    Right =1395
+    Bottom =90
+    DatasheetGridlinesColor =12632256
+    Filter ="[IdA]=3"
+    RecSrcDt = Begin
+        0x87bb1726f113e540
+    End
+    RecordSource ="MQFifostock"
+    Caption ="QryFifostock"
+    OnCurrent ="[Event Procedure]"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Tahoma"
+    PrtMip = Begin
+        0x6801000068010000d00200006801000000000000683d00000000000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    FilterOnLoad =0
+    DatasheetGridlinesColor12 =12632256
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextAlign =1
+            TextFontFamily =18
+            FontSize =9
+            FontWeight =700
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin BoundObjectFrame
+            BorderLineStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =18
+            BorderLineStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Times New Roman"
+            AsianLineBreak =255
+            ShowDatePicker =0
+        End
+        Begin ListBox
+            TextFontFamily =18
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Times New Roman"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            TextFontFamily =18
+            BorderLineStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Times New Roman"
+        End
+        Begin Subform
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="Region"
+        End
+        Begin BreakLevel
+            ControlSource ="Receiving Date"
+        End
+        Begin FormHeader
+            Height =226
+            Name ="ReportHeader"
+            GUID = Begin
+                0xa19345b1cf298d49947e7943c0925cc6
+            End
+        End
+        Begin PageHeader
+            Height =1267
+            Name ="PageHeaderSection"
+            GUID = Begin
+                0xb44886f40c78224ab477f1ffc457e431
+            End
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    FontUnderline = NotDefault
+                    BackStyle =1
+                    TextFontCharSet =177
+                    TextFontFamily =34
+                    Width =7365
+                    Height =600
+                    FontSize =24
+                    FontWeight =400
+                    ForeColor =8388608
+                    Name ="Label20"
+                    Caption ="Portfolio portfolio statement Region "
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x731e60735c74c743aee3ba86d7de7bbd
+                    End
+                    LayoutCachedWidth =7365
+                    LayoutCachedHeight =600
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =12426
+                    Width =1125
+                    Height =300
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =8388608
+                    Name ="Testo35"
+                    ControlSource ="=Now()"
+                    Format ="Medium Date"
+                    GUID = Begin
+                        0x069514aef35dda47b680550eac221fd1
+                    End
+
+                    LayoutCachedLeft =12426
+                    LayoutCachedWidth =13551
+                    LayoutCachedHeight =300
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =13833
+                    Width =1125
+                    Height =300
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =8388608
+                    Name ="Testo94"
+                    ControlSource ="=Now()"
+                    Format ="Short Time"
+                    GUID = Begin
+                        0xc8185f11bd2b814a89b3278b1fb017fa
+                    End
+
+                    LayoutCachedLeft =13833
+                    LayoutCachedWidth =14958
+                    LayoutCachedHeight =300
+                End
+                Begin Rectangle
+                    BackStyle =1
+                    Left =12529
+                    Top =450
+                    Width =1649
+                    Height =800
+                    BackColor =-2147483613
+                    Name ="Casella120"
+                    GUID = Begin
+                        0x982672ec759d204f82e76cff534747ea
+                    End
+                    LayoutCachedLeft =12529
+                    LayoutCachedTop =450
+                    LayoutCachedWidth =14178
+                    LayoutCachedHeight =1250
+                End
+                Begin Rectangle
+                    Top =855
+                    Width =15697
+                    Height =412
+                    Name ="Box35"
+                    GUID = Begin
+                        0x6b900411b8a2854dbe879b7e9e726182
+                    End
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =15697
+                    LayoutCachedHeight =1267
+                End
+                Begin Label
+                    BackStyle =1
+                    TextAlign =3
+                    Left =8320
+                    Top =855
+                    Width =1380
+                    Height =345
+                    FontSize =12
+                    BackColor =13942903
+                    Name ="Etichetta53"
+                    Caption ="Value Live €"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xaf68751b0aa21b41bdd6a46956cbba04
+                    End
+                    LayoutCachedLeft =8320
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =9700
+                    LayoutCachedHeight =1200
+                End
+                Begin Label
+                    BackStyle =1
+                    TextAlign =0
+                    Left =5610
+                    Top =855
+                    Width =1485
+                    Height =345
+                    FontSize =12
+                    BackColor =7961551
+                    Name ="Etichetta60"
+                    Caption ="Value € MTD"
+                    GUID = Begin
+                        0x530cfb2aec35964398d797b1b57bf536
+                    End
+                    LayoutCachedLeft =5610
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =7095
+                    LayoutCachedHeight =1200
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =11062
+                    Top =855
+                    Width =1125
+                    Height =345
+                    FontSize =12
+                    Name ="Etichetta88"
+                    Caption ="Profit/loss"
+                    GUID = Begin
+                        0x003a4c186f4b9040baf44366c01d4199
+                    End
+                    LayoutCachedLeft =11062
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =12187
+                    LayoutCachedHeight =1200
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =13425
+                    Top =855
+                    Width =495
+                    Height =345
+                    FontSize =12
+                    Name ="Etichetta89"
+                    Caption ="Rel."
+                    GUID = Begin
+                        0xf1beec54e06f9f48841d49dd83825703
+                    End
+                    LayoutCachedLeft =13425
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =13920
+                    LayoutCachedHeight =1200
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =3278
+                    Top =855
+                    Width =870
+                    Height =345
+                    FontSize =12
+                    Name ="Etichetta114"
+                    Caption ="Value €"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x099ba1784e56644cbf65fad33801abe2
+                    End
+                    LayoutCachedLeft =3278
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =4148
+                    LayoutCachedHeight =1200
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =12814
+                    Top =855
+                    Width =600
+                    Height =345
+                    FontSize =12
+                    Name ="Etichetta118"
+                    Caption ="Abs. "
+                    GUID = Begin
+                        0x0365c70382158f4692d5a5301c5409a6
+                    End
+                    LayoutCachedLeft =12814
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =13414
+                    LayoutCachedHeight =1200
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =13035
+                    Top =450
+                    Width =765
+                    Height =300
+                    Name ="Etichetta119"
+                    Caption ="Portfolio"
+                    GUID = Begin
+                        0xc7226d576db0a243bc10de248432a2bd
+                    End
+                    LayoutCachedLeft =13035
+                    LayoutCachedTop =450
+                    LayoutCachedWidth =13800
+                    LayoutCachedHeight =750
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =2775
+                    Top =855
+                    Width =585
+                    Height =345
+                    FontSize =12
+                    Name ="Label154"
+                    Caption ="BUY"
+                    GUID = Begin
+                        0xcc0f5f702c38da429a40e1c2e150aec1
+                    End
+                    LayoutCachedLeft =2775
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =3360
+                    LayoutCachedHeight =1200
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =15120
+                    Top =855
+                    Width =390
+                    Height =285
+                    Name ="Etichetta163"
+                    Caption ="Rel."
+                    GUID = Begin
+                        0xece2cd9c1eac894984d60a5acbff2f48
+                    End
+                    LayoutCachedLeft =15120
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =15510
+                    LayoutCachedHeight =1140
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =14284
+                    Top =855
+                    Width =480
+                    Height =285
+                    Name ="Etichetta164"
+                    Caption ="Abs. "
+                    GUID = Begin
+                        0xa0e1f5b724735b4386c1ee9b57ee0695
+                    End
+                    LayoutCachedLeft =14284
+                    LayoutCachedTop =855
+                    LayoutCachedWidth =14764
+                    LayoutCachedHeight =1140
+                End
+                Begin Label
+                    TextAlign =0
+                    Left =14550
+                    Top =450
+                    Width =780
+                    Height =300
+                    Name ="Etichetta165"
+                    Caption ="Leverage"
+                    GUID = Begin
+                        0x6d280c00f760cc46ad87ae0035875879
+                    End
+                    LayoutCachedLeft =14550
+                    LayoutCachedTop =450
+                    LayoutCachedWidth =15330
+                    LayoutCachedHeight =750
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =0
+            Name ="GroupHeader1"
+            GUID = Begin
+                0x86beeae41156454fa283c7551597cef8
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Detail"
+            GUID = Begin
+                0x7cbdcef7d3dc4e4190d6a61621a09d07
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =453
+            Name ="PièDiPaginaGruppo0"
+            GUID = Begin
+                0x18048b129a19f341803cfd4e7de0c6fa
+            End
+            Begin
+                Begin Rectangle
+                    BackStyle =1
+                    Left =12529
+                    Width =1649
+                    Height =290
+                    BackColor =-2147483613
+                    Name ="Casella242"
+                    GUID = Begin
+                        0x9355604ea23df246993b0c0883b556aa
+                    End
+                    LayoutCachedLeft =12529
+                    LayoutCachedWidth =14178
+                    LayoutCachedHeight =290
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontCharSet =186
+                    TextFontFamily =34
+                    Left =60
+                    Width =660
+                    Height =330
+                    FontSize =11
+                    ForeColor =8388608
+                    Name ="Etichetta211"
+                    Caption ="Total"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xbac24be337b2ba479952f2727629d21f
+                    End
+                    LayoutCachedLeft =60
+                    LayoutCachedWidth =720
+                    LayoutCachedHeight =330
+                End
+                Begin Rectangle
+                    Width =15697
+                    Height =397
+                    Name ="Casella212"
+                    GUID = Begin
+                        0x45b0c8cb017c2042adec4665bc47e053
+                    End
+                    LayoutCachedWidth =15697
+                    LayoutCachedHeight =397
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontCharSet =186
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =2265
+                    Width =2430
+                    Height =390
+                    FontSize =11
+                    FontWeight =700
+                    ForeColor =8388608
+                    Name ="Testo213"
+                    ControlSource ="=Sum([Value€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x5c933af58003db478717d188d87a6b2b
+                    End
+
+                    LayoutCachedLeft =2265
+                    LayoutCachedWidth =4695
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    DecimalPlaces =3
+                    TextFontCharSet =186
+                    TextAlign =3
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =7815
+                    Width =2430
+                    Height =390
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =1
+                    BackColor =13942903
+                    Name ="Testo214"
+                    ControlSource ="=Sum([Valuelive€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xd250c0cd8f41ee4ba508da0e55d7645b
+                    End
+
+                    LayoutCachedLeft =7815
+                    LayoutCachedWidth =10245
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =13320
+                    Top =7
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Testo215"
+                    ControlSource ="=Sum([Valuelive€])/[TotalLiveE]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x8d00882017b37845a663332c441acaf7
+                    End
+
+                    LayoutCachedLeft =13320
+                    LayoutCachedTop =7
+                    LayoutCachedWidth =14106
+                    LayoutCachedHeight =262
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =12525
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Testo216"
+                    ControlSource ="=Sum([Valuelive€])/[totalportfoliovalue]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0xedde2d15ff10b94a8dcfc0ce0b73cd3a
+                    End
+
+                    LayoutCachedLeft =12525
+                    LayoutCachedWidth =13311
+                    LayoutCachedHeight =255
+                End
+                Begin Rectangle
+                    Width =15697
+                    Height =397
+                    Name ="Casella159"
+                    GUID = Begin
+                        0x84c7da7f5983aa4a9b3d2dd41790f46c
+                    End
+                    LayoutCachedWidth =15697
+                    LayoutCachedHeight =397
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontCharSet =177
+                    TextAlign =3
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =10305
+                    Width =1200
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =4
+                    BackColor =62207
+                    Name ="Testo217"
+                    ControlSource ="=Sum([Valuelive€])-Sum([Value€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xef70592430d73e44909c55e7b9507235
+                    End
+
+                    LayoutCachedLeft =10305
+                    LayoutCachedWidth =11505
+                    LayoutCachedHeight =255
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =11625
+                    Width =846
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="Testo218"
+                    ControlSource ="=(Sum([Valuelive€])-Sum([Value€]))/Sum([Value€])"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x54f63fd27bfb2040be4a172761b82bd6
+                    End
+
+                    LayoutCachedLeft =11625
+                    LayoutCachedWidth =12471
+                    LayoutCachedHeight =255
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextFontCharSet =186
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =735
+                    Width =2091
+                    Height =330
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =6
+                    ForeColor =8388608
+                    Name ="Sector"
+                    ControlSource ="Region"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x256c786fde665e4f924172593fc6798e
+                    End
+
+                    LayoutCachedLeft =735
+                    LayoutCachedWidth =2826
+                    LayoutCachedHeight =330
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontCharSet =186
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =5100
+                    Width =2430
+                    Height =390
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =7
+                    BackColor =7961551
+                    Name ="Testo222"
+                    ControlSource ="=Sum([ValueMTD€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x7e8ab61343077a4584ccb2466ecf9a90
+                    End
+
+                    LayoutCachedLeft =5100
+                    LayoutCachedWidth =7530
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =14970
+                    Width =726
+                    Height =255
+                    FontWeight =700
+                    TabIndex =8
+                    Name ="Testo168"
+                    ControlSource ="=Sum([ValLeverage])/[totalLiveE]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x925a50acc1be5344af7d7c7cace81764
+                    End
+
+                    LayoutCachedLeft =14970
+                    LayoutCachedWidth =15696
+                    LayoutCachedHeight =255
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =14158
+                    Width =726
+                    Height =255
+                    FontWeight =700
+                    TabIndex =9
+                    Name ="subLevAbs"
+                    ControlSource ="=Sum([ValLeverage])/[totalportfoliovalue]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x429eb27eb81e0c42a0ba9a6abe6b0ad4
+                    End
+
+                    LayoutCachedLeft =14158
+                    LayoutCachedWidth =14884
+                    LayoutCachedHeight =255
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PageFooterSection"
+            GUID = Begin
+                0x27944ff098bf364d8baecf1f5713993a
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =4251
+            Name ="ReportFooter"
+            GUID = Begin
+                0xfd2c09dfd73943499f67bf1f63803881
+            End
+            Begin
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    Left =9300
+                    Top =2145
+                    Width =6408
+                    Height =846
+                    BackColor =12765388
+                    Name ="Box158"
+                    GUID = Begin
+                        0xaa83da4c08732d439a50d4f559e3acdf
+                    End
+                    LayoutCachedLeft =9300
+                    LayoutCachedTop =2145
+                    LayoutCachedWidth =15708
+                    LayoutCachedHeight =2991
+                End
+                Begin Rectangle
+                    SpecialEffect =3
+                    BackStyle =1
+                    Left =170
+                    Top =3284
+                    Width =15527
+                    Height =854
+                    BackColor =5167783
+                    Name ="Box150"
+                    GUID = Begin
+                        0xcae46572c34cd24595877626e0a5c882
+                    End
+                    LayoutCachedLeft =170
+                    LayoutCachedTop =3284
+                    LayoutCachedWidth =15697
+                    LayoutCachedHeight =4138
+                End
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    Left =170
+                    Top =907
+                    Width =9123
+                    Height =2136
+                    BackColor =12765388
+                    Name ="Box149"
+                    GUID = Begin
+                        0x94876382f2ee694ca0e675edc4f78b9e
+                    End
+                    LayoutCachedLeft =170
+                    LayoutCachedTop =907
+                    LayoutCachedWidth =9293
+                    LayoutCachedHeight =3043
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =2425
+                    Top =1118
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    BorderColor =12428870
+                    Name ="txtDol"
+                    ControlSource ="=dol()"
+                    Format ="$ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x62d74cc63556a54cbd843447cab3f562
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =2425
+                    LayoutCachedTop =1118
+                    LayoutCachedWidth =3960
+                    LayoutCachedHeight =1433
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =4170
+                    Top =1118
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =1
+                    BorderColor =12428870
+                    Name ="txtEur"
+                    ControlSource ="=eur()"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x572be93ff698114d8d2f13129d830daa
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =4170
+                    LayoutCachedTop =1118
+                    LayoutCachedWidth =5705
+                    LayoutCachedHeight =1433
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =5880
+                    Top =1118
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =2
+                    BorderColor =12428870
+                    Name ="txtGb"
+                    ControlSource ="=gb()"
+                    Format ="£ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x07a2583b310ca745bbf0e7fb52586f8c
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =5880
+                    LayoutCachedTop =1118
+                    LayoutCachedWidth =7415
+                    LayoutCachedHeight =1433
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =7635
+                    Top =1118
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =3
+                    BorderColor =12428870
+                    Name ="txtYen"
+                    ControlSource ="=yen()"
+                    Format ="¥ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xa2d3eb2ae3aea7489cb142a2f3f41a00
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =7635
+                    LayoutCachedTop =1118
+                    LayoutCachedWidth =9170
+                    LayoutCachedHeight =1433
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =2425
+                    Top =1748
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =4
+                    BorderColor =12428870
+                    Name ="txtDolG"
+                    ControlSource ="=dolg()"
+                    Format ="$ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x4860be3fe548a341a2d8df3fba2c8717
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =2425
+                    LayoutCachedTop =1748
+                    LayoutCachedWidth =3960
+                    LayoutCachedHeight =2063
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =4170
+                    Top =1748
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =5
+                    BorderColor =12428870
+                    Name ="txtEurG"
+                    ControlSource ="=eurg()"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xa2e02fbf153031469f0d2077488d2cc5
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =4170
+                    LayoutCachedTop =1748
+                    LayoutCachedWidth =5705
+                    LayoutCachedHeight =2063
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =5880
+                    Top =1748
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =6
+                    BorderColor =12428870
+                    Name ="txtGbG"
+                    ControlSource ="=gbg()"
+                    Format ="£ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x3abbbb6a37774542837c7ca68b1134ad
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =5880
+                    LayoutCachedTop =1748
+                    LayoutCachedWidth =7415
+                    LayoutCachedHeight =2063
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =7635
+                    Top =1748
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =7
+                    BorderColor =12428870
+                    Name ="txtYenG"
+                    ControlSource ="=yeng()"
+                    Format ="¥ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xede22596df272541b2381a1709c015dc
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =7635
+                    LayoutCachedTop =1748
+                    LayoutCachedWidth =9170
+                    LayoutCachedHeight =2063
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =2425
+                    Top =1433
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =8
+                    BorderColor =12428870
+                    Name ="txtDolA"
+                    ControlSource ="=dola()"
+                    Format ="$ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xca6fa5337cfc8d4899a6a5d91a3b4e5c
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =2425
+                    LayoutCachedTop =1433
+                    LayoutCachedWidth =3960
+                    LayoutCachedHeight =1748
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =4170
+                    Top =1433
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =9
+                    BorderColor =12428870
+                    Name ="txtEurA"
+                    ControlSource ="=eura()"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x16c906149452ac4bb9c59cfdb8cac64d
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =4170
+                    LayoutCachedTop =1433
+                    LayoutCachedWidth =5705
+                    LayoutCachedHeight =1748
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =5880
+                    Top =1433
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =10
+                    BorderColor =12428870
+                    Name ="txtGbA"
+                    ControlSource ="=gba()"
+                    Format ="£ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xf77745603198ed4b85a4e58c6d41b103
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =5880
+                    LayoutCachedTop =1433
+                    LayoutCachedWidth =7415
+                    LayoutCachedHeight =1748
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =7635
+                    Top =1433
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =11
+                    BorderColor =12428870
+                    Name ="txtYenA"
+                    ControlSource ="=yEna()"
+                    Format ="¥ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x6d618b32751f9949a42c5b3091347f38
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =7635
+                    LayoutCachedTop =1433
+                    LayoutCachedWidth =9170
+                    LayoutCachedHeight =1748
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =2425
+                    Top =2063
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =12
+                    BorderColor =12428870
+                    Name ="TotDol"
+                    ControlSource ="=[txtDol]+[txtDolG]-[txtDolA]"
+                    Format ="$ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x243434e4351ae14d8dbf1b55effc96f5
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =2425
+                    LayoutCachedTop =2063
+                    LayoutCachedWidth =3960
+                    LayoutCachedHeight =2378
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =4170
+                    Top =2063
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =13
+                    BorderColor =12428870
+                    Name ="TotEur"
+                    ControlSource ="=[txtEur]+[txtEurG]-[txtEurA]"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xd3cf6c75a940d64fa208a7d0cae187f8
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =4170
+                    LayoutCachedTop =2063
+                    LayoutCachedWidth =5705
+                    LayoutCachedHeight =2378
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =5880
+                    Top =2063
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =14
+                    BorderColor =12428870
+                    Name ="TotGb"
+                    ControlSource ="=[txtGb]+[txtGbG]-[txtGbA]"
+                    Format ="£ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x3ae1fbd3045efc4f87da0649196b733d
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =5880
+                    LayoutCachedTop =2063
+                    LayoutCachedWidth =7415
+                    LayoutCachedHeight =2378
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =7635
+                    Top =2063
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =15
+                    BorderColor =12428870
+                    Name ="TotYen"
+                    ControlSource ="=[txtYen]+[txtYenG]+[txtYenA]"
+                    Format ="¥ #,##0.#"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xb75dbe005ccbb14caaa573297ba36e7c
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =7635
+                    LayoutCachedTop =2063
+                    LayoutCachedWidth =9170
+                    LayoutCachedHeight =2378
+                End
+                Begin TextBox
+                    DecimalPlaces =3
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =2425
+                    Top =2393
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =16
+                    BorderColor =12428870
+                    Name ="TotDCE"
+                    ControlSource ="=[totdol]/dolT()"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x1706a6df9af78c418520b854a54cb4a8
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =2425
+                    LayoutCachedTop =2393
+                    LayoutCachedWidth =3960
+                    LayoutCachedHeight =2708
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =4170
+                    Top =2393
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =17
+                    BorderColor =12428870
+                    Name ="TotCE"
+                    ControlSource ="=[toteur]"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x954c46099a188d41bf6f0497f220ba38
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =4170
+                    LayoutCachedTop =2393
+                    LayoutCachedWidth =5705
+                    LayoutCachedHeight =2708
+                End
+                Begin TextBox
+                    DecimalPlaces =3
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =5880
+                    Top =2393
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =18
+                    BorderColor =12428870
+                    Name ="TotGCE"
+                    ControlSource ="=[totgb]/gbT()"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x0fa97c7b8e60d84796b69353985ac77c
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =5880
+                    LayoutCachedTop =2393
+                    LayoutCachedWidth =7415
+                    LayoutCachedHeight =2708
+                End
+                Begin TextBox
+                    DecimalPlaces =3
+                    OldBorderStyle =1
+                    TextFontCharSet =204
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =7635
+                    Top =2393
+                    Width =1535
+                    Height =315
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =19
+                    BorderColor =12428870
+                    Name ="TotYCE"
+                    ControlSource ="=[totyen]/yenT()"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xc339b080723524439c02a5700d313ded
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =7635
+                    LayoutCachedTop =2393
+                    LayoutCachedWidth =9170
+                    LayoutCachedHeight =2708
+                End
+                Begin Label
+                    TextAlign =0
+                    TextFontFamily =34
+                    Left =340
+                    Top =3401
+                    Width =3135
+                    Height =480
+                    FontSize =18
+                    BorderColor =-2147483609
+                    ForeColor =-2147483617
+                    Name ="Etichetta142"
+                    Caption ="Total portfolio value"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xc6089c2f8b6aea4dacce08acba8a2754
+                    End
+                    LayoutCachedLeft =340
+                    LayoutCachedTop =3401
+                    LayoutCachedWidth =3475
+                    LayoutCachedHeight =3881
+                End
+                Begin Rectangle
+                    BackStyle =1
+                    Left =12529
+                    Width =1649
+                    Height =290
+                    BackColor =-2147483613
+                    Name ="Casella243"
+                    GUID = Begin
+                        0x5bcf16c582f4e4488060bbce8907b95f
+                    End
+                    LayoutCachedLeft =12529
+                    LayoutCachedWidth =14178
+                    LayoutCachedHeight =290
+                End
+                Begin Rectangle
+                    Width =15697
+                    Height =397
+                    Name ="Box37"
+                    GUID = Begin
+                        0x9787b14f88346f4a92790eaeec287f5e
+                    End
+                    LayoutCachedWidth =15697
+                    LayoutCachedHeight =397
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontCharSet =177
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =2265
+                    Width =2430
+                    Height =390
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =20
+                    ForeColor =8388608
+                    Name ="Testo57"
+                    ControlSource ="=Sum([Value€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x32d20de4a00e824aa2a3cbe37c945314
+                    End
+
+                    LayoutCachedLeft =2265
+                    LayoutCachedWidth =4695
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    DecimalPlaces =3
+                    TextFontCharSet =186
+                    TextAlign =3
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =7815
+                    Width =2430
+                    Height =390
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =21
+                    BackColor =13942903
+                    Name ="TotalLiveE"
+                    ControlSource ="=Sum([Valuelive€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xdc69156a51c2794fafd3c592a3fbad63
+                    End
+
+                    LayoutCachedLeft =7815
+                    LayoutCachedWidth =10245
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =13320
+                    Top =7
+                    Width =846
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =22
+                    Name ="Text156"
+                    ControlSource ="=Sum([Valuelive€])/[TotalLiveE]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0xfe30c8fb88a4ff4795f771ce2fb650a3
+                    End
+
+                    LayoutCachedLeft =13320
+                    LayoutCachedTop =7
+                    LayoutCachedWidth =14166
+                    LayoutCachedHeight =262
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =12525
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =23
+                    Name ="Text157"
+                    ControlSource ="=Sum([Valuelive€])/[totalportfoliovalue]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x42d284f6c906984aada9643a17ef850b
+                    End
+
+                    LayoutCachedLeft =12525
+                    LayoutCachedWidth =13311
+                    LayoutCachedHeight =255
+                End
+                Begin Rectangle
+                    Width =15697
+                    Height =397
+                    Name ="Casella219"
+                    GUID = Begin
+                        0x368d9db5db043c4592708af8530c1706
+                    End
+                    LayoutCachedWidth =15697
+                    LayoutCachedHeight =397
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontCharSet =186
+                    TextAlign =3
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =10305
+                    Width =1200
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =24
+                    BackColor =62207
+                    Name ="Testo220"
+                    ControlSource ="=Sum([Valuelive€])-Sum([Value€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xda79a934908ba14db5a35c11c045f527
+                    End
+
+                    LayoutCachedLeft =10305
+                    LayoutCachedWidth =11505
+                    LayoutCachedHeight =255
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =11625
+                    Width =846
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =25
+                    Name ="Testo221"
+                    ControlSource ="=(Sum([Valuelive€])-Sum([Value€]))/Sum([Value€])"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x64d71dfbaec2c142a7299e6622b9a43e
+                    End
+
+                    LayoutCachedLeft =11625
+                    LayoutCachedWidth =12471
+                    LayoutCachedHeight =255
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontCharSet =186
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =5100
+                    Width =2430
+                    Height =390
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =26
+                    BackColor =7961551
+                    Name ="Testo241"
+                    ControlSource ="=Sum([ValueMTD€])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xd21343e6cd39704fb648d1a3e80619b2
+                    End
+
+                    LayoutCachedLeft =5100
+                    LayoutCachedWidth =7530
+                    LayoutCachedHeight =390
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =14970
+                    Width =726
+                    Height =255
+                    FontWeight =700
+                    TabIndex =27
+                    Name ="Testo171"
+                    ControlSource ="=Sum([ValLeverage])/[totalLiveE]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x29508a49a19c9441ad562b1c2d45c4b1
+                    End
+
+                    LayoutCachedLeft =14970
+                    LayoutCachedWidth =15696
+                    LayoutCachedHeight =255
+                End
+                Begin TextBox
+                    TextFontCharSet =163
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =14158
+                    Width =726
+                    Height =255
+                    FontWeight =700
+                    TabIndex =28
+                    Name ="Testo172"
+                    ControlSource ="=Sum([ValLeverage])/[totalportfoliovalue]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0xfcda6f57f53bb94b84b3458ef36d0d82
+                    End
+
+                    LayoutCachedLeft =14158
+                    LayoutCachedWidth =14884
+                    LayoutCachedHeight =255
+                End
+                Begin TextBox
+                    DecimalPlaces =3
+                    OldBorderStyle =1
+                    TextFontCharSet =162
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =9475
+                    Top =2393
+                    Width =1715
+                    Height =330
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =29
+                    BorderColor =12428870
+                    ForeColor =8388608
+                    Name ="TotalCashE"
+                    ControlSource ="=[totdce]+[totce]+[totgce]+[totyce]"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x2a34ebbe0ef2e3479760b5fe5a4298a5
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =9475
+                    LayoutCachedTop =2393
+                    LayoutCachedWidth =11190
+                    LayoutCachedHeight =2723
+                End
+                Begin TextBox
+                    DecimalPlaces =3
+                    OldBorderStyle =1
+                    TextFontFamily =34
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =8850
+                    Top =3405
+                    Width =2435
+                    Height =480
+                    FontSize =18
+                    FontWeight =700
+                    TabIndex =30
+                    BorderColor =12428870
+                    ForeColor =8388608
+                    Name ="TotalPortfolioValue"
+                    ControlSource ="=[TotalCashE]+[TotalLiveE]"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0x04705811e773b24093a8299f67eb861d
+                    End
+                    ShowDatePicker =1
+
+                    LayoutCachedLeft =8850
+                    LayoutCachedTop =3405
+                    LayoutCachedWidth =11285
+                    LayoutCachedHeight =3885
+                End
+                Begin TextBox
+                    TextFontCharSet =162
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =13545
+                    Top =2385
+                    Width =1431
+                    Height =330
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =31
+                    Name ="AbsC"
+                    ControlSource ="=([totdce]+[totce]+[totgce]+[totyce])/[totalportfoliovalue]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x5e24abef836a47499c4287e230c7ad74
+                    End
+
+                    LayoutCachedLeft =13545
+                    LayoutCachedTop =2385
+                    LayoutCachedWidth =14976
+                    LayoutCachedHeight =2715
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =13545
+                    Top =3393
+                    Width =1431
+                    Height =480
+                    FontSize =18
+                    FontWeight =700
+                    TabIndex =32
+                    Name ="Text153"
+                    ControlSource ="=(Sum([Valuelive€])/[totalportfoliovalue])+[absc]"
+                    Format ="Percent"
+                    FontName ="Calibri"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x0ad177f1a2f74d4ba857e5e56a10ee93
+                    End
+
+                    LayoutCachedLeft =13545
+                    LayoutCachedTop =3393
+                    LayoutCachedWidth =14976
+                    LayoutCachedHeight =3873
+                End
+                Begin TextBox
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =11850
+                    Top =3397
+                    Width =1416
+                    Height =480
+                    FontSize =18
+                    FontWeight =700
+                    TabIndex =33
+                    Name ="Testo173"
+                    ControlSource ="=(Sum([ValLeverage])/[totalportfoliovalue])+[absc]"
+                    Format ="Percent"
+                    FontName ="Calibri"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0x3edf64b42825bc49a7c9a925d681d7a3
+                    End
+
+                    LayoutCachedLeft =11850
+                    LayoutCachedTop =3397
+                    LayoutCachedWidth =13266
+                    LayoutCachedHeight =3877
+                End
+                Begin TextBox
+                    TextFontCharSet =162
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =11850
+                    Top =2385
+                    Width =1416
+                    Height =330
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =34
+                    Name ="Testo174"
+                    ControlSource ="=([totdce]+[totce]+[totgce]+[totyce])/[totalportfoliovalue]"
+                    Format ="Percent"
+                    FontName ="Arial"
+                    ControlTipText ="Value€ Totale"
+                    GUID = Begin
+                        0xe54191782f069d438aa34a0a5fe1b08f
+                    End
+
+                    LayoutCachedLeft =11850
+                    LayoutCachedTop =2385
+                    LayoutCachedWidth =13266
+                    LayoutCachedHeight =2715
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontCharSet =177
+                    TextFontFamily =34
+                    Left =60
+                    Width =1860
+                    Height =390
+                    FontSize =12
+                    ForeColor =8388608
+                    Name ="Label18"
+                    Caption ="Purchase Total"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x35f7b22355f0144a9ee1259ca493c311
+                    End
+                    LayoutCachedLeft =60
+                    LayoutCachedWidth =1920
+                    LayoutCachedHeight =390
+                End
+                Begin Label
+                    TextFontCharSet =204
+                    TextAlign =0
+                    TextFontFamily =34
+                    Left =235
+                    Top =1118
+                    Width =1365
+                    Height =315
+                    FontSize =11
+                    FontWeight =400
+                    BorderColor =-2147483609
+                    ForeColor =8998176
+                    Name ="Etichetta129"
+                    Caption ="Cashflow/adj."
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xf377355ee337f749b8527077c16cd474
+                    End
+                    LayoutCachedLeft =235
+                    LayoutCachedTop =1118
+                    LayoutCachedWidth =1600
+                    LayoutCachedHeight =1433
+                End
+                Begin Label
+                    TextFontCharSet =204
+                    TextAlign =0
+                    TextFontFamily =34
+                    Left =235
+                    Top =1748
+                    Width =1890
+                    Height =315
+                    FontSize =11
+                    FontWeight =400
+                    BorderColor =-2147483609
+                    ForeColor =8998176
+                    Name ="Etichetta130"
+                    Caption ="Realized profit/loss"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xa3f97d85cabb394d819cb258c1a8152b
+                    End
+                    LayoutCachedLeft =235
+                    LayoutCachedTop =1748
+                    LayoutCachedWidth =2125
+                    LayoutCachedHeight =2063
+                End
+                Begin Label
+                    TextFontCharSet =204
+                    TextAlign =0
+                    TextFontFamily =34
+                    Left =235
+                    Top =1433
+                    Width =2025
+                    Height =315
+                    FontSize =11
+                    FontWeight =400
+                    BorderColor =-2147483609
+                    ForeColor =8998176
+                    Name ="Etichetta131"
+                    Caption ="Purchase total"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xefa63697cc05bb4db6500399a6387257
+                    End
+                    LayoutCachedLeft =235
+                    LayoutCachedTop =1433
+                    LayoutCachedWidth =2260
+                    LayoutCachedHeight =1748
+                End
+                Begin Label
+                    TextAlign =0
+                    TextFontFamily =34
+                    Left =235
+                    Top =2063
+                    Width =2070
+                    Height =330
+                    FontSize =12
+                    FontWeight =400
+                    BorderColor =-2147483609
+                    ForeColor =-2147483617
+                    Name ="Etichetta135"
+                    Caption ="Cash total port. (loc)"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xb3d193720c0d9c4b8333ad5672e01b89
+                    End
+                    LayoutCachedLeft =235
+                    LayoutCachedTop =2063
+                    LayoutCachedWidth =2305
+                    LayoutCachedHeight =2393
+                End
+                Begin Label
+                    TextAlign =0
+                    TextFontFamily =34
+                    Left =235
+                    Top =2393
+                    Width =1965
+                    Height =330
+                    FontSize =12
+                    FontWeight =400
+                    BorderColor =-2147483609
+                    ForeColor =-2147483617
+                    Name ="Etichetta140"
+                    Caption ="Cash total port.  (€)"
+                    FontName ="Calibri"
+                    GUID = Begin
+                        0xd02bcece80441b43a45ab05d1e86c1d5
+                    End
+                    LayoutCachedLeft =235
+                    LayoutCachedTop =2393
+                    LayoutCachedWidth =2200
+                    LayoutCachedHeight =2723
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Option Explicit
+
+Function Dol() As Double
+'    Dol = Val(sDol)
+    Dol = sDol
+
+End Function
+Function Eur() As Double
+'    Eur = Val(sEur)
+    Eur = sEur
+End Function
+Function Gb() As Double
+'    Gb = Val(sGb)
+    Gb = (sGb)
+End Function
+Function Yen() As Double
+'    Yen = Val(sYen)
+    Yen = (sYen)
+End Function
+Function DolG() As Double
+'    DolG = Val(sDolG)
+    DolG = (sDolG)
+End Function
+Function EurG() As Double
+'    EurG = Val(sEurG)
+    EurG = (sEurG)
+End Function
+Function GbG() As Double
+'    GbG = Val(sGbG)
+    GbG = (sGbG)
+End Function
+Function YenG() As Double
+'    YenG = Val(sYenG)
+    YenG = (sYenG)
+End Function
+Function DolA() As Double
+'    DolA = Val(sDolA)
+    DolA = (sDolA)
+End Function
+Function EurA() As Double
+'    EurA = Val(sEurA)
+    EurA = (sEurA)
+End Function
+Function GbA() As Double
+'    GbA = Val(sGbA)
+    GbA = (sGbA)
+End Function
+Function YenA() As Double
+'   YenA = Val(sYenA)
+    YenA = (sYenA)
+End Function
+Function DolT() As Double
+    DolT = sDolT
+End Function
+Function GbT() As Double
+    GbT = sGbT
+End Function
+Function YenT() As Double
+    YenT = sYenT
+End Function
+
+Function AssE1() As Double
+'   YenA = Val(sYenA)
+    AssE1 = (sAssE1)
+End Function
+Function AssLiveE1() As Double
+'   YenA = Val(sYenA)
+    AssLiveE1 = (sAssLiveE1)
+End Function
+
+Function AssE2() As Double
+'   YenA = Val(sYenA)
+    AssE2 = (sAssE2)
+End Function
+Function AssLiveE2() As Double
+'   YenA = Val(sYenA)
+    AssLiveE2 = (sAssLiveE2)
+End Function
+
+Function AssE3() As Double
+'   YenA = Val(sYenA)
+    AssE3 = (sAssE3)
+End Function
+Function AssLiveE3() As Double
+'   YenA = Val(sYenA)
+    AssLiveE3 = (sAssLiveE3)
+End Function
+Function AssE4() As Double
+'   YenA = Val(sYenA)
+    AssE4 = (sAssE4)
+End Function
+Function AssLiveE4() As Double
+'   YenA = Val(sYenA)
+    AssLiveE4 = (sAssLiveE4)
+End Function
+Function AssE5() As Double
+'   YenA = Val(sYenA)
+    AssE5 = (sAssE5)
+End Function
+Function AssLiveE5() As Double
+'   YenA = Val(sYenA)
+    AssLiveE5 = (sAssLiveE5)
+End Function
+Function AssE6() As Double
+'   YenA = Val(sYenA)
+    AssE6 = (sAssE6)
+End Function
+Function AssLiveE6() As Double
+'   YenA = Val(sYenA)
+    AssLiveE6 = (sAssLiveE6)
+End Function
+Function AssE7() As Double
+'   YenA = Val(sYenA)
+    AssE7 = (sAssE7)
+End Function
+Function AssLiveE7() As Double
+'   YenA = Val(sYenA)
+    AssLiveE7 = (sAssLiveE7)
+End Function
+Function AssE8() As Double
+'   YenA = Val(sYenA)
+    AssE8 = (sAssE8)
+End Function
+Function AssLiveE8() As Double
+'   YenA = Val(sYenA)
+    AssLiveE8 = (sAssLiveE8)
+End Function
+
+Private Sub Report_Close()
+DoCmd.Restore
+End Sub
+
+Private Sub Report_Current()
+CalcoloGua
+Calcolo
+CalcoloAz
+Assetto
+Cambio
+'Controllo
+End Sub
+
+Private Sub Report_Open(Cancel As Integer)
+DoCmd.Maximize
+CalcoloGua
+Calcolo
+CalcoloAz
+Assetto
+Cambio
+'Controllo
+End Sub
+
+
+Private Sub Controllo()
+'pulisco le variabili
+ '   txtDol = 0
+ '   txtEur = 0
+ '   txtGb = 0
+ '   txtYen = 0
+
+'    txtDolG = 0
+'    txtEurG = 0
+'    TxtGbG = 0
+'    txtYenG = 0
+
+'    txtDolA = 0
+'    txtEurA = 0
+'    txtGbA = 0
+'    txtYenA = 0
+    
+'Inserisco le variabili per la scrittura nella maschera
+ '   txtDol = Format$(sDol, "$ #.##0,#")
+ '   txtEur = Format$(sEur, "€ #.##0,#")
+ '   txtGb = Format$(sGb, "£ #.##0,#")
+ '   txtYen = Format$(sYen, "¥ #.##0,#")
+ '   txtDol = Val(sDol)
+ '   txtEur = Val(sEur)
+ '   txtGb = Val(sGb)
+ '   txtYen = Val(sYen)
+      
+    
+ '   txtDolG = Val(sDolG)
+ '   txtEurG = Val(sEurG)
+ '   TxtGbG = Val(sGbG)
+ '   txtYenG = Val(sYenG)
+        
+ 
+ '   txtDolA = Val(sDolA)
+ '   txtEurA = Val(sEurA)
+ '   txtGbA = Val(sGbA)
+ '   txtYenA = Val(sYenA)
+
+'    txtDolT = Val(sDol) + Val(sDolG) - Val(sDolA)
+'    txtEurT = Val(sEur) + Val(sEurG) - Val(sEurA)
+'    txtGbT = Val(sGb) + Val(sGbG) - Val(sGbA)
+'    txtYenT = Val(sYen) + Val(sYenG) - Val(sYenA)
+
+
+End Sub

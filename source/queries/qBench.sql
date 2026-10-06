@@ -1,0 +1,2 @@
+SELECT Bench.Desc AS Benchmark, Format(CDate([HSTCLSDATE]),"dd\/mm\/yyyy") AS [Close Date], Bench.HST_CLOSE AS [Close Value], Bench.CurrentValue AS [Close Value â‚¬], Bench.[FUND START DATE], Bench.[START VALUE] AS StartValue, Bench.StartValueE AS StartValueâ‚¬, Format([Un],"Percent") AS Unj, Format([Adj],"Percent") AS Adju, Bench.[2018 START DATE] AS [2018 YDT], Bench.[2018START VALUE], Bench.[2018StartValueE], Format([2018Un],"Percent") AS 2018Unj, Format([2018Adj],"Percent") AS 2018Adju
+FROM Bench;

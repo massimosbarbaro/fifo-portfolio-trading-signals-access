@@ -1,0 +1,2758 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1622327810
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =204
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4932
+    DatasheetFontHeight =11
+    ItemSuffix =177
+    Left =4620
+    Right =9810
+    Bottom =8250
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x7b2029bb7729e540
+    End
+    GUID = Begin
+        0x9f9b5ad40b2844418fad90f9e65fd6de
+    End
+    RecordSource ="StrategyLine"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    TotalsRow =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin FormHeader
+            Height =737
+            BackColor =14865828
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0xcd6e35cd34558d4a935f85f5f70b0418
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =915
+                    Top =120
+                    Width =3540
+                    Height =540
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Auto_Title0"
+                    Caption ="Strategies parameters"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xf80c75c29b6ae2409b7fbf9f9e49e8af
+                    End
+                    GridlineColor =-2147483616
+                    HorizontalAnchor =2
+                    LayoutCachedLeft =915
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =4455
+                    LayoutCachedHeight =660
+                End
+            End
+        End
+        Begin Section
+            Height =11296
+            Name ="Corpo"
+            GUID = Begin
+                0x8b87ceb77604c9418da3be8901d36ef4
+            End
+            Begin
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =285
+                    Top =120
+                    Width =4372
+                    Height =3541
+                    BackColor =-2147483616
+                    Name ="Casella94"
+                    GUID = Begin
+                        0x2ccad51b893b444e8735111a0d577ffa
+                    End
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =4657
+                    LayoutCachedHeight =3661
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =2232
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =12
+                    Name ="S20"
+                    ControlSource ="S20"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xdd8addcf265a5645b2d3410cd66dce73
+                    End
+                    GroupTable =4
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =2232
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =2508
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =4
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =2232
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta62"
+                            Caption ="Price /20d SMA cross:"
+                            GUID = Begin
+                                0x371fc7109e041c43b86076575dc44cdf
+                            End
+                            GroupTable =4
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =2232
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =2508
+                            LayoutGroup =1
+                            GroupTable =4
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =2580
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =13
+                    Name ="E20"
+                    ControlSource ="E20"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x824fe03346a7fb4f88ea8c3f04666c77
+                    End
+                    GroupTable =4
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =2580
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =2856
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =4
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =2580
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta63"
+                            Caption ="Price /20d EMA cross:"
+                            GUID = Begin
+                                0x4fdd54a33531c649a006927b076b7cac
+                            End
+                            GroupTable =4
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =2580
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =2856
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =1
+                            GroupTable =4
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =2928
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =14
+                    Name ="E20/S20"
+                    ControlSource ="E20/S20"
+                    Format ="Percent"
+                    EventProcPrefix ="E20_S20"
+                    GUID = Begin
+                        0x86e07a93f5884448ac12dea946a8fe85
+                    End
+                    GroupTable =4
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =2928
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =3204
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =4
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =2928
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta64"
+                            Caption ="20d EMA/20d SMA cross:"
+                            GUID = Begin
+                                0x0afeb247dedc8841a20b90ce3b3951b7
+                            End
+                            GroupTable =4
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =2928
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =3204
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =1
+                            GroupTable =4
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =1584
+                    Width =792
+                    Height =252
+                    FontSize =9
+                    TabIndex =9
+                    Name ="S15"
+                    ControlSource ="S15"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xb2b9d00c0b9fa14da864c96e08487710
+                    End
+                    GroupTable =15
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =1584
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =1836
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =5
+                    GroupTable =15
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =1584
+                            Width =2196
+                            Height =252
+                            FontSize =9
+                            Name ="Etichetta160"
+                            Caption ="Price /15d SMA cross:"
+                            GUID = Begin
+                                0xea5a9bf2282ab74fb6b793603df07734
+                            End
+                            GroupTable =15
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =1584
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =1836
+                            LayoutGroup =5
+                            GroupTable =15
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =1908
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =10
+                    Name ="E15"
+                    ControlSource ="E15"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x6871107fb1a54842a4b9df96290591c6
+                    End
+                    GroupTable =15
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =1908
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =2184
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =5
+                    GroupTable =15
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =1908
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta162"
+                            Caption ="Price /15d EMA cross:"
+                            GUID = Begin
+                                0xe8966eadcb20ff4bb3acb271d9b7910a
+                            End
+                            GroupTable =15
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =1908
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =2184
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =5
+                            GroupTable =15
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =900
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =4
+                    Name ="S10"
+                    ControlSource ="S10"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xca19a3c0f6a748438d78997d1ee5fbb4
+                    End
+                    GroupTable =16
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =900
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =1176
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =6
+                    GroupTable =16
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =900
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta166"
+                            Caption ="Price /10d SMA cross:"
+                            GUID = Begin
+                                0xfa59b4311707a34495a6724724d3d503
+                            End
+                            GroupTable =16
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =900
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =1176
+                            LayoutGroup =6
+                            GroupTable =16
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =1248
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =5
+                    Name ="E10"
+                    ControlSource ="E10"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xa11d5eedca59964fb1fbf989b8a56b11
+                    End
+                    GroupTable =16
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =1248
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =1524
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =6
+                    GroupTable =16
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =1248
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta168"
+                            Caption ="Price /10d EMA cross:"
+                            GUID = Begin
+                                0x792911764f44af419d5565b50e7e6cf3
+                            End
+                            GroupTable =16
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =1248
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =1524
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =6
+                            GroupTable =16
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =216
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    Name ="S5"
+                    ControlSource ="S5"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x94254405a5e78d449affa899ee4d4390
+                    End
+                    GroupTable =17
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =216
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =492
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =7
+                    GroupTable =17
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =216
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta172"
+                            Caption ="Price /5d SMA cross:"
+                            GUID = Begin
+                                0xbb020766fc3cef4c9c5099649ecc9861
+                            End
+                            GroupTable =17
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =216
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =492
+                            LayoutGroup =7
+                            GroupTable =17
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =564
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =1
+                    Name ="E5"
+                    ControlSource ="E5"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x0a03a88977c12d48a65905bfeebf2bf9
+                    End
+                    GroupTable =17
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =564
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =840
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =7
+                    GroupTable =17
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =564
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta174"
+                            Caption ="Price /5d EMA cross:"
+                            GUID = Begin
+                                0x4d4094cc652bb44499b9b8028bed5e1a
+                            End
+                            GroupTable =17
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =564
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =840
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =7
+                            GroupTable =17
+                        End
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =285
+                    Top =8303
+                    Width =4372
+                    Height =2671
+                    BackColor =-2147483616
+                    Name ="Casella97"
+                    GUID = Begin
+                        0x48daa821504eb94a8afa738e5e9fd918
+                    End
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =8303
+                    LayoutCachedWidth =4657
+                    LayoutCachedHeight =10974
+                End
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =285
+                    Top =3818
+                    Width =4372
+                    Height =1951
+                    BackColor =-2147483616
+                    Name ="Casella96"
+                    GUID = Begin
+                        0xb8445eae48ce9d49b8077608f3b9e571
+                    End
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =3818
+                    LayoutCachedWidth =4657
+                    LayoutCachedHeight =5769
+                End
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =285
+                    Top =5918
+                    Width =4372
+                    Height =2206
+                    BackColor =-2147483616
+                    Name ="Casella95"
+                    GUID = Begin
+                        0xaa612eac66bc3746b534bd8273f7db95
+                    End
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =5918
+                    LayoutCachedWidth =4657
+                    LayoutCachedHeight =8124
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2595
+                    Top =3308
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    TabIndex =18
+                    Name ="T20"
+                    ControlSource ="=[S5]+[E5]+[S10]+[E10]+[S15]+[E15]+[s20]+[e20]+([e20/s20])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x9582c9d6180ee440a180573684183712
+                    End
+
+                    LayoutCachedLeft =2595
+                    LayoutCachedTop =3308
+                    LayoutCachedWidth =3381
+                    LayoutCachedHeight =3563
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =345
+                            Top =3308
+                            Width =2190
+                            Height =270
+                            FontSize =9
+                            Name ="Etichetta82"
+                            Caption ="SUM"
+                            GUID = Begin
+                                0x2efa9516064188418262ad3980953dad
+                            End
+                            LayoutCachedLeft =345
+                            LayoutCachedTop =3308
+                            LayoutCachedWidth =2535
+                            LayoutCachedHeight =3578
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2640
+                    Top =5409
+                    Width =726
+                    Height =255
+                    FontSize =9
+                    TabIndex =29
+                    Name ="T50"
+                    ControlSource ="=[s50]+[e50]+([S20/s50])+([e50/s50])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x1cadae91a4bf87459745e580bc269d7d
+                    End
+
+                    LayoutCachedLeft =2640
+                    LayoutCachedTop =5409
+                    LayoutCachedWidth =3366
+                    LayoutCachedHeight =5664
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =398
+                            Top =5416
+                            Width =2190
+                            Height =270
+                            FontSize =9
+                            Name ="Etichetta86"
+                            Caption ="SUM"
+                            GUID = Begin
+                                0xcb0f58ff2cd7e64da031fe48507bbde6
+                            End
+                            LayoutCachedLeft =398
+                            LayoutCachedTop =5416
+                            LayoutCachedWidth =2588
+                            LayoutCachedHeight =5686
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2595
+                    Top =7804
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    TabIndex =43
+                    Name ="T100"
+                    ControlSource ="=[s100]+[e100]+([S20/s100])+([S50/s100])+([e100/s100])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xa5da710dd46c8343a19d2d85c6b2d9f9
+                    End
+
+                    LayoutCachedLeft =2595
+                    LayoutCachedTop =7804
+                    LayoutCachedWidth =3381
+                    LayoutCachedHeight =8059
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =345
+                            Top =7811
+                            Width =2190
+                            Height =270
+                            FontSize =9
+                            Name ="Etichetta89"
+                            Caption ="SUM"
+                            GUID = Begin
+                                0x099cb3e0e7aec24abff6e2080af14d57
+                            End
+                            LayoutCachedLeft =345
+                            LayoutCachedTop =7811
+                            LayoutCachedWidth =2535
+                            LayoutCachedHeight =8081
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2664
+                    Top =4284
+                    Width =732
+                    Height =276
+                    FontSize =9
+                    TabIndex =22
+                    Name ="S50"
+                    ControlSource ="S50"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xc1722e0590c9bd449bd5bfaaee39fe77
+                    End
+                    GroupTable =5
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2664
+                    LayoutCachedTop =4284
+                    LayoutCachedWidth =3396
+                    LayoutCachedHeight =4560
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =5
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =396
+                            Top =4284
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta65"
+                            Caption ="Price /50d SMA cross:"
+                            GUID = Begin
+                                0xcc684229e93f794696f51251f0b5548d
+                            End
+                            GroupTable =5
+                            BottomPadding =36
+                            LayoutCachedLeft =396
+                            LayoutCachedTop =4284
+                            LayoutCachedWidth =2592
+                            LayoutCachedHeight =4560
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =2
+                            GroupTable =5
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2664
+                    Top =3936
+                    Width =732
+                    Height =276
+                    FontSize =9
+                    TabIndex =21
+                    Name ="E50"
+                    ControlSource ="E50"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x8a9ef02e1abd284ca7d804b42bfbe6a7
+                    End
+                    GroupTable =5
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2664
+                    LayoutCachedTop =3936
+                    LayoutCachedWidth =3396
+                    LayoutCachedHeight =4212
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =5
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =396
+                            Top =3936
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta66"
+                            Caption ="Price /50d EMA cross:"
+                            GUID = Begin
+                                0x2487dc60d37a924d8f8d8d1e343e0915
+                            End
+                            GroupTable =5
+                            BottomPadding =36
+                            LayoutCachedLeft =396
+                            LayoutCachedTop =3936
+                            LayoutCachedWidth =2592
+                            LayoutCachedHeight =4212
+                            LayoutGroup =2
+                            GroupTable =5
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2664
+                    Top =5016
+                    Width =732
+                    Height =276
+                    FontSize =9
+                    TabIndex =24
+                    Name ="E50/S50"
+                    ControlSource ="E50/S50"
+                    Format ="Percent"
+                    EventProcPrefix ="E50_S50"
+                    GUID = Begin
+                        0x5d246d68dcee684b8b1d88c667050f10
+                    End
+                    GroupTable =5
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2664
+                    LayoutCachedTop =5016
+                    LayoutCachedWidth =3396
+                    LayoutCachedHeight =5292
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =5
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =396
+                            Top =5016
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta67"
+                            Caption ="50d EMA/50d SMA cross:"
+                            GUID = Begin
+                                0xf71f1ad08ec6a64c8e67e43d352a5773
+                            End
+                            GroupTable =5
+                            BottomPadding =36
+                            LayoutCachedLeft =396
+                            LayoutCachedTop =5016
+                            LayoutCachedWidth =2592
+                            LayoutCachedHeight =5292
+                            RowStart =3
+                            RowEnd =3
+                            LayoutGroup =2
+                            GroupTable =5
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =6024
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =32
+                    Name ="S100"
+                    ControlSource ="S100"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x5fecaf35b0dd264a8fcd61a405a81b7e
+                    End
+                    GroupTable =14
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =6024
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =6300
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =4
+                    GroupTable =14
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =6024
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta68"
+                            Caption ="Price /100d SMA cross:"
+                            GUID = Begin
+                                0x17a6447228e00b49834ef5e1245450f3
+                            End
+                            GroupTable =14
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =6024
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =6300
+                            LayoutGroup =4
+                            GroupTable =14
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =6372
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =33
+                    Name ="E100"
+                    ControlSource ="E100"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x49a9812770fdde42b9fe8aa4fa203b1d
+                    End
+                    GroupTable =14
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =6372
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =6648
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =4
+                    GroupTable =14
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =6372
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta69"
+                            Caption ="Price /100d EMA cross:"
+                            GUID = Begin
+                                0xafefdbfcb979fc46a03133515473b348
+                            End
+                            GroupTable =14
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =6372
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =6648
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =4
+                            GroupTable =14
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =7416
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =36
+                    Name ="E100/S100"
+                    ControlSource ="E100/S100"
+                    Format ="Percent"
+                    EventProcPrefix ="E100_S100"
+                    GUID = Begin
+                        0x2d8ab219e515b6479dcf24d083ebeb3f
+                    End
+                    GroupTable =14
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =7416
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =7692
+                    RowStart =4
+                    RowEnd =4
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =4
+                    GroupTable =14
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =7416
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta70"
+                            Caption ="100d EMA/100d SMA cross:"
+                            GUID = Begin
+                                0x51a54171623e0c44bbc7e1930e1a6772
+                            End
+                            GroupTable =14
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =7416
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =7692
+                            RowStart =4
+                            RowEnd =4
+                            LayoutGroup =4
+                            GroupTable =14
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =8460
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =45
+                    Name ="S200"
+                    ControlSource ="S200"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x3b387d6ed5987940a2e21b6b15accc16
+                    End
+                    GroupTable =7
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =8460
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =8736
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =7
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =8460
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta71"
+                            Caption ="Price /200d SMA cross:"
+                            GUID = Begin
+                                0x3fc97f3f65f4964db24da8ed5bb80d4f
+                            End
+                            GroupTable =7
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =8460
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =8736
+                            LayoutGroup =3
+                            GroupTable =7
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =8808
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =46
+                    Name ="E200"
+                    ControlSource ="E200"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x448f33c933bfb8408c5cdb8cbed59dfb
+                    End
+                    GroupTable =7
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =8808
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =9084
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =7
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =8808
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta72"
+                            Caption ="Price /200d EMA cross:"
+                            GUID = Begin
+                                0xc16706e24b063a438738f05e43ae6b78
+                            End
+                            GroupTable =7
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =8808
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =9084
+                            RowStart =1
+                            RowEnd =1
+                            LayoutGroup =3
+                            GroupTable =7
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =10200
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =50
+                    Name ="E200/S200"
+                    ControlSource ="E200/S200"
+                    Format ="Percent"
+                    EventProcPrefix ="E200_S200"
+                    GUID = Begin
+                        0x4af07179da35b441b2d73c9e5803d873
+                    End
+                    GroupTable =7
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =10200
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =10476
+                    RowStart =5
+                    RowEnd =5
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =7
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =348
+                            Top =10200
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Etichetta73"
+                            Caption ="200d EMA/200d SMA cross:"
+                            GUID = Begin
+                                0x5e2d6c896b5a744291c110f1810638ef
+                            End
+                            GroupTable =7
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =10200
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =10476
+                            RowStart =5
+                            RowEnd =5
+                            LayoutGroup =3
+                            GroupTable =7
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    IMESentenceMode =3
+                    Left =1650
+                    Top =3308
+                    Width =846
+                    Height =255
+                    FontSize =9
+                    TabIndex =19
+                    Name ="W20"
+                    ControlSource ="W20"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x1639897f45b4fe40a9dd989f65c1cd9f
+                    End
+
+                    LayoutCachedLeft =1650
+                    LayoutCachedTop =3308
+                    LayoutCachedWidth =2496
+                    LayoutCachedHeight =3563
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    IMESentenceMode =3
+                    Left =1703
+                    Top =5409
+                    Width =846
+                    Height =255
+                    FontSize =9
+                    TabIndex =31
+                    Name ="W50"
+                    ControlSource ="W50"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xd94f819e9ccf7043864b3e2f4b611331
+                    End
+
+                    LayoutCachedLeft =1703
+                    LayoutCachedTop =5409
+                    LayoutCachedWidth =2549
+                    LayoutCachedHeight =5664
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    IMESentenceMode =3
+                    Left =1605
+                    Top =7804
+                    Width =846
+                    Height =255
+                    FontSize =9
+                    TabIndex =44
+                    Name ="W100"
+                    ControlSource ="W100"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xf9c72a7c2c27e646b4a97aa073813d66
+                    End
+
+                    LayoutCachedLeft =1605
+                    LayoutCachedTop =7804
+                    LayoutCachedWidth =2451
+                    LayoutCachedHeight =8059
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2595
+                    Top =10629
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    TabIndex =57
+                    Name ="T200"
+                    ControlSource ="=[s200]+[e200]+([S20/s200])+([S50/s200])+([S100/s200])+([e200/s200])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xf58606dc6b64d34b85ebdb547a270e16
+                    End
+
+                    LayoutCachedLeft =2595
+                    LayoutCachedTop =10629
+                    LayoutCachedWidth =3381
+                    LayoutCachedHeight =10884
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            TextFontCharSet =162
+                            TextAlign =1
+                            Left =345
+                            Top =10626
+                            Width =2190
+                            Height =270
+                            FontSize =9
+                            Name ="Etichetta91"
+                            Caption ="SUM"
+                            GUID = Begin
+                                0xfe24c0d6c4713c4fb571659ae30fa69e
+                            End
+                            LayoutCachedLeft =345
+                            LayoutCachedTop =10626
+                            LayoutCachedWidth =2535
+                            LayoutCachedHeight =10896
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    IMESentenceMode =3
+                    Left =1605
+                    Top =10629
+                    Width =846
+                    Height =255
+                    FontSize =9
+                    TabIndex =59
+                    Name ="W200"
+                    ControlSource ="W200"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x076ed37f52431e40bffadb9fb2463f25
+                    End
+
+                    LayoutCachedLeft =1605
+                    LayoutCachedTop =10629
+                    LayoutCachedWidth =2451
+                    LayoutCachedHeight =10884
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =3323
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    TabIndex =20
+                    Name ="TQ20"
+                    ControlSource ="=[SQ5]+[EQ5]+[SQ10]+[EQ10]+[SQ15]+[EQ15]+[sQ20]+[eQ20]+([esQ20])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x7741ffa334c24048b26c0a786336378d
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =3323
+                    LayoutCachedWidth =4476
+                    LayoutCachedHeight =3578
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =2234
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =15
+                    Name ="SQ20"
+                    ControlSource ="=[W20]*[S20]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xf9cca08579869246a495290037e76b61
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =2234
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =2504
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =2579
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =16
+                    Name ="EQ20"
+                    ControlSource ="=[W20]*[E20]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xce42e71484a77b4bb9ec235804416fc2
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =2579
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =2849
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =2924
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =17
+                    Name ="ESQ20"
+                    ControlSource ="=[W20]*[E20/S20]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xfcf2317cbb1f0e42bcf94b9f52c81db0
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =2924
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =3194
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =5409
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    TabIndex =30
+                    Name ="TQ50"
+                    ControlSource ="=[sQ50]+[eQ50]+[SS50]+([esQ50])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x2341c703f1f15a4e8892ffdf695822b4
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =5409
+                    LayoutCachedWidth =4476
+                    LayoutCachedHeight =5664
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =3947
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =25
+                    Name ="SQ50"
+                    ControlSource ="=[W50]*[S50]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x03b4ae7be18ef147b4179e943e3cdaf7
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =3947
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =4217
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =4292
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =26
+                    Name ="EQ50"
+                    ControlSource ="=[W50]*[E50]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x502c29b47385664d992391525c44e5ed
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =4292
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =4562
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =163
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =5017
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =28
+                    Name ="ESQ50"
+                    ControlSource ="=[W50]*[E50/S50]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xdb5eba80ca2fb245802d51d9c21895c6
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =5017
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =5287
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3630
+                    Top =7384
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    TabIndex =41
+                    Name ="ESQ100"
+                    ControlSource ="=[W100]*[E100/S100]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x733dc0d652fca840aef22c821a0a1a90
+                    End
+
+                    LayoutCachedLeft =3630
+                    LayoutCachedTop =7384
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =7639
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3642
+                    Top =6024
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =37
+                    Name ="SQ100"
+                    ControlSource ="=[W100]*[S100]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xb44cf287a491ec40bf2523466f68d38f
+                    End
+
+                    LayoutCachedLeft =3642
+                    LayoutCachedTop =6024
+                    LayoutCachedWidth =4413
+                    LayoutCachedHeight =6294
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3642
+                    Top =6369
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =38
+                    Name ="EQ100"
+                    ControlSource ="=[W100]*[E100]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xc93acf5cf5380647a71ff41f10e0a1c9
+                    End
+
+                    LayoutCachedLeft =3642
+                    LayoutCachedTop =6369
+                    LayoutCachedWidth =4413
+                    LayoutCachedHeight =6639
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =7789
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =42
+                    Name ="TQ100"
+                    ControlSource ="=[sQ100]+[eQ100]+[S20S100]+[S50S100]+([esQ100])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x3a3413ad3c491a41bfaf4795876ae6ae
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =7789
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =8059
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =10629
+                    Width =786
+                    Height =255
+                    FontSize =9
+                    TabIndex =58
+                    Name ="TQ200"
+                    ControlSource ="=[sQ200]+[eQ200]+[S20S200]+[S50S200]+[S100S200]+([esQ200])"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xfb1ce5753c389f41952fecdddc699bf1
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =10629
+                    LayoutCachedWidth =4431
+                    LayoutCachedHeight =10884
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =8464
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =51
+                    Name ="SQ200"
+                    ControlSource ="=[W200]*[S200]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x9b881258b707804397fb186522b06c70
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =8464
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =8734
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =8809
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =52
+                    Name ="EQ200"
+                    ControlSource ="=[W200]*[E200]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xfbb114d70a7bbb4a8ad397acd7e6812e
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =8809
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =9079
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =10189
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =56
+                    Name ="ESQ200"
+                    ControlSource ="=[W200]*[E200/S200]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x16442a2a88655d439378d80cc13b3e8b
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =10189
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =10459
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2664
+                    Top =4632
+                    Width =732
+                    Height =312
+                    FontSize =9
+                    TabIndex =23
+                    Name ="S20/S50"
+                    ControlSource ="S20/S50"
+                    Format ="Percent"
+                    EventProcPrefix ="S20_S50"
+                    GUID = Begin
+                        0xe364e66e1fc8ea4d8ce00a5a4e1da4b6
+                    End
+                    GroupTable =5
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2664
+                    LayoutCachedTop =4632
+                    LayoutCachedWidth =3396
+                    LayoutCachedHeight =4944
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =2
+                    GroupTable =5
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =163
+                            TextAlign =1
+                            Left =396
+                            Top =4632
+                            Width =2196
+                            Height =312
+                            FontSize =9
+                            Name ="Label127"
+                            Caption ="20d SMA/50d SMA cross:"
+                            GUID = Begin
+                                0xbd4d88ff6ec9184f9c68e7878dd74b61
+                            End
+                            GroupTable =5
+                            BottomPadding =36
+                            LayoutCachedLeft =396
+                            LayoutCachedTop =4632
+                            LayoutCachedWidth =2592
+                            LayoutCachedHeight =4944
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =2
+                            GroupTable =5
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =163
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =4621
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =27
+                    Name ="SS50"
+                    ControlSource ="=[W50]*[S20/S50]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x3524706a8309194d9e54557253e763ef
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =4621
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =4891
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =6720
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =34
+                    Name ="S20/S100"
+                    ControlSource ="S20/S100"
+                    Format ="Percent"
+                    EventProcPrefix ="S20_S100"
+                    GUID = Begin
+                        0xe8c39ddfc9acb7499fb0489d87d474c5
+                    End
+                    GroupTable =14
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =6720
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =6996
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =4
+                    GroupTable =14
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =163
+                            TextAlign =1
+                            Left =348
+                            Top =6720
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Label131"
+                            Caption ="20d SMA/100d SMA cross:"
+                            GUID = Begin
+                                0x35091b5f32b46649a17802e00757870e
+                            End
+                            GroupTable =14
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =6720
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =6996
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =4
+                            GroupTable =14
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3630
+                    Top =6709
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =39
+                    Name ="S20S100"
+                    ControlSource ="=[W100]*[S20/S100]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x02b707830fa2a741af0ef21c12a9e734
+                    End
+
+                    LayoutCachedLeft =3630
+                    LayoutCachedTop =6709
+                    LayoutCachedWidth =4401
+                    LayoutCachedHeight =6979
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =7068
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =35
+                    Name ="S50/S100"
+                    ControlSource ="S50/S100"
+                    Format ="Percent"
+                    EventProcPrefix ="S50_S100"
+                    GUID = Begin
+                        0x4b436babc410744eb87fcdee374b5b01
+                    End
+                    GroupTable =14
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =7068
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =7344
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =4
+                    GroupTable =14
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =163
+                            TextAlign =1
+                            Left =348
+                            Top =7068
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Label134"
+                            Caption ="50d SMA/100d SMA cross:"
+                            GUID = Begin
+                                0x26c50f6669e7b349998fd07da9a1d495
+                            End
+                            GroupTable =14
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =7068
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =7344
+                            RowStart =3
+                            RowEnd =3
+                            LayoutGroup =4
+                            GroupTable =14
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3630
+                    Top =7054
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =40
+                    Name ="S50S100"
+                    ControlSource ="=[W100]*[S50/S100]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x4079b92cb0ace047a697f0a5605c3b1b
+                    End
+
+                    LayoutCachedLeft =3630
+                    LayoutCachedTop =7054
+                    LayoutCachedWidth =4401
+                    LayoutCachedHeight =7324
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =9156
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =47
+                    Name ="S20/S200"
+                    ControlSource ="S20/S200"
+                    Format ="Percent"
+                    EventProcPrefix ="S20_S200"
+                    GUID = Begin
+                        0x87fcf17b406d6e448cad91c1df430260
+                    End
+                    GroupTable =7
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =9156
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =9432
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =7
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =163
+                            TextAlign =1
+                            Left =348
+                            Top =9156
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Label147"
+                            Caption ="20d SMA/200d SMA cross:"
+                            GUID = Begin
+                                0x34662996062b2144918ec0478ba504fd
+                            End
+                            GroupTable =7
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =9156
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =9432
+                            RowStart =2
+                            RowEnd =2
+                            LayoutGroup =3
+                            GroupTable =7
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =9504
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =48
+                    Name ="S50/S200"
+                    ControlSource ="S50/S200"
+                    Format ="Percent"
+                    EventProcPrefix ="S50_S200"
+                    GUID = Begin
+                        0x9d218f7badb32142a401df8af19afd03
+                    End
+                    GroupTable =7
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =9504
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =9780
+                    RowStart =3
+                    RowEnd =3
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =7
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =163
+                            TextAlign =1
+                            Left =348
+                            Top =9504
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Label149"
+                            Caption ="50d SMA/200d SMA cross:"
+                            GUID = Begin
+                                0xb2bb56f72f188a4b939f076f0eda0480
+                            End
+                            GroupTable =7
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =9504
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =9780
+                            RowStart =3
+                            RowEnd =3
+                            LayoutGroup =3
+                            GroupTable =7
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2616
+                    Top =9852
+                    Width =792
+                    Height =276
+                    FontSize =9
+                    TabIndex =49
+                    Name ="S100/S200"
+                    ControlSource ="S100/S200"
+                    Format ="Percent"
+                    EventProcPrefix ="S100_S200"
+                    GUID = Begin
+                        0x8cfd85628462814b9063e1edab224e8d
+                    End
+                    GroupTable =7
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2616
+                    LayoutCachedTop =9852
+                    LayoutCachedWidth =3408
+                    LayoutCachedHeight =10128
+                    RowStart =4
+                    RowEnd =4
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =3
+                    GroupTable =7
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextFontCharSet =163
+                            TextAlign =1
+                            Left =348
+                            Top =9852
+                            Width =2196
+                            Height =276
+                            FontSize =9
+                            Name ="Label151"
+                            Caption ="100d SMA/200d SMA cross:"
+                            GUID = Begin
+                                0x2994c99e118cce4b8b8a6b757b920711
+                            End
+                            GroupTable =7
+                            BottomPadding =36
+                            LayoutCachedLeft =348
+                            LayoutCachedTop =9852
+                            LayoutCachedWidth =2544
+                            LayoutCachedHeight =10128
+                            RowStart =4
+                            RowEnd =4
+                            LayoutGroup =3
+                            GroupTable =7
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =9154
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =53
+                    Name ="S20S200"
+                    ControlSource ="=[W200]*[S20/S200]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x207d2d9482158942a0fe2e4c4f48666d
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =9154
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =9424
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =9499
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =54
+                    Name ="S50S200"
+                    ControlSource ="=[W200]*[S50/S200]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x8549db644e2ab147b50c4338029dab8a
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =9499
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =9769
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3645
+                    Top =9844
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =55
+                    Name ="S100S200"
+                    ControlSource ="=[W200]*[S100/S200]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xd0e90940a9ccd44e9fbcb85a98bbbb97
+                    End
+
+                    LayoutCachedLeft =3645
+                    LayoutCachedTop =9844
+                    LayoutCachedWidth =4416
+                    LayoutCachedHeight =10114
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =1570
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =8
+                    Name ="SQ15"
+                    ControlSource ="=[W20]*[S15]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xb7fc4ac85d09fb43999870b5a387bc20
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =1570
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =1840
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =1915
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =11
+                    Name ="EQ15"
+                    ControlSource ="=[W20]*[E15]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xfaecc9e373ba5545a09555cee9375bed
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =1915
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =2185
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =898
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =6
+                    Name ="SQ10"
+                    ControlSource ="=[W20]*[S10]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x13d44573245e3a48a1521ab9d285eb06
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =898
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =1168
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =1243
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =7
+                    Name ="EQ10"
+                    ControlSource ="=[W20]*[E10]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x3dc780137368a049860cc2a6f0c184a6
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =1243
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =1513
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =218
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =2
+                    Name ="SQ5"
+                    ControlSource ="=[W20]*[S5]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0x405f186b5024ef4aa9c4b4948fa74269
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =218
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =488
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextFontCharSet =162
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =563
+                    Width =771
+                    Height =270
+                    FontSize =9
+                    TabIndex =3
+                    Name ="EQ5"
+                    ControlSource ="=[W20]*[E5]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xe3b479c7997e154cb8eb4e696b7e2853
+                    End
+
+                    LayoutCachedLeft =3690
+                    LayoutCachedTop =563
+                    LayoutCachedWidth =4461
+                    LayoutCachedHeight =833
+                End
+            End
+        End
+        Begin FormFooter
+            Height =863
+            BackColor =14865828
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x75d714a9d0b252498e569f70b0430e7a
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =1188
+                    Top =225
+                    Width =1317
+                    Height =315
+                    Name ="txtTotal"
+                    ControlSource ="=[W20]+[W50]+[W100]+[W200]"
+                    Format ="Percent"
+                    GUID = Begin
+                        0xf782ade19ac607428bf1e358b9d2c1a2
+                    End
+
+                    LayoutCachedLeft =1188
+                    LayoutCachedTop =225
+                    LayoutCachedWidth =2505
+                    LayoutCachedHeight =540
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =285
+                            Top =225
+                            Width =675
+                            Height =315
+                            Name ="Etichetta50"
+                            Caption ="Total:"
+                            GUID = Begin
+                                0xa5846a85a7dbd84f8ba865eb284b0513
+                            End
+                            LayoutCachedLeft =285
+                            LayoutCachedTop =225
+                            LayoutCachedWidth =960
+                            LayoutCachedHeight =540
+                        End
+                    End
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =247
+                    Left =2494
+                    Top =56
+                    Width =1077
+                    Height =290
+                    TabIndex =1
+                    Name ="cmdEMA"
+                    Caption ="EMA"
+                    GUID = Begin
+                        0x42d90ce3b4852544913cf99564f7d4d0
+                    End
+
+                    LayoutCachedLeft =2494
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =3571
+                    LayoutCachedHeight =346
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4081
+                    Top =56
+                    Width =576
+                    Height =576
+                    TabIndex =2
+                    Name ="cmdEsci"
+                    Caption ="Comando124"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Chiudi maschera"
+                    GUID = Begin
+                        0xf2b94d2af1621b46914b352777e4b406
+                    End
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Close"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                    End
+
+                    LayoutCachedLeft =4081
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =4657
+                    LayoutCachedHeight =632
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =247
+                    Left =2494
+                    Top =466
+                    Width =1077
+                    Height =290
+                    TabIndex =3
+                    Name ="Indice"
+                    Caption ="Indice"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x6d6a630c3592a546af696cbd97bbfe92
+                    End
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    LayoutCachedLeft =2494
+                    LayoutCachedTop =466
+                    LayoutCachedWidth =3571
+                    LayoutCachedHeight =756
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Indice_Click()
+AggiornaPrice2
+
+StrategiaLive
+
+
+
+CalcoloIndice
+CalcoloSMA
+CalcoloEMA
+CalcoloUltimo
+
+End Sub

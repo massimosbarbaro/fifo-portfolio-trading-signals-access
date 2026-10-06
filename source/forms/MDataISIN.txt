@@ -1,0 +1,698 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1691528093
+Begin Form
+    AllowFilters = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularCharSet =204
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10692
+    DatasheetFontHeight =11
+    ItemSuffix =38
+    Top =1176
+    Right =11652
+    Bottom =4620
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xc5cc52da9014e540
+    End
+    GUID = Begin
+        0xe9c1127cbf23c341af1cb6e16397caf5
+    End
+    RecordSource ="SELECT [1ISIN].ISIN, [1ISIN].SYM, [1ISIN].Description, [1Sector].Sector, [1Asset"
+        "t].[Assett class], [1Direction].Direction, [1Type].Type, [1Region].Region, [1Cur"
+        "rency].Currency, [1ISIN].Leverage FROM ((((((1ISIN LEFT JOIN 1Assett ON [1ISIN]."
+        "IdA = [1Assett].IdA) LEFT JOIN 1Currency ON [1ISIN].IdC = [1Currency].IdC) LEFT "
+        "JOIN 1Direction ON [1ISIN].IdD = [1Direction].IdD) LEFT JOIN 1Region ON [1ISIN]."
+        "IdR = [1Region].IdR) LEFT JOIN 1Sector ON [1ISIN].IdS = [1Sector].IdS) LEFT JOIN"
+        " 1SectorGroup ON [1Sector].IdSG = [1SectorGroup].IdSG) LEFT JOIN 1Type ON [1ISIN"
+        "].IdT = [1Type].IdT WHERE ((([1ISIN].ISIN)=[Forms]![MFFifoData]![Productid]) AND"
+        " (Not ([Forms]![MFFifodata]![Productid]) Is Null)) OR ((([Forms]![MFFifodata]![P"
+        "roductid])=\"All\"));"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =12632256
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =16768194
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0xb3550560e30fe04194499c0a70237ecf
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =1020
+            BackColor =15986404
+            Name ="Corpo"
+            GUID = Begin
+                0x5577dfee9d0f544ebd7642cafe0ce54a
+            End
+            AlternateBackColor =15986404
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    TextAlign =1
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =629
+                    Top =120
+                    Width =1530
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    BorderColor =13936755
+                    Name ="ISIN"
+                    ControlSource ="ISIN"
+                    OnDblClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xb8170feeb217a444a562a53952c74ad9
+                    End
+                    GridlineWidthLeft =0
+                    GridlineWidthTop =0
+                    GridlineWidthRight =0
+                    GridlineWidthBottom =0
+
+                    LayoutCachedLeft =629
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =2159
+                    LayoutCachedHeight =479
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            TextFontFamily =18
+                            Left =120
+                            Top =120
+                            Width =509
+                            Height =314
+                            FontSize =9
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Etichetta5"
+                            Caption ="ISIN"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0xa61eafc0f80e3d42ae4ba99dca7fe46d
+                            End
+                            GridlineWidthLeft =0
+                            GridlineWidthTop =0
+                            GridlineWidthRight =0
+                            GridlineWidthBottom =0
+                            LayoutCachedLeft =120
+                            LayoutCachedTop =120
+                            LayoutCachedWidth =629
+                            LayoutCachedHeight =434
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    TextAlign =1
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =3960
+                    Top =630
+                    Width =2550
+                    Height =315
+                    TabIndex =2
+                    BorderColor =13936755
+                    Name ="CasellaCombinata22"
+                    ControlSource ="Sector"
+                    GUID = Begin
+                        0x543f9d01e44a7c409e5e92a21c9e300d
+                    End
+                    GridlineWidthLeft =0
+                    GridlineWidthTop =0
+                    GridlineWidthRight =0
+                    GridlineWidthBottom =0
+
+                    LayoutCachedLeft =3960
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =6510
+                    LayoutCachedHeight =945
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            TextFontFamily =18
+                            Left =3345
+                            Top =630
+                            Width =615
+                            Height =315
+                            FontSize =9
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Sector_Etichetta"
+                            Caption ="Sector"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0x8093514ac4cd7244ac7d0e57cb852812
+                            End
+                            GridlineWidthLeft =0
+                            GridlineWidthTop =0
+                            GridlineWidthRight =0
+                            GridlineWidthBottom =0
+                            LayoutCachedLeft =3345
+                            LayoutCachedTop =630
+                            LayoutCachedWidth =3960
+                            LayoutCachedHeight =945
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =2475
+                    Top =623
+                    Width =720
+                    Height =315
+                    TabIndex =5
+                    BorderColor =13936755
+                    Name ="CasellaCombinata30"
+                    ControlSource ="Region"
+                    GUID = Begin
+                        0xd29effe69cb8244f8bff7fa447631f58
+                    End
+                    GridlineWidthLeft =0
+                    GridlineWidthTop =0
+                    GridlineWidthRight =0
+                    GridlineWidthBottom =0
+
+                    LayoutCachedLeft =2475
+                    LayoutCachedTop =623
+                    LayoutCachedWidth =3195
+                    LayoutCachedHeight =938
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextFontFamily =18
+                            Left =1815
+                            Top =623
+                            Width =660
+                            Height =315
+                            FontSize =9
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Region_Etichetta"
+                            Caption ="Region"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0x1d444ef1c9b8c549b92e51a8a58fcbcc
+                            End
+                            GridlineWidthLeft =0
+                            GridlineWidthTop =0
+                            GridlineWidthRight =0
+                            GridlineWidthBottom =0
+                            LayoutCachedLeft =1815
+                            LayoutCachedTop =623
+                            LayoutCachedWidth =2475
+                            LayoutCachedHeight =938
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    TextAlign =1
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =7230
+                    Top =630
+                    Width =1620
+                    Height =315
+                    TabIndex =3
+                    BorderColor =13936755
+                    Name ="CasellaCombinata20"
+                    ControlSource ="Assett class"
+                    GUID = Begin
+                        0x4afeb2eace8c58448ccf5a2f831e3f0e
+                    End
+                    GridlineWidthLeft =0
+                    GridlineWidthTop =0
+                    GridlineWidthRight =0
+                    GridlineWidthBottom =0
+
+                    LayoutCachedLeft =7230
+                    LayoutCachedTop =630
+                    LayoutCachedWidth =8850
+                    LayoutCachedHeight =945
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            TextFontFamily =18
+                            Left =6630
+                            Top =630
+                            Width =600
+                            Height =315
+                            FontSize =9
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Assett_Etichetta"
+                            Caption ="Assett"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0xa059138eadf7d34cada4547d82589f1f
+                            End
+                            GridlineWidthLeft =0
+                            GridlineWidthTop =0
+                            GridlineWidthRight =0
+                            GridlineWidthBottom =0
+                            LayoutCachedLeft =6630
+                            LayoutCachedTop =630
+                            LayoutCachedWidth =7230
+                            LayoutCachedHeight =945
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    TextAlign =1
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =9900
+                    Top =120
+                    Width =564
+                    Height =315
+                    TabIndex =4
+                    BorderColor =13936755
+                    Name ="CasellaCombinata27"
+                    ControlSource ="Direction"
+                    GUID = Begin
+                        0x45d6402809cb834e928c97fe116d3111
+                    End
+                    GridlineWidthLeft =0
+                    GridlineWidthTop =0
+                    GridlineWidthRight =0
+                    GridlineWidthBottom =0
+
+                    LayoutCachedLeft =9900
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =10464
+                    LayoutCachedHeight =435
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            TextFontFamily =18
+                            Left =9015
+                            Top =120
+                            Width =885
+                            Height =315
+                            FontSize =9
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Direction_Etichetta"
+                            Caption ="Direction"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0x12f7d7ef6db7ac43a3c65ee725559f14
+                            End
+                            GridlineWidthLeft =0
+                            GridlineWidthTop =0
+                            GridlineWidthRight =0
+                            GridlineWidthBottom =0
+                            LayoutCachedLeft =9015
+                            LayoutCachedTop =120
+                            LayoutCachedWidth =9900
+                            LayoutCachedHeight =435
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    TextAlign =2
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =959
+                    Top =623
+                    Width =588
+                    Height =315
+                    FontWeight =700
+                    TabIndex =6
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    BorderColor =13936755
+                    Name ="CasellaCombinata33"
+                    ControlSource ="Currency"
+                    GUID = Begin
+                        0x5e69f5fb8224a44099bbd356983b1bb9
+                    End
+
+                    LayoutCachedLeft =959
+                    LayoutCachedTop =623
+                    LayoutCachedWidth =1547
+                    LayoutCachedHeight =938
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            TextFontFamily =18
+                            Top =616
+                            Width =959
+                            Height =314
+                            FontSize =9
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Currency_Etichetta"
+                            Caption ="Currency"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0xef70e3398377d74b90b8e96dda41443c
+                            End
+                            LayoutCachedTop =616
+                            LayoutCachedWidth =959
+                            LayoutCachedHeight =930
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    TextAlign =2
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =2834
+                    Top =120
+                    Width =1155
+                    Height =359
+                    FontWeight =700
+                    TabIndex =1
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    BorderColor =13936755
+                    Name ="SYM"
+                    ControlSource ="SYM"
+                    GUID = Begin
+                        0xf140d8f36af0be40b4671bf90946d387
+                    End
+                    GridlineWidthLeft =0
+                    GridlineWidthTop =0
+                    GridlineWidthRight =0
+                    GridlineWidthBottom =0
+
+                    LayoutCachedLeft =2834
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =3989
+                    LayoutCachedHeight =479
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            TextFontFamily =18
+                            Left =2325
+                            Top =120
+                            Width =509
+                            Height =315
+                            FontSize =9
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Etichetta7"
+                            Caption ="SYM"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0x19cf9dcc177ae2498cf60abaec9e158f
+                            End
+                            GridlineWidthLeft =0
+                            GridlineWidthTop =0
+                            GridlineWidthRight =0
+                            GridlineWidthBottom =0
+                            LayoutCachedLeft =2325
+                            LayoutCachedTop =120
+                            LayoutCachedWidth =2834
+                            LayoutCachedHeight =435
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =4
+                    OverlapFlags =85
+                    TextFontCharSet =204
+                    TextAlign =2
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =5159
+                    Top =120
+                    Width =3681
+                    Height =315
+                    FontWeight =700
+                    TabIndex =7
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    BorderColor =13936755
+                    Name ="Description"
+                    ControlSource ="Description"
+                    GUID = Begin
+                        0xe6d1b7d6b55e784692f87fc97df02a17
+                    End
+
+                    LayoutCachedLeft =5159
+                    LayoutCachedTop =120
+                    LayoutCachedWidth =8840
+                    LayoutCachedHeight =435
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            TextFontFamily =18
+                            Left =4081
+                            Top =113
+                            Width =1064
+                            Height =315
+                            FontSize =9
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Etichetta36"
+                            Caption ="Description"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0x480f1514e111a94fbc62558699629ea7
+                            End
+                            LayoutCachedLeft =4081
+                            LayoutCachedTop =113
+                            LayoutCachedWidth =5145
+                            LayoutCachedHeight =428
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =4
+                    OverlapFlags =87
+                    TextFontCharSet =204
+                    TextAlign =2
+                    BorderLineStyle =3
+                    IMESentenceMode =3
+                    Left =9825
+                    Top =637
+                    Width =714
+                    Height =315
+                    FontWeight =700
+                    TabIndex =8
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    BorderColor =13936755
+                    Name ="Leverage"
+                    ControlSource ="Leverage"
+                    GUID = Begin
+                        0xe123224cabc59748b5abdae7631f3146
+                    End
+
+                    LayoutCachedLeft =9825
+                    LayoutCachedTop =637
+                    LayoutCachedWidth =10539
+                    LayoutCachedHeight =952
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            TextFontFamily =18
+                            Left =8955
+                            Top =630
+                            Width =870
+                            Height =270
+                            FontSize =9
+                            LeftMargin =22
+                            TopMargin =22
+                            RightMargin =22
+                            BottomMargin =22
+                            BorderColor =13936755
+                            ForeColor =9205103
+                            Name ="Etichetta37"
+                            Caption ="Leverage"
+                            FontName ="Georgia"
+                            GUID = Begin
+                                0x45ebc1d3cec44945898ad48a455285e8
+                            End
+                            LayoutCachedLeft =8955
+                            LayoutCachedTop =630
+                            LayoutCachedWidth =9825
+                            LayoutCachedHeight =900
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x8accd9f44637bc4fbfc945871bafcdf5
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub cmdEsci_Click()
+On Error GoTo Err_cmdEsci_Click
+
+
+    If Me.Dirty Then Me.Dirty = False
+    DoCmd.Close
+
+Exit_cmdEsci_Click:
+    Exit Sub
+
+Err_cmdEsci_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdEsci_Click
+    
+End Sub
+
+Private Sub ISIN_DblClick(Cancel As Integer)
+
+On Error GoTo Err_ISIN_DblClick
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "MISINModify"
+    stLinkCriteria = "[ISIN]=" & "'" & Me![ISIN] & "'"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_ISIN_DblClick:
+    Exit Sub
+
+Err_ISIN_DblClick:
+    MsgBox Err.Description
+    Resume Exit_ISIN_DblClick
+    
+
+End Sub

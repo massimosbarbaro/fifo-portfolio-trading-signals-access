@@ -1,0 +1,772 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =-623089370
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    BorderStyle =3
+    PictureAlignment =2
+    PictureSizeMode =1
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5378
+    DatasheetFontHeight =10
+    ItemSuffix =16
+    Left =6195
+    Right =11580
+    Bottom =9015
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xd657a669ce48e340
+    End
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Tahoma"
+    PrtMip = Begin
+        0x680100006801000068010000680100000000000002150000341a000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    PictureSizeMode =1
+    DatasheetGridlinesColor12 =12632256
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =18
+            FontSize =10
+            BorderColor =11644565
+            ForeColor =7233610
+            FontName ="Constantia"
+            GridlineColor =7233610
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin CommandButton
+            TextFontFamily =18
+            Width =1701
+            Height =283
+            FontWeight =400
+            ForeColor =7233610
+            FontName ="Constantia"
+            GridlineColor =16118511
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            GridlineColor =7233610
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =11644565
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =11644565
+            FontName ="Calibri"
+            AsianLineBreak =1
+            GridlineColor =7233610
+        End
+        Begin ListBox
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =11644565
+            FontName ="Calibri"
+            GridlineColor =7233610
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =11644565
+            FontName ="Calibri"
+            GridlineColor =7233610
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =11644565
+            GridlineColor =7233610
+        End
+        Begin ToggleButton
+            TextFontFamily =18
+            Width =283
+            Height =283
+            FontWeight =400
+            ForeColor =7233610
+            FontName ="Constantia"
+            GridlineColor =16118511
+            BorderLineStyle =0
+        End
+        Begin Tab
+            TextFontCharSet =204
+            Width =5103
+            Height =3402
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin FormHeader
+            Height =963
+            BackColor =16118511
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0x66666c2ff3270a4990b00a337a65bfd8
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =1870
+                    Top =283
+                    Width =945
+                    Height =540
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    BorderColor =0
+                    ForeColor =8998176
+                    Name ="Auto_Title0"
+                    Caption ="Stock"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xd2a12a199427d244869ae3f553afafda
+                    End
+                    GridlineColor =-2147483616
+                    HorizontalAnchor =2
+                    LayoutCachedLeft =1870
+                    LayoutCachedTop =283
+                    LayoutCachedWidth =2815
+                    LayoutCachedHeight =823
+                End
+            End
+        End
+        Begin Section
+            Height =6708
+            BackColor =16118511
+            Name ="Detail"
+            GUID = Begin
+                0x449170e49dcd734a8febf22475b1a413
+            End
+            AlternateBackColor =16777215
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =912
+                    Width =4641
+                    Height =576
+                    FontWeight =700
+                    Name ="Command0"
+                    Caption ="AKJ transaction input"
+                    OnClick ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Open Form"
+                    GUID = Begin
+                        0xad12e7d5e256b147a87df21d70317e08
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =912
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =1488
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =285
+                    Top =165
+                    Width =4641
+                    Height =576
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Command2"
+                    Caption ="Stock on Fifo Basis"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Open Form"
+                    GUID = Begin
+                        0x2522fc8a76ab814c955ba9fd0b495d2c
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =165
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =741
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    Left =1190
+                    Width =1536
+                    Height =321
+                    TabIndex =2
+                    Name ="CmdRegion"
+                    Caption ="Stock on Fifo Basis Region"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x70ae40153fc71a4a8a365b77a471335c
+                    End
+
+                    LayoutCachedLeft =1190
+                    LayoutCachedWidth =2726
+                    LayoutCachedHeight =321
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =2406
+                    Width =4641
+                    Height =576
+                    TabIndex =3
+                    Name ="cmdGuadagno"
+                    Caption ="Realized profit/loss"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x935e0210afa0ce4386add9d4b8e521ac
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =2406
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =2982
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =3153
+                    Width =4641
+                    Height =576
+                    TabIndex =4
+                    Name ="cmdRocno"
+                    Caption ="Cash adjustment"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x362bee2e3eb6404fac2bd40ea9d7544a
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =3153
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =3729
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =3900
+                    Width =4641
+                    Height =576
+                    TabIndex =5
+                    Name ="cmdPortfolio"
+                    Caption ="Portfolio Cash"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x2110edd93034294199619c76bea6a2f1
+                    End
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =3900
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =4476
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =6132
+                    Width =4641
+                    Height =576
+                    TabIndex =6
+                    Name ="cmdImport"
+                    Caption ="Import"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x65f0cf08cf2a8645bbfa3bb32e28c021
+                    End
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =6132
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =6708
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =5385
+                    Width =4641
+                    Height =576
+                    TabIndex =7
+                    Name ="cmdSearch"
+                    Caption ="Statements Search"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x4aff0b6e3996784aab25a3cbc703ebd1
+                    End
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =5385
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =5961
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =1659
+                    Width =4641
+                    Height =576
+                    TabIndex =8
+                    Name ="cmdeElenco"
+                    Caption ="Transactions Search"
+                    GUID = Begin
+                        0xff99c884a5a06c40b933183175bb786d
+                    End
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="OpenReport"
+                            Argument ="ElencoQAkj"
+                            Argument ="2"
+                            Argument =""
+                            Argument =""
+                            Argument ="0"
+                        End
+                        Begin
+                            Action ="RunCommand"
+                            Argument ="54"
+                        End
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =1659
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =2235
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =285
+                    Top =4596
+                    Width =4641
+                    Height =576
+                    TabIndex =9
+                    Name ="cmdStrategy"
+                    Caption ="Strategy"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xdf72def7ae9c1e4e88f15fabf470633a
+                    End
+                    ImageData = Begin
+                        0x00000000
+                    End
+
+                    LayoutCachedLeft =285
+                    LayoutCachedTop =4596
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =5172
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+            End
+        End
+        Begin FormFooter
+            Height =1360
+            BackColor =16118511
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0xf0f2af2f9887a44994beeca1873ca29b
+            End
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4138
+                    Top =226
+                    Width =786
+                    Height =636
+                    FontWeight =700
+                    Name ="Command3"
+                    Caption ="Exit"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Open Form"
+                    GUID = Begin
+                        0xdbbd16241bc28b4fbf831ceb8e4014da
+                    End
+
+                    LayoutCachedLeft =4138
+                    LayoutCachedTop =226
+                    LayoutCachedWidth =4924
+                    LayoutCachedHeight =862
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub cmdImport_Click()
+On Error GoTo Err_cmdImport_Click
+
+    Dim stDocName As String
+
+    stDocName = "1qAccodaAKJTradeReport"
+    DoCmd.OpenQuery stDocName, acNormal, acEdit
+    
+    stDocName = "2qPuliziaZeri"
+    DoCmd.OpenQuery stDocName, acNormal, acEdit
+    
+    stDocName = "3qAccodaNewIsin"
+    DoCmd.OpenQuery stDocName, acNormal, acEdit
+
+Exit_cmdImport_Click:
+    Exit Sub
+
+Err_cmdImport_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdImport_Click
+    
+End Sub
+
+Private Sub cmdPortfolio_Click()
+On Error GoTo Err_cmdPortfolio_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "fPortfolio"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_cmdPortfolio_Click:
+    Exit Sub
+
+Err_cmdPortfolio_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdPortfolio_Click
+    
+
+End Sub
+
+Private Sub cmdSearch_Click()
+On Error GoTo Err_cmdSearch_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "fSEARCH"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_cmdSearch_Click:
+    Exit Sub
+
+Err_cmdSearch_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdSearch_Click
+End Sub
+
+Private Sub cmdStrategy_Click()
+On Error GoTo Err_cmdStrategy_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "fStrategy"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_cmdStrategy_Click:
+    Exit Sub
+
+Err_cmdStrategy_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdStrategy_Click
+
+End Sub
+
+Private Sub Command0_Click()
+On Error GoTo Err_Command0_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "1ISIN"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_Command0_Click:
+    Exit Sub
+
+Err_Command0_Click:
+    MsgBox Err.Description
+    Resume Exit_Command0_Click
+    
+End Sub
+
+Private Sub Command1_Click()
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "saleInvoice"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+End Sub
+
+Private Sub Command2_Click()
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "MFFifo"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+End Sub
+
+Private Sub Command3_Click()
+DoCmd.Quit acQuitSaveAll
+End Sub
+Private Sub CmdRegion_Click()
+On Error GoTo Err_CmdRegion_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "MFFifoType"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_CmdRegion_Click:
+    Exit Sub
+
+Err_CmdRegion_Click:
+    MsgBox Err.Description
+    Resume Exit_CmdRegion_Click
+    
+End Sub
+Private Sub cmdGuadagno_Click()
+On Error GoTo Err_cmdGuadagno_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "fGuadagnoGenerale"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_cmdGuadagno_Click:
+    Exit Sub
+
+Err_cmdGuadagno_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdGuadagno_Click
+    
+End Sub
+Private Sub cmdRocno_Click()
+On Error GoTo Err_cmdRocno_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "fCashRocno"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_cmdRocno_Click:
+    Exit Sub
+
+Err_cmdRocno_Click:
+    MsgBox Err.Description
+    Resume Exit_cmdRocno_Click
+    
+End Sub
+
+Private Sub Form_Close()
+
+fHistoric = False
+
+End Sub
+
+Private Sub Form_Load()
+
+'apertura form alert
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "fMail"
+    DoCmd.OpenForm stDocName, , , , acFormReadOnly
+
+
+End Sub

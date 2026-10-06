@@ -1,0 +1,610 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =-1128079684
+Begin Report
+    LayoutForPrint = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =48
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10942
+    DatasheetFontHeight =10
+    ItemSuffix =42
+    Left =270
+    Top =210
+    Right =270
+    Bottom =210
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x7cac695d3610e540
+    End
+    RecordSource ="MQFifoRepType"
+    Caption ="QryFifostock"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Tahoma"
+    PrtMip = Begin
+        0x370200001b0100001b0100001b01000000000000be2a00000e01000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    FilterOnLoad =0
+    DatasheetGridlinesColor12 =12632256
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextAlign =1
+            TextFontFamily =18
+            FontSize =9
+            FontWeight =700
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin BoundObjectFrame
+            BorderLineStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =18
+            BorderLineStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Times New Roman"
+            AsianLineBreak =255
+            ShowDatePicker =0
+        End
+        Begin ListBox
+            TextFontFamily =18
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Times New Roman"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            TextFontFamily =18
+            BorderLineStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Times New Roman"
+        End
+        Begin Subform
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="SYM"
+        End
+        Begin BreakLevel
+            ControlSource ="Receiving Date"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =1042
+            Name ="ReportHeader"
+            GUID = Begin
+                0xa19345b1cf298d49947e7943c0925cc6
+            End
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    FontUnderline = NotDefault
+                    BackStyle =1
+                    TextFontFamily =34
+                    Left =57
+                    Top =57
+                    Width =7095
+                    Height =675
+                    FontSize =24
+                    FontWeight =400
+                    ForeColor =8388608
+                    Name ="Label20"
+                    Caption ="Stock Report On Fifo Basis"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x2270bf9742f8024cbf84951df3ae8fdf
+                    End
+                End
+            End
+        End
+        Begin PageHeader
+            Height =566
+            Name ="PageHeaderSection"
+            GUID = Begin
+                0xb44886f40c78224ab477f1ffc457e431
+            End
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontFamily =34
+                    Left =2715
+                    Top =165
+                    Width =1485
+                    Height =285
+                    Name ="Receiving Date_Label"
+                    Caption ="Receiving Date"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Receiving_Date_Label"
+                    GUID = Begin
+                        0x1efffa895df1284fae64362751adad94
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =4590
+                    Top =170
+                    Width =1365
+                    Height =285
+                    Name ="Purchased Qty_Label"
+                    Caption ="Purchased Qty"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Purchased_Qty_Label"
+                    GUID = Begin
+                        0x0b11af597fe75e48880548bc8ef1d15a
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =6060
+                    Top =170
+                    Width =1380
+                    Height =285
+                    Name ="In Stock_Label"
+                    Caption ="In Stock"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="In_Stock_Label"
+                    GUID = Begin
+                        0xdc4e16cffe6f08438474fcf47a71440b
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7590
+                    Top =170
+                    Width =1320
+                    Height =285
+                    Name ="Rate_Label"
+                    Caption ="Rate"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xf8641d8502588a4d9b2284d460f08edf
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =9525
+                    Top =165
+                    Width =1170
+                    Height =285
+                    Name ="Value_Label"
+                    Caption ="Value"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x01a15ec4d86d0d4c86341b6f7600e5b4
+                    End
+                End
+                Begin Rectangle
+                    Top =165
+                    Width =10942
+                    Height =292
+                    Name ="Box35"
+                    GUID = Begin
+                        0xd14b42ce2431c443923b5854516ed14b
+                    End
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =453
+            Name ="GroupHeader0"
+            GUID = Begin
+                0x79ad3f3cb60db944929319499b7c8e06
+            End
+            Begin
+                Begin Line
+                    Top =390
+                    Width =10941
+                    Name ="Line38"
+                    GUID = Begin
+                        0xd87a9b4f9685704fb84e2612e57dc7bc
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    DecimalPlaces =0
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =56
+                    Width =2310
+                    Height =300
+                    ColumnWidth =975
+                    FontSize =12
+                    FontWeight =700
+                    ForeColor =8388608
+                    Name ="Product"
+                    ControlSource ="SYM"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x79bf9cd56fc8894d9629de283a47e1ac
+                    End
+
+                    LayoutCachedLeft =56
+                    LayoutCachedWidth =2366
+                    LayoutCachedHeight =300
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =2891
+                    Top =56
+                    Width =1806
+                    Height =285
+                    ColumnWidth =825
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Prdt"
+                    ControlSource ="Prdt"
+                    StatusBarText ="Product"
+                    GUID = Begin
+                        0x441c049d936e334b93386cd0e963e1c3
+                    End
+
+                    LayoutCachedLeft =2891
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =4697
+                    LayoutCachedHeight =341
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =5782
+                    Top =56
+                    TabIndex =2
+                    Name ="Region"
+                    ControlSource ="Region"
+                    GUID = Begin
+                        0x74e2e27805c152438b4af397878a3915
+                    End
+
+                    LayoutCachedLeft =5782
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =7483
+                    LayoutCachedHeight =296
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =270
+            Name ="Detail"
+            GUID = Begin
+                0x7cbdcef7d3dc4e4190d6a61621a09d07
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =2835
+                    Width =1485
+                    Height =270
+                    ColumnWidth =1545
+                    Name ="Receiving Date"
+                    ControlSource ="Receiving Date"
+                    Format ="Medium Date"
+                    FontName ="Arial"
+                    EventProcPrefix ="Receiving_Date"
+                    GUID = Begin
+                        0x74d7c26ca04f3648a1e289116bf8438f
+                    End
+
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =4425
+                    Width =1365
+                    Height =270
+                    ColumnWidth =915
+                    TabIndex =1
+                    Name ="Purchased Qty"
+                    ControlSource ="Purchased Qty"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    EventProcPrefix ="Purchased_Qty"
+                    GUID = Begin
+                        0xb6fd14d42506c04881841474e5b57f05
+                    End
+
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =5955
+                    Width =1380
+                    Height =270
+                    ColumnWidth =1260
+                    TabIndex =2
+                    Name ="In Stock"
+                    ControlSource ="In Stock"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    EventProcPrefix ="In_Stock"
+                    GUID = Begin
+                        0x82d5e792edf07940976a1378c1d5680e
+                    End
+
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =7530
+                    Width =1320
+                    Height =270
+                    TabIndex =3
+                    Name ="Rate"
+                    ControlSource ="Rate"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xacb9dda5f8503744aec9f59149e1b856
+                    End
+
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =9075
+                    Width =1710
+                    Height =270
+                    TabIndex =4
+                    Name ="Value"
+                    ControlSource ="Value"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x3b7719f04a6e9a459dfcaee4290e07c8
+                    End
+
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =396
+            Name ="GroupFooter1"
+            GUID = Begin
+                0x8041d310fac17c45931166fd94907c1c
+            End
+            Begin
+                Begin TextBox
+                    DecimalPlaces =0
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =5955
+                    Top =60
+                    Width =1365
+                    Height =285
+                    ColumnOrder =0
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Sum Of In Stock"
+                    ControlSource ="=Sum([In Stock])"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    EventProcPrefix ="Sum_Of_In_Stock"
+                    GUID = Begin
+                        0x38ca46ff2ca77e468047fcdcfe7992e5
+                    End
+
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =9075
+                    Top =60
+                    Width =1695
+                    Height =285
+                    ColumnOrder =1
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Sum Of Value"
+                    ControlSource ="=Sum([Value])"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    EventProcPrefix ="Sum_Of_Value"
+                    GUID = Begin
+                        0xdcc41e215edeae48a5858f29ede2bcdf
+                    End
+
+                End
+                Begin Rectangle
+                    Top =60
+                    Width =10942
+                    Height =292
+                    Name ="Box39"
+                    GUID = Begin
+                        0x2ed36853d0c36d409149f6816c9bd426
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =60
+                    Top =60
+                    Width =1695
+                    Height =285
+                    FontSize =9
+                    FontWeight =700
+                    Name ="Label34"
+                    ControlSource ="=[SYM] & \" Total\""
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x814953ddeeed9045ac05c1d1d57bb8b4
+                    End
+
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PageFooterSection"
+            GUID = Begin
+                0x27944ff098bf364d8baecf1f5713993a
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =327
+            Name ="ReportFooter"
+            GUID = Begin
+                0xfd2c09dfd73943499f67bf1f63803881
+            End
+            Begin
+                Begin TextBox
+                    DecimalPlaces =0
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =5955
+                    Width =1365
+                    Height =285
+                    ColumnOrder =0
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =8388608
+                    Name ="In Stock Grand Total Sum"
+                    ControlSource ="=Sum([In Stock])"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    EventProcPrefix ="In_Stock_Grand_Total_Sum"
+                    GUID = Begin
+                        0x825dba745d241747a409eb88d5a1ada4
+                    End
+
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =9075
+                    Width =1695
+                    Height =285
+                    ColumnOrder =1
+                    FontSize =9
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =8388608
+                    Name ="Value Grand Total Sum"
+                    ControlSource ="=Sum([Value])"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    EventProcPrefix ="Value_Grand_Total_Sum"
+                    GUID = Begin
+                        0xefaa647cf2ef694285b68127448523c0
+                    End
+
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontFamily =34
+                    Left =60
+                    Width =1695
+                    Height =285
+                    ForeColor =8388608
+                    Name ="Label18"
+                    Caption ="Grand Total"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x56376c479a1f7b48b9131aef0924cc4c
+                    End
+                End
+                Begin Rectangle
+                    Width =10942
+                    Height =292
+                    Name ="Box37"
+                    GUID = Begin
+                        0x049a0a674188d744a2579cce791fbf86
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Report_Close()
+DoCmd.Restore
+End Sub
+
+Private Sub Report_Open(Cancel As Integer)
+DoCmd.Maximize
+End Sub

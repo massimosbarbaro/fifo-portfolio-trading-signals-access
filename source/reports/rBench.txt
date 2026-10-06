@@ -1,0 +1,1012 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1259077725
+Begin Report
+    LayoutForPrint = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularCharSet =163
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =16308
+    DatasheetFontHeight =11
+    ItemSuffix =48
+    Top =480
+    Right =17628
+    Bottom =4344
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x6fd3c6830f2ce540
+    End
+    GUID = Begin
+        0x4ecb63c867f12542a90b6036403a6d8d
+    End
+    RecordSource ="qBench"
+    Caption ="rBench"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x0301000003010000060100000301000000000000e63c00002c01000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =163
+            FontSize =9
+            FontWeight =700
+            BorderColor =5066944
+            ForeColor =11830108
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+        End
+        Begin Rectangle
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BackColor =-2147483617
+            BorderColor =-2147483617
+            GridlineColor =-2147483609
+        End
+        Begin Line
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =5066944
+            GridlineColor =-2147483609
+        End
+        Begin Image
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BackColor =-2147483617
+            BorderColor =-2147483617
+            GridlineColor =-2147483609
+        End
+        Begin CommandButton
+            TextFontCharSet =163
+            Width =1701
+            Height =283
+            FontSize =9
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            OldBorderStyle =0
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =5066944
+            GridlineColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            GridlineColor =-2147483609
+        End
+        Begin OptionGroup
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =5066944
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =5066944
+            GridlineColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontCharSet =163
+            BorderLineStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            BorderColor =5066944
+            FontName ="Calibri"
+            AsianLineBreak =1
+            GridlineColor =-2147483609
+            ShowDatePicker =0
+        End
+        Begin ListBox
+            TextFontCharSet =163
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =9
+            BorderColor =5066944
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            TextFontCharSet =163
+            BorderLineStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =9
+            BorderColor =5066944
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =5066944
+            GridlineColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            Width =4536
+            Height =2835
+            BorderColor =5066944
+            GridlineColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =5066944
+            GridlineColor =-2147483609
+        End
+        Begin ToggleButton
+            TextFontCharSet =163
+            Width =283
+            Height =283
+            FontSize =9
+            FontWeight =400
+            ForeColor =-2147483609
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            BorderLineStyle =0
+        End
+        Begin Tab
+            TextFontCharSet =163
+            BackStyle =0
+            Width =5103
+            Height =3402
+            FontSize =9
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Attachment
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =5066944
+            GridlineColor =-2147483609
+            LabelX =-1701
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =240
+            Name ="ReportHeader"
+            GUID = Begin
+                0x3cd8267085ad3a47a2915ecf490e61e1
+            End
+            Begin
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Width =840
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="Benchmark_Label"
+                    Caption ="Benchmark"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xf2c64dc7a487854f8004a9d386bf724e
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedWidth =840
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Left =1656
+                    Width =960
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="Close Date_Label"
+                    Caption ="Closing Date"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Close_Date_Label"
+                    GUID = Begin
+                        0x386e9329444d2a409a03e3f588f6bbee
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =1656
+                    LayoutCachedWidth =2616
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =2742
+                    Width =1035
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="Close Value_Label"
+                    Caption ="Closing Value"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Close_Value_Label"
+                    GUID = Begin
+                        0x5e599da5f7211e46b9edc9df1ff6db8b
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =2742
+                    LayoutCachedWidth =3777
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =3891
+                    Width =1155
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="Close Value €_Label"
+                    Caption ="Closing Value €"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Close_Value_€_Label"
+                    GUID = Begin
+                        0xc993d5080d481f40b660f5f4fea2137c
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =3891
+                    LayoutCachedWidth =5046
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =5286
+                    Width =1335
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="FUND START DATE_Label"
+                    Caption ="FUND START DATE"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="FUND_START_DATE_Label"
+                    GUID = Begin
+                        0xffaefe66fd95ce4d9810588634e3ade8
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =5286
+                    LayoutCachedWidth =6621
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =6840
+                    Width =810
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="StartValue_Label"
+                    Caption ="Start Value"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xdb04e2f5d0153f4c906cd970e3c48e8e
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =6840
+                    LayoutCachedWidth =7650
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =7821
+                    Width =930
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="StartValue€_Label"
+                    Caption ="Start Value €"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x5e1b7b11ae85954cb4d72228ee995875
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =7821
+                    LayoutCachedWidth =8751
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Left =8844
+                    Width =525
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="Unj_Label"
+                    Caption ="Unadj."
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x76f37ebdbc5fae46b405a9137770f27b
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =8844
+                    LayoutCachedWidth =9369
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Left =9630
+                    Width =345
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="Adju_Label"
+                    Caption ="Adj."
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x27647b27aa40d94382e8daa2db0bc426
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =9630
+                    LayoutCachedWidth =9975
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =10224
+                    Width =705
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="2018 YDT_Label"
+                    Caption ="YDT"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Ctl2018_YDT_Label"
+                    GUID = Begin
+                        0x4253c2dce931f842af84f3aa9835e761
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =10224
+                    LayoutCachedWidth =10929
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =11133
+                    Width =1110
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="2018START VALUE_Label"
+                    Caption ="YTD Value"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Ctl2018START_VALUE_Label"
+                    GUID = Begin
+                        0x6b566eac8cf4b847b777977b3375154f
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =11133
+                    LayoutCachedWidth =12243
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =3
+                    Left =12450
+                    Width =1230
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="2018StartValueE_Label"
+                    Caption ="YTD Value €"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Ctl2018StartValueE_Label"
+                    GUID = Begin
+                        0x4ed3f49dfaacda4fba4e7b9cc8c8dee0
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =12450
+                    LayoutCachedWidth =13680
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Left =13995
+                    Width =525
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="2018Unj_Label"
+                    Caption ="Unadj."
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Ctl2018Unj_Label"
+                    GUID = Begin
+                        0x5601676dfcff1a419861500e330f6ff7
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =13995
+                    LayoutCachedWidth =14520
+                    LayoutCachedHeight =210
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Left =14970
+                    Width =360
+                    Height =210
+                    FontSize =7
+                    ForeColor =-2147483617
+                    Name ="2018Adju_Label"
+                    Caption ="Adj"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Ctl2018Adju_Label"
+                    GUID = Begin
+                        0x2345b4fc3f343d4a9302030ca2d25930
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+                    GridlineColor =0
+                    LayoutCachedLeft =14970
+                    LayoutCachedWidth =15330
+                    LayoutCachedHeight =210
+                End
+                Begin Line
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =83
+                    Top =225
+                    Width =15467
+                    BorderColor =0
+                    Name ="Line47"
+                    GUID = Begin
+                        0x7c9cb59030ce8540871726d01121715b
+                    End
+                    LayoutCachedTop =225
+                    LayoutCachedWidth =15467
+                    LayoutCachedHeight =225
+                End
+            End
+        End
+        Begin PageHeader
+            Height =15
+            Name ="PageHeaderSection"
+            GUID = Begin
+                0x971b62a8d349f84eb5f8828b2b3af452
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =348
+            Name ="Detail"
+            GUID = Begin
+                0x1304af076228c24591400c05dd932b15
+            End
+            AlternateBackColor =16777215
+            Begin
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =30
+                    Top =37
+                    Width =1557
+                    Height =210
+                    FontSize =7
+                    FontWeight =700
+                    Name ="Benchmark"
+                    ControlSource ="Benchmark"
+                    Format ="@"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x107f024a8cc5ae4cb4d22a9e80fd0536
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =30
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =1587
+                    LayoutCachedHeight =247
+                End
+                Begin TextBox
+                    DecimalPlaces =5
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =1656
+                    Top =37
+                    Width =948
+                    Height =210
+                    FontSize =7
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Close Date"
+                    ControlSource ="Close Date"
+                    Format ="dd\\/mm\\/yyyy"
+                    FontName ="Arial"
+                    EventProcPrefix ="Close_Date"
+                    GUID = Begin
+                        0xbe93de69f3f3f24db9041e3918558f92
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =1656
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =2604
+                    LayoutCachedHeight =247
+                End
+                Begin TextBox
+                    DecimalPlaces =5
+                    OverlapFlags =81
+                    TextFontCharSet =177
+                    IMESentenceMode =3
+                    Left =2694
+                    Top =37
+                    Width =1038
+                    Height =210
+                    FontSize =7
+                    TabIndex =2
+                    Name ="Close Value"
+                    ControlSource ="Close Value"
+                    Format ="Standard"
+                    FontName ="Arial"
+                    EventProcPrefix ="Close_Value"
+                    GUID = Begin
+                        0x80f1db8b1e31c04fb05888620ee724ac
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =2694
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =3732
+                    LayoutCachedHeight =247
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =3846
+                    Top =37
+                    Width =1173
+                    Height =195
+                    FontSize =7
+                    TabIndex =5
+                    Name ="Close Value €"
+                    ControlSource ="Close Value €"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    FontName ="Arial"
+                    EventProcPrefix ="Close_Value_€"
+                    GUID = Begin
+                        0x07d2f17a3dce7a41a36834ed70ead67d
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =3846
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =5019
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =5106
+                    Top =37
+                    Width =1506
+                    Height =195
+                    FontSize =7
+                    FontWeight =700
+                    TabIndex =7
+                    Name ="FUND START DATE"
+                    ControlSource ="FUND START DATE"
+                    Format ="dd\\/mm\\/yyyy"
+                    FontName ="Arial"
+                    EventProcPrefix ="FUND_START_DATE"
+                    GUID = Begin
+                        0x31b456c272b0b64a889e10ed3c57de1d
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =5106
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =6612
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =6672
+                    Top =37
+                    Width =918
+                    Height =195
+                    FontSize =7
+                    TabIndex =3
+                    Name ="StartValue"
+                    ControlSource ="StartValue"
+                    Format ="General Number"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x4fa625b0e56add4f8e0b342227ae9130
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =6672
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =7590
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =7710
+                    Top =37
+                    Width =1014
+                    Height =195
+                    FontSize =7
+                    TabIndex =4
+                    Name ="StartValue€"
+                    ControlSource ="StartValue€"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0xb68ed48f4ec21e4080be9df643eecb16
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =7710
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =8724
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =2
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =8844
+                    Top =37
+                    Width =588
+                    Height =195
+                    FontSize =7
+                    FontWeight =700
+                    TabIndex =6
+                    ForeColor =2366701
+                    Name ="Unj"
+                    ControlSource ="Unj"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x963ae06cbe1f8243896ec95de6b99935
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =8844
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =9432
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =9540
+                    Top =37
+                    Width =528
+                    Height =195
+                    FontSize =7
+                    FontWeight =700
+                    TabIndex =8
+                    ForeColor =2366701
+                    Name ="Adju"
+                    ControlSource ="Adju"
+                    FontName ="Arial"
+                    GUID = Begin
+                        0x30265103cca592488be7196475ed8849
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =9540
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =10068
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =10194
+                    Top =37
+                    Width =873
+                    Height =195
+                    FontSize =7
+                    FontWeight =700
+                    TabIndex =9
+                    Name ="2018 YDT"
+                    ControlSource ="2018 YDT"
+                    Format ="dd\\/mm\\/yyyy"
+                    FontName ="Arial"
+                    EventProcPrefix ="Ctl2018_YDT"
+                    GUID = Begin
+                        0x5cc35014a6f9184baf1eb52ede12dfd2
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =10194
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =11067
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =11127
+                    Top =37
+                    Width =1065
+                    Height =195
+                    FontSize =7
+                    TabIndex =10
+                    Name ="2018START VALUE"
+                    ControlSource ="2018START VALUE"
+                    Format ="General Number"
+                    FontName ="Arial"
+                    EventProcPrefix ="Ctl2018START_VALUE"
+                    GUID = Begin
+                        0xff978657e648f04a957b26250cafcd9c
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =11127
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =12192
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    IMESentenceMode =3
+                    Left =12300
+                    Top =37
+                    Width =1320
+                    Height =195
+                    FontSize =7
+                    TabIndex =11
+                    Name ="2018StartValueE"
+                    ControlSource ="2018StartValueE"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    FontName ="Arial"
+                    EventProcPrefix ="Ctl2018StartValueE"
+                    GUID = Begin
+                        0xf79b1369556e9e4594d8e892445a7199
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =12300
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =13620
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =2
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =13761
+                    Top =37
+                    Width =912
+                    Height =195
+                    FontSize =7
+                    FontWeight =700
+                    TabIndex =12
+                    ForeColor =2366701
+                    Name ="2018Unj"
+                    ControlSource ="2018Unj"
+                    FontName ="Arial"
+                    EventProcPrefix ="Ctl2018Unj"
+                    GUID = Begin
+                        0x1f6198bfb84dc7469f1613dab8cc15f2
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =13761
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =14673
+                    LayoutCachedHeight =232
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontCharSet =0
+                    TextAlign =2
+                    BackStyle =1
+                    IMESentenceMode =3
+                    Left =14713
+                    Top =37
+                    Width =795
+                    Height =195
+                    FontSize =7
+                    FontWeight =700
+                    TabIndex =13
+                    ForeColor =2366701
+                    Name ="2018Adju"
+                    ControlSource ="2018Adju"
+                    FontName ="Arial"
+                    EventProcPrefix ="Ctl2018Adju"
+                    GUID = Begin
+                        0xd46b191af4451340baad0c554e3f90eb
+                    End
+                    GridlineStyleTop =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =14713
+                    LayoutCachedTop =37
+                    LayoutCachedWidth =15508
+                    LayoutCachedHeight =232
+                End
+                Begin Line
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =81
+                    Top =285
+                    Width =15467
+                    BorderColor =0
+                    Name ="Line46"
+                    GUID = Begin
+                        0x76ff15106868264eb93181c7fa42b139
+                    End
+                    LayoutCachedTop =285
+                    LayoutCachedWidth =15467
+                    LayoutCachedHeight =285
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PageFooterSection"
+            GUID = Begin
+                0xb2f865302dadd441ad99766fb03d35c8
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="ReportFooter"
+            GUID = Begin
+                0xed894b320419924ca2320445f40a1f4b
+            End
+            AutoHeight =1
+        End
+    End
+End

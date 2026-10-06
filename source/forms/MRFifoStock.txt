@@ -1,0 +1,377 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =-716384814
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    ScrollBars =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4044
+    DatasheetFontHeight =9
+    ItemSuffix =13
+    Left =2775
+    Top =810
+    Right =12150
+    Bottom =6360
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xab1bc7a89804e540
+    End
+    RecordSource ="SELECT [1Region].Region, FifoStock.Prdt, FifoStock.Doc, FifoStock.fDate, FifoSto"
+        "ck.AvQty, FifoStock.Rt, [Rt]/[PQty]*[AvQty] AS [Value] FROM FifoStock INNER JOIN"
+        " (1Region INNER JOIN 1ISIN ON [1Region].IdR = [1ISIN].IdR) ON FifoStock.Prdt = ["
+        "1ISIN].ISIN WHERE ((([1Region].Region)=[forms]![MFFifoType]![Productid]) AND ((["
+        "forms]![MFFifoType]![Productid]) Is Not Null)) OR ((([forms]![MFFifoType]![Produ"
+        "ctid])=\"All\")) ORDER BY FifoStock.Prdt, FifoStock.Doc;"
+    Caption ="SaleDetail"
+    DatasheetFontName ="Tahoma"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DatasheetGridlinesColor12 =12632256
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+            BorderLineStyle =0
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0x28d7bdc41894e1448d28f7559e4b658b
+            End
+        End
+        Begin Section
+            Height =2097
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x6e5ec0346c93e046b327b1daa5a3f9a4
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =114
+                    Width =900
+                    Height =255
+                    ColumnWidth =1125
+                    TabIndex =1
+                    Name ="Doc"
+                    ControlSource ="Doc"
+                    GUID = Begin
+                        0x70e0e362808df74faa9f67e6a770fe91
+                    End
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =114
+                            Width =1560
+                            Height =255
+                            Name ="PInv_Label"
+                            Caption ="nvoice #"
+                            GUID = Begin
+                                0x9f59c750ea52b44291549e1ee48aabce
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =456
+                    Width =1110
+                    Height =255
+                    ColumnWidth =1785
+                    TabIndex =2
+                    Name ="fDate"
+                    ControlSource ="fDate"
+                    Format ="Medium Date"
+                    InputMask ="00\\->L<LL\\-00;0;_"
+                    GUID = Begin
+                        0xa9bf457a722f5b428f418d57a704ff34
+                    End
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =456
+                            Width =1560
+                            Height =255
+                            Name ="PDate_Label"
+                            Caption ="Purchase  Date"
+                            GUID = Begin
+                                0xd2000f2b3d53ee4d968f4375c4d4d5cc
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =1677
+                    Top =798
+                    Width =2310
+                    Height =255
+                    ColumnWidth =2445
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0x0ea0803e0ff5264b95d8068f29112e2e
+                    End
+                    Name ="Product"
+                    ControlSource ="Prdt"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Products].[ProductId], [Products].[Product] FROM [Products] ORDER BY [Pr"
+                        "oduct];"
+                    ColumnWidths ="0;1440"
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =798
+                            Width =1560
+                            Height =255
+                            Name ="Product_Label"
+                            Caption ="Product"
+                            GUID = Begin
+                                0x1c693cc026448745b954cadda4325252
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =1140
+                    Width =900
+                    Height =255
+                    ColumnWidth =1515
+                    TabIndex =3
+                    Name ="AvQty"
+                    ControlSource ="AvQty"
+                    GUID = Begin
+                        0x9a464b78fbc1bd4dafcb1be98d5ae324
+                    End
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =1140
+                            Width =1560
+                            Height =255
+                            Name ="Qty_Label"
+                            Caption ="Available Qty"
+                            GUID = Begin
+                                0x6fc8b8c5bc039247997deaabac1bbdf7
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =1482
+                    Width =2310
+                    Height =255
+                    ColumnWidth =1695
+                    TabIndex =4
+                    Name ="Rt"
+                    ControlSource ="Value"
+                    Format ="Standard"
+                    GUID = Begin
+                        0x0e1a174f94733a4dbe50358333efe875
+                    End
+
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =1482
+                            Width =1560
+                            Height =255
+                            Name ="Rate_Label"
+                            Caption ="Value"
+                            GUID = Begin
+                                0x206e84a60eca5a4fbde4db4ecdb8ff58
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =630
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0xe53d46024906c6418c945e9511d76980
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1740
+                    Width =900
+                    Height =255
+                    Name ="TAvb"
+                    ControlSource ="=Sum([AvQty])"
+                    DefaultValue ="0"
+                    GUID = Begin
+                        0x35a1c05b4126ba48a6e22d0a31af05fd
+                    End
+
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2834
+                    Width =900
+                    Height =255
+                    TabIndex =1
+                    Name ="TValue"
+                    ControlSource ="=Sum([Value])"
+                    DefaultValue ="0"
+                    GUID = Begin
+                        0xb9d174e16ab0364dbc20ed1236b2573e
+                    End
+
+                    LayoutCachedLeft =2834
+                    LayoutCachedWidth =3734
+                    LayoutCachedHeight =255
+                End
+            End
+        End
+    End
+End

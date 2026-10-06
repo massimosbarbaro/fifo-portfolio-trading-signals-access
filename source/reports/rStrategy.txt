@@ -1,0 +1,2962 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1980454310
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularCharSet =162
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =31680
+    DatasheetFontHeight =11
+    ItemSuffix =104
+    Top =600
+    Bottom =600
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x2b33e0be7a29e540
+    End
+    GUID = Begin
+        0x1a0bab87f6817e41b6635295ce495ed8
+    End
+    RecordSource ="qStrategy"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    FilterOnLoad =0
+    FitToPage =1
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =162
+            FontSize =11
+            ForeColor =-2147483615
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+        End
+        Begin Rectangle
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            GridlineColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            GridlineColor =-2147483609
+        End
+        Begin Image
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            GridlineColor =-2147483609
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            GridlineColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            GridlineColor =-2147483609
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            GridlineColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            GridlineColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            TextFontCharSet =162
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            AsianLineBreak =1
+            GridlineColor =-2147483609
+            ShowDatePicker =0
+        End
+        Begin ListBox
+            TextFontCharSet =162
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            TextFontCharSet =162
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            GridlineColor =-2147483609
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            GridlineColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            GridlineColor =-2147483609
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin CustomControl
+            SpecialEffect =2
+            Width =4536
+            Height =2835
+            GridlineColor =-2147483609
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            BorderLineStyle =0
+        End
+        Begin Tab
+            TextFontCharSet =162
+            Width =5103
+            Height =3402
+            FontSize =11
+            FontName ="Calibri"
+            GridlineColor =-2147483609
+            BorderLineStyle =0
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+            GridlineColor =-2147483609
+        End
+        Begin Attachment
+            BackStyle =0
+            BorderLineStyle =0
+            PictureSizeMode =3
+            Width =1701
+            Height =1701
+            BorderColor =12632256
+            GridlineColor =-2147483609
+            LabelX =-1701
+        End
+        Begin EmptyCell
+            Height =240
+            GridlineColor =10921638
+            GridlineThemeColorIndex =1
+            GridlineShade =65.0
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =734
+            Name ="IntestazioneReport"
+            GUID = Begin
+                0xb0b8409a0e6e414eaa974c11688cdba1
+            End
+            AutoHeight =1
+            Begin
+                Begin Label
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Left =1288
+                    Top =60
+                    Width =1649
+                    Height =569
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Auto_Title0"
+                    Caption ="qStrategy"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xba3a2654469c5c47a1baa4fe2928ded2
+                    End
+                    LayoutCachedLeft =1288
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =2937
+                    LayoutCachedHeight =629
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6072
+                    Top =60
+                    Width =5103
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Testo0"
+                    ControlSource ="=Date()"
+                    Format ="Long Date"
+                    GUID = Begin
+                        0xa9fffb4aea5cc743a2dbf864dfe9a234
+                    End
+
+                    LayoutCachedLeft =6072
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =11175
+                    LayoutCachedHeight =419
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =3
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6072
+                    Top =375
+                    Width =5103
+                    Height =359
+                    TabIndex =1
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Testo1"
+                    ControlSource ="=Time()"
+                    Format ="Long Time"
+                    GUID = Begin
+                        0x857e2ef12b76c44f9946aee9502f30ac
+                    End
+
+                    LayoutCachedLeft =6072
+                    LayoutCachedTop =375
+                    LayoutCachedWidth =11175
+                    LayoutCachedHeight =734
+                End
+            End
+        End
+        Begin PageHeader
+            Height =457
+            Name ="SezioneIntestazionePagina"
+            GUID = Begin
+                0x910c5bd491ec484ab8d2d5a3f41826cb
+            End
+            AutoHeight =1
+            Begin
+                Begin Label
+                    Left =60
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta4"
+                    Caption ="ISIN"
+                    GUID = Begin
+                        0x95d24be11151a54bb566227cd2c3b8cf
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =900
+                    LayoutCachedHeight =419
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =960
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta6"
+                    Caption ="UltimoDiDate"
+                    GUID = Begin
+                        0x924ac03ffdd55a4d85b757e97c9d13a0
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =960
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =1800
+                    LayoutCachedHeight =419
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =1860
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta8"
+                    Caption ="UltimoDiClose"
+                    GUID = Begin
+                        0x610dcb1159955b49bcf970d1abc19609
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =1860
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =2700
+                    LayoutCachedHeight =419
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =2760
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta10"
+                    Caption ="S5"
+                    GUID = Begin
+                        0xdde8d4e0868be148b43eeda6bf486ba6
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =2760
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =3600
+                    LayoutCachedHeight =419
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =3660
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta12"
+                    Caption ="S20"
+                    GUID = Begin
+                        0x9c127cde8b4370459f4cb037aaa1f99d
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =3660
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =4500
+                    LayoutCachedHeight =419
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =4560
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta14"
+                    Caption ="S50"
+                    GUID = Begin
+                        0xe1a9e6f71c069343bb6290fadc9bbf3a
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =4560
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =5400
+                    LayoutCachedHeight =419
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =5460
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta16"
+                    Caption ="S100"
+                    GUID = Begin
+                        0x3e3d43cdb52c794c8e61be776108cc72
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =6300
+                    LayoutCachedHeight =419
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =6360
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta18"
+                    Caption ="S200"
+                    GUID = Begin
+                        0x6a77a2bf5ff654408e6c2adcd1b6b606
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =6360
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =7200
+                    LayoutCachedHeight =419
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =7260
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta20"
+                    Caption ="E5"
+                    GUID = Begin
+                        0x16f80d934cb8064f8ca428d3276effd1
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =7260
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =8100
+                    LayoutCachedHeight =419
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =8160
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta22"
+                    Caption ="E20"
+                    GUID = Begin
+                        0x80ccda4b51b7da47b4667a84d651f4cf
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =8160
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =9000
+                    LayoutCachedHeight =419
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =9060
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta24"
+                    Caption ="E50"
+                    GUID = Begin
+                        0xbe0bd7cbc4a88440a9af3498a488e315
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =9060
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =9900
+                    LayoutCachedHeight =419
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =9960
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta26"
+                    Caption ="E100"
+                    GUID = Begin
+                        0xe805a57013087e40829c87bc40a0091e
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =9960
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =10800
+                    LayoutCachedHeight =419
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =10860
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta28"
+                    Caption ="E200"
+                    GUID = Begin
+                        0x1ff6395df990a04ab17bd796ff781c26
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =10860
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =11700
+                    LayoutCachedHeight =419
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =11760
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta30"
+                    Caption ="L5"
+                    GUID = Begin
+                        0xf4aba17a482bca4caa674f051a6e3818
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =11760
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =419
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =12660
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta32"
+                    Caption ="L20"
+                    GUID = Begin
+                        0xb680f9fd5f98b14092a2aff0ec5d9b3d
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =12660
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =13500
+                    LayoutCachedHeight =419
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =13560
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta34"
+                    Caption ="L50"
+                    GUID = Begin
+                        0xfcedd988562da54ba7f95abe3eb67c43
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =13560
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =14400
+                    LayoutCachedHeight =419
+                    ColumnStart =15
+                    ColumnEnd =15
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =14460
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta36"
+                    Caption ="L100"
+                    GUID = Begin
+                        0x9ee084a9507e754b8804ddf9ad00967e
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =14460
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =15300
+                    LayoutCachedHeight =419
+                    ColumnStart =16
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =15360
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta38"
+                    Caption ="L200"
+                    GUID = Begin
+                        0x923087b2644ada4cbdfabbdf589db298
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =15360
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =16200
+                    LayoutCachedHeight =419
+                    ColumnStart =17
+                    ColumnEnd =17
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =16260
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta40"
+                    Caption ="LE5"
+                    GUID = Begin
+                        0x799232a3f43410408685c6b22cf620c6
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =16260
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =17100
+                    LayoutCachedHeight =419
+                    ColumnStart =18
+                    ColumnEnd =18
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =17160
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta42"
+                    Caption ="LE20"
+                    GUID = Begin
+                        0x46c6cda96435e84585910f428c52f077
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =17160
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =18000
+                    LayoutCachedHeight =419
+                    ColumnStart =19
+                    ColumnEnd =19
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =18060
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta44"
+                    Caption ="LE50"
+                    GUID = Begin
+                        0x955b574585572746b20aa93ccd13ee09
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =18060
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =18900
+                    LayoutCachedHeight =419
+                    ColumnStart =20
+                    ColumnEnd =20
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =18960
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta46"
+                    Caption ="LE100"
+                    GUID = Begin
+                        0x989d19c89010734c975d4e50ba4ff490
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =18960
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =19800
+                    LayoutCachedHeight =419
+                    ColumnStart =21
+                    ColumnEnd =21
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =19860
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta48"
+                    Caption ="LE200"
+                    GUID = Begin
+                        0x2975499b38efc7488258351f10de3df1
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =19860
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =20700
+                    LayoutCachedHeight =419
+                    ColumnStart =22
+                    ColumnEnd =22
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =20760
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta50"
+                    Caption ="LES5"
+                    GUID = Begin
+                        0x0774505d4643c2428fbcd9721bdbf4d1
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =20760
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =21600
+                    LayoutCachedHeight =419
+                    ColumnStart =23
+                    ColumnEnd =23
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =21660
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta52"
+                    Caption ="LES20"
+                    GUID = Begin
+                        0x92f8f654bf02734a9555eca2207fde96
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =21660
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =22500
+                    LayoutCachedHeight =419
+                    ColumnStart =24
+                    ColumnEnd =24
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =22560
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta54"
+                    Caption ="LES50"
+                    GUID = Begin
+                        0x49dfdf1c9574ef4ab9d86f90b83d9b81
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =22560
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =23400
+                    LayoutCachedHeight =419
+                    ColumnStart =25
+                    ColumnEnd =25
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =23460
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta56"
+                    Caption ="LES100"
+                    GUID = Begin
+                        0x30a2bb31226a7b45a16fbb04c098ae54
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =23460
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =24300
+                    LayoutCachedHeight =419
+                    ColumnStart =26
+                    ColumnEnd =26
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =24360
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta58"
+                    Caption ="LES200"
+                    GUID = Begin
+                        0xf3a5a78342fd4c4bb3ffa1f82c2e1b72
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =24360
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =25200
+                    LayoutCachedHeight =419
+                    ColumnStart =27
+                    ColumnEnd =27
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =25260
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta60"
+                    Caption ="T5"
+                    GUID = Begin
+                        0xc3c63577414bc24b91cc1208a77e4652
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =25260
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =26100
+                    LayoutCachedHeight =419
+                    ColumnStart =28
+                    ColumnEnd =28
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =26160
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta62"
+                    Caption ="T20"
+                    GUID = Begin
+                        0x91c0f78f9bbde24f88c0b7fbdf2a9162
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =26160
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =27000
+                    LayoutCachedHeight =419
+                    ColumnStart =29
+                    ColumnEnd =29
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =27060
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta64"
+                    Caption ="T50"
+                    GUID = Begin
+                        0x0cd43c28dbce2e4ea03a72b83efd7cb2
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =27060
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =27900
+                    LayoutCachedHeight =419
+                    ColumnStart =30
+                    ColumnEnd =30
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =27960
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta66"
+                    Caption ="T100"
+                    GUID = Begin
+                        0xc1e7a19974a8714eb036c5c0771aafcc
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =27960
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =28800
+                    LayoutCachedHeight =419
+                    ColumnStart =31
+                    ColumnEnd =31
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =28860
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta68"
+                    Caption ="T200"
+                    GUID = Begin
+                        0xd9fabf9f1836734299ef53b11fe5fed6
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =28860
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =29700
+                    LayoutCachedHeight =419
+                    ColumnStart =32
+                    ColumnEnd =32
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    Left =29760
+                    Top =60
+                    Width =840
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Etichetta70"
+                    Caption ="TT"
+                    GUID = Begin
+                        0x7b27deb08854be44927efe269ea48455
+                    End
+                    GroupTable =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =29760
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =30600
+                    LayoutCachedHeight =419
+                    ColumnStart =33
+                    ColumnEnd =33
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =420
+            Name ="Corpo"
+            GUID = Begin
+                0x7fba32f07ba9d04ca92012a64445971d
+            End
+            AutoHeight =1
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    IMESentenceMode =3
+                    Left =60
+                    Top =36
+                    Width =840
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="ISIN"
+                    ControlSource ="ISIN"
+                    GUID = Begin
+                        0xed2b4606062ac74783ecdfc0c1acf886
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =900
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =960
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =1
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="UltimoDiDate"
+                    ControlSource ="UltimoDiDate"
+                    GUID = Begin
+                        0x3f54c651ff64a749a6bac2889fe1b7f9
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =960
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =1800
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =1860
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =2
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="UltimoDiClose"
+                    ControlSource ="UltimoDiClose"
+                    GUID = Begin
+                        0x7ae84dcd9fe5f44dbb8f69780393bc66
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =1860
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =2700
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =2760
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =3
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="S5"
+                    ControlSource ="S5"
+                    GUID = Begin
+                        0x0909bba14cc7c14f8bf105ce9492327a
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =2760
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3600
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =3660
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =4
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="S20"
+                    ControlSource ="S20"
+                    GUID = Begin
+                        0x542fd06182a4c1458833250ca1363801
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =3660
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =4500
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =4560
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =5
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="S50"
+                    ControlSource ="S50"
+                    GUID = Begin
+                        0x710ac3a90a647c49a1038f697bcf4203
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =4560
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =5400
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =5460
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =6
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="S100"
+                    ControlSource ="S100"
+                    GUID = Begin
+                        0x8b6ca91e7182bf46b6353d3b89c95394
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =6300
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =6360
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =7
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="S200"
+                    ControlSource ="S200"
+                    GUID = Begin
+                        0x77f117268957914e9d441db7e36436f3
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =6360
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7200
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =7260
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =8
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="E5"
+                    ControlSource ="E5"
+                    GUID = Begin
+                        0xc92d117ff77ed4419573544e57dce027
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =7260
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8100
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =8160
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =9
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="E20"
+                    ControlSource ="E20"
+                    GUID = Begin
+                        0x447be3b2c186f54f8e18c8c5f2d68dfa
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =8160
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9000
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =9060
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =10
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="E50"
+                    ControlSource ="E50"
+                    GUID = Begin
+                        0xb554e1bec08f604c8fd328bf4c5ce20c
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =9060
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9900
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =9960
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="E100"
+                    ControlSource ="E100"
+                    GUID = Begin
+                        0xd77fbc08dc8d7a4a9169aa5a8bf4a58a
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =9960
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =10800
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =10860
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =12
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="E200"
+                    ControlSource ="E200"
+                    GUID = Begin
+                        0xcb1d6cdd48830a4f8fb17909310df9e2
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =10860
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =11700
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =11760
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =13
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="L5"
+                    ControlSource ="L5"
+                    GUID = Begin
+                        0x8102bfefa5dc1348a41be33b88c158ac
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =11760
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =12660
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =14
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="L20"
+                    ControlSource ="L20"
+                    GUID = Begin
+                        0xc2f6e443cb6cf446b7df1f3a274a8eda
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =12660
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =13500
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =13560
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =15
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="L50"
+                    ControlSource ="L50"
+                    GUID = Begin
+                        0x0bf5683a50992b44ac9475567f8e8ca8
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =13560
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =14400
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =15
+                    ColumnEnd =15
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =14460
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =16
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="L100"
+                    ControlSource ="L100"
+                    GUID = Begin
+                        0x10c72118cf15734791c20081932b90e1
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =14460
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =15300
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =16
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =15360
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =17
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="L200"
+                    ControlSource ="L200"
+                    GUID = Begin
+                        0x9f76eccca2d074458e312353c5e7bb72
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =15360
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =16200
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =17
+                    ColumnEnd =17
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =16260
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LE5"
+                    ControlSource ="LE5"
+                    GUID = Begin
+                        0xf33b916d71d910439dccab71b124c21a
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =16260
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =17100
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =18
+                    ColumnEnd =18
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =17160
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =19
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LE20"
+                    ControlSource ="LE20"
+                    GUID = Begin
+                        0x1f068d098adf764397f543db543aaf25
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =17160
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =18000
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =19
+                    ColumnEnd =19
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =18060
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =20
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LE50"
+                    ControlSource ="LE50"
+                    GUID = Begin
+                        0x344b5bc978b057419f2f2854fc817972
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =18060
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =18900
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =20
+                    ColumnEnd =20
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =18960
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =21
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LE100"
+                    ControlSource ="LE100"
+                    GUID = Begin
+                        0x2c1483ad3a40384396438cbce7155415
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =18960
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =19800
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =21
+                    ColumnEnd =21
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =19860
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =22
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LE200"
+                    ControlSource ="LE200"
+                    GUID = Begin
+                        0x36e6e98f84d6f44eaaa8588ea169c62d
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =19860
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =20700
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =22
+                    ColumnEnd =22
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =20760
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =23
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LES5"
+                    ControlSource ="LES5"
+                    GUID = Begin
+                        0x036bb5c17ebf4849808a947ba01c8f97
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =20760
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =21600
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =23
+                    ColumnEnd =23
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =21660
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =24
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LES20"
+                    ControlSource ="LES20"
+                    GUID = Begin
+                        0x1b2bb04847940247ba72201b80660160
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =21660
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =22500
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =24
+                    ColumnEnd =24
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =22560
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =25
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LES50"
+                    ControlSource ="LES50"
+                    GUID = Begin
+                        0xe0c6dba4e17e034a95ea63f4faabbdae
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =22560
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =23400
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =25
+                    ColumnEnd =25
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =23460
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =26
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LES100"
+                    ControlSource ="LES100"
+                    GUID = Begin
+                        0x6e97ae8ae57627438451b4c77bc5b21d
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =23460
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =24300
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =26
+                    ColumnEnd =26
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =24360
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =27
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="LES200"
+                    ControlSource ="LES200"
+                    GUID = Begin
+                        0xfcca4433365d1442a7b2b86e3fb30d26
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =24360
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =25200
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =27
+                    ColumnEnd =27
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =25260
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =28
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="T5"
+                    ControlSource ="T5"
+                    GUID = Begin
+                        0x34073f97e4f6c24385bf91f5798c8b69
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =25260
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =26100
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =28
+                    ColumnEnd =28
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =26160
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =29
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="T20"
+                    ControlSource ="T20"
+                    GUID = Begin
+                        0xd2f078fa6c99ba408e5b894cc7f88af0
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =26160
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =27000
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =29
+                    ColumnEnd =29
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =27060
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =30
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="T50"
+                    ControlSource ="T50"
+                    GUID = Begin
+                        0xcf469bb06d9fb14f9362ee5b6a9541ad
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =27060
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =27900
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =30
+                    ColumnEnd =30
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =27960
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =31
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="T100"
+                    ControlSource ="T100"
+                    GUID = Begin
+                        0x79d944af24e3554fadb5f9b08e857aff
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =27960
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =28800
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =31
+                    ColumnEnd =31
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =28860
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =32
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="T200"
+                    ControlSource ="T200"
+                    GUID = Begin
+                        0xdcf5bddf379da642965572de65f5a957
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =28860
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =29700
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =32
+                    ColumnEnd =32
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =29760
+                    Top =36
+                    Width =840
+                    Height =360
+                    TabIndex =33
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="TT"
+                    ControlSource ="TT"
+                    GUID = Begin
+                        0x27ee35cd451d8d44b826b3dd92d8feec
+                    End
+                    GroupTable =1
+
+                    LayoutCachedLeft =29760
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =30600
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =33
+                    ColumnEnd =33
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+            End
+        End
+        Begin PageFooter
+            Height =359
+            Name ="SezionePièDiPaginaPagina"
+            GUID = Begin
+                0x76510ba86d0b1c4e93648d498d4d5a3f
+            End
+            AutoHeight =1
+            Begin
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3787
+                    Width =3600
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Testo2"
+                    ControlSource ="=\"Pagina \" & [Page] & \" di \" & [Pages]"
+                    GUID = Begin
+                        0xa06557583ad2a94bbf6e865cff3936aa
+                    End
+
+                    LayoutCachedLeft =3787
+                    LayoutCachedWidth =7387
+                    LayoutCachedHeight =359
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            CanShrink = NotDefault
+            Height =510
+            Name ="PièDiPaginaReport"
+            GUID = Begin
+                0x8f246d2ec4b3334ab26ef9da42bad901
+            End
+            AutoHeight =1
+            Begin
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =60
+                    Top =48
+                    Width =840
+                    Height =312
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="AccessTotalsISIN"
+                    ControlSource ="=Count(*)"
+                    ControlTipText ="Conteggio record"
+                    GUID = Begin
+                        0x893ecea79f54a049a730a5b2eedf462d
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    GridlineStyleTop =1
+                    GridlineWidthTop =2
+
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =900
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =960
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota71"
+                    GUID = Begin
+                        0x9bb407a45e3f854480f24da15600eac9
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =960
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =1800
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =1860
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota72"
+                    GUID = Begin
+                        0xa985ebe6bf89454ab45f3ee45c026a2a
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =1860
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =2700
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =2760
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota73"
+                    GUID = Begin
+                        0x6f25e2c731ec554cae0b54f6f69db6e1
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =2760
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =3600
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =3660
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota74"
+                    GUID = Begin
+                        0xda2573b1b905744ba74fd59cdfc0151a
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =3660
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =4500
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =4560
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota75"
+                    GUID = Begin
+                        0xc22940838f75134eba7e011697559e31
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =4560
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =5400
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =5460
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota76"
+                    GUID = Begin
+                        0x90d24ff020045545ba6baac03d17b147
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =5460
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =6300
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =6360
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota77"
+                    GUID = Begin
+                        0x4f5f147faf6b73488384aa535813edf2
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =6360
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =7200
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =7260
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota78"
+                    GUID = Begin
+                        0x12251275dca627499a5bc1240cb971a6
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =7260
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =8100
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =8
+                    ColumnEnd =8
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =8160
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota79"
+                    GUID = Begin
+                        0x3b26144f349033449206af7f782114ab
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =8160
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =9000
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =9
+                    ColumnEnd =9
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =9060
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota80"
+                    GUID = Begin
+                        0xc55eba94b1807c4996145f15c49b8660
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =9060
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =9900
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =10
+                    ColumnEnd =10
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =9960
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota81"
+                    GUID = Begin
+                        0xfaac3c86f556f14b94772a1c7e85bd40
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =9960
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =10800
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =11
+                    ColumnEnd =11
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =10860
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota82"
+                    GUID = Begin
+                        0x548b4c75af5e7d419a3cd6ca22f15d46
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =10860
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =11700
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =12
+                    ColumnEnd =12
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =11760
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota83"
+                    GUID = Begin
+                        0x67996082151ef140b156464f42a8be7c
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =11760
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =12600
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =13
+                    ColumnEnd =13
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =12660
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota84"
+                    GUID = Begin
+                        0x8521390725675e43a32eb1eef48bd90d
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =12660
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =13500
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =14
+                    ColumnEnd =14
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =13560
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota85"
+                    GUID = Begin
+                        0x321b1b7005181848bb701821cbd82c99
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =13560
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =14400
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =15
+                    ColumnEnd =15
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =14460
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota86"
+                    GUID = Begin
+                        0x54ac84b9664afe47aafeb543a592d63f
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =14460
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =15300
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =16
+                    ColumnEnd =16
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =15360
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota87"
+                    GUID = Begin
+                        0x6302ce807138314dac702d3f1365e2f0
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =15360
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =16200
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =17
+                    ColumnEnd =17
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =16260
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota88"
+                    GUID = Begin
+                        0x4467c29d5c41be479b8acda69777ac03
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =16260
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =17100
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =18
+                    ColumnEnd =18
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =17160
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota89"
+                    GUID = Begin
+                        0xc127c709f364f844bcbc82f9d1341786
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =17160
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =18000
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =19
+                    ColumnEnd =19
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =18060
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota90"
+                    GUID = Begin
+                        0xe8a12b421e5de54d8dea1639cc2a29fe
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =18060
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =18900
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =20
+                    ColumnEnd =20
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =18960
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota91"
+                    GUID = Begin
+                        0xa71237a3a6e3d144a4ea718a38095e50
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =18960
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =19800
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =21
+                    ColumnEnd =21
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =19860
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota92"
+                    GUID = Begin
+                        0x0aaeda50f47cbb4d92077e1b6d852828
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =19860
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =20700
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =22
+                    ColumnEnd =22
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =20760
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota93"
+                    GUID = Begin
+                        0x5f18b86b918bab49a87e4ef3e1ca7fd1
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =20760
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =21600
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =23
+                    ColumnEnd =23
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =21660
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota94"
+                    GUID = Begin
+                        0x86a8c1345c297542b4dd36e6af452a14
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =21660
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =22500
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =24
+                    ColumnEnd =24
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =22560
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota95"
+                    GUID = Begin
+                        0xe1f43b9a6900e74ca299303e4bdecf1f
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =22560
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =23400
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =25
+                    ColumnEnd =25
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =23460
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota96"
+                    GUID = Begin
+                        0x5e879c0498da514cba69512e9d1d35c4
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =23460
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =24300
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =26
+                    ColumnEnd =26
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =24360
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota97"
+                    GUID = Begin
+                        0xe081d72a68183a4d9247c079eb672ecb
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =24360
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =25200
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =27
+                    ColumnEnd =27
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =25260
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota98"
+                    GUID = Begin
+                        0xd5ed515a8ba5004bb2f04b514c11a1b5
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =25260
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =26100
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =28
+                    ColumnEnd =28
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =26160
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota99"
+                    GUID = Begin
+                        0x8fa74e51a30b7544bb6f206b175f296c
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =26160
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =27000
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =29
+                    ColumnEnd =29
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =27060
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota100"
+                    GUID = Begin
+                        0x3605a48df71b5c409b9bf823bfe17d76
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =27060
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =27900
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =30
+                    ColumnEnd =30
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =27960
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota101"
+                    GUID = Begin
+                        0x8d1901e89931864c970a94204b166f2d
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =27960
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =28800
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =31
+                    ColumnEnd =31
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =28860
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota102"
+                    GUID = Begin
+                        0x3d772f07b3c067428ffc51da316c8441
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =28860
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =29700
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =32
+                    ColumnEnd =32
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin EmptyCell
+                    Left =29760
+                    Top =48
+                    Width =840
+                    Height =312
+                    Name ="CellaVuota103"
+                    GUID = Begin
+                        0xa644b58c87db31458f4369dab7fe6439
+                    End
+                    GroupTable =1
+                    BottomPadding =150
+                    LayoutCachedLeft =29760
+                    LayoutCachedTop =48
+                    LayoutCachedWidth =30600
+                    LayoutCachedHeight =360
+                    RowStart =2
+                    RowEnd =2
+                    ColumnStart =33
+                    ColumnEnd =33
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+            End
+        End
+    End
+End

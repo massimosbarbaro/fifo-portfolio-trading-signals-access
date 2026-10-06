@@ -1,0 +1,259 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1653309202
+Begin Form
+    AllowFilters = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    RecordLocks =1
+    TabularCharSet =162
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =12075
+    DatasheetFontHeight =11
+    ItemSuffix =6
+    Left =150
+    Top =75
+    Right =13410
+    Bottom =7545
+    TimerInterval =10000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x2dfdd4d77836e540
+    End
+    GUID = Begin
+        0x74cc429f4b7c4d4cbe37b3143b9db0aa
+    End
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    OnTimer ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            FontName ="Calibri"
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12632256
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin FormHeader
+            Height =1134
+            BackColor =-2147483603
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0xd8885bb6e7610342afe3c3a94f8b028f
+            End
+            AutoHeight =1
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5499
+                    Top =340
+                    Width =884
+                    Height =569
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =8998176
+                    Name ="Auto_Title0"
+                    Caption ="Alert"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xde12fced3668f4489245b4d3c8a41661
+                    End
+                    GridlineColor =-2147483616
+                    LayoutCachedLeft =5499
+                    LayoutCachedTop =340
+                    LayoutCachedWidth =6383
+                    LayoutCachedHeight =909
+                End
+            End
+        End
+        Begin Section
+            Height =6349
+            Name ="Corpo"
+            GUID = Begin
+                0x6e2b92e2c9c6d747859ee6e3e24cdf00
+            End
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextFontCharSet =162
+                    IMESentenceMode =3
+                    Left =169
+                    Top =680
+                    Width =11748
+                    Height =5445
+                    FontSize =9
+                    Name ="txtMsgMail"
+                    GUID = Begin
+                        0xa421ac28ea623a45b7e60988f471d3da
+                    End
+
+                    LayoutCachedLeft =169
+                    LayoutCachedTop =680
+                    LayoutCachedWidth =11917
+                    LayoutCachedHeight =6125
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2777
+                    Top =170
+                    Width =3288
+                    Height =315
+                    TabIndex =1
+                    Name ="txtDate"
+                    GUID = Begin
+                        0xd9b042693eabba44a5bf7d3432a6c49b
+                    End
+
+                    LayoutCachedLeft =2777
+                    LayoutCachedTop =170
+                    LayoutCachedWidth =6065
+                    LayoutCachedHeight =485
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1984
+                            Top =170
+                            Width =750
+                            Height =315
+                            Name ="Etichetta5"
+                            Caption ="Date:"
+                            GUID = Begin
+                                0x2ea75237411cc34c9d2a2975b4d31fb1
+                            End
+                            LayoutCachedLeft =1984
+                            LayoutCachedTop =170
+                            LayoutCachedWidth =2734
+                            LayoutCachedHeight =485
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x9749dbacdf6b404ca906bfeb728e41e2
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Form_Load()
+'MessStrategy
+'Pulisco le variabili
+sInvioOld = ""
+sInvio = ""
+txtDate = Now()
+
+ Me.TimerInterval = 10000
+' txtMsgMail = sMsgT
+
+End Sub
+
+Private Sub Form_Timer()
+Dim sDataMsg As String
+
+'Pulisco le variabili
+
+
+
+
+MessStrategy
+
+' Me.TimerInterval = 10000
+txtDate = Now()
+    If Not sMsgT = "" Then
+        sInvio = sMsgT
+        
+        If sInvio = sInvioOld Then
+'            txtMsgMail = sInvioOld
+            
+        Else
+            sDataMsg = Now() & vbCrLf & vbCrLf & sInvio
+            txtMsgMail = sDataMsg
+            sInvioOld = sInvio
+            'InviaMail
+            SenMail
+                    
+        End If
+      
+        
+    End If
+ 
+
+
+'MsgBox "Ciao"
+End Sub

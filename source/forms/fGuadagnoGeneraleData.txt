@@ -1,0 +1,1195 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =1571197277
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularCharSet =204
+    PictureSizeMode =1
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =13731
+    DatasheetFontHeight =11
+    ItemSuffix =25
+    Top =720
+    Right =13935
+    Bottom =6615
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xa72624931113e540
+    End
+    GUID = Begin
+        0xffbaa9d051fc1b419fab4a89dd680249
+    End
+    RecordSource ="GuadagnoGeneraleData"
+    OnCurrent ="[Event Procedure]"
+    AfterUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    OnLoad ="[Event Procedure]"
+    AllowDatasheetView =0
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    PictureSizeMode =4
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =204
+            FontSize =11
+            BorderColor =-2147483609
+            ForeColor =8998176
+            FontName ="Calibri"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BackColor =15592941
+            BorderColor =-2147483609
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =-2147483609
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BackColor =15592941
+            BorderColor =-2147483609
+        End
+        Begin CommandButton
+            TextFontCharSet =204
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =16771286
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =-2147483609
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =-2147483609
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =-2147483609
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =-2147483609
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =-2147483609
+        End
+        Begin ToggleButton
+            TextFontCharSet =204
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =16771286
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            TextFontCharSet =204
+            Width =5103
+            Height =3402
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin FormHeader
+            Height =1081
+            BackColor =16768194
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0x921376bbbc5e7b47870a49820bf2b3d4
+            End
+            AutoHeight =1
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    TextAlign =1
+                    Left =1288
+                    Top =60
+                    Width =3404
+                    Height =569
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Auto_Title0"
+                    Caption ="Realized profit/loss"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xa5fc4877ab2cbe4a8ba494bc8737df57
+                    End
+                    LayoutCachedLeft =1288
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =4692
+                    LayoutCachedHeight =629
+                End
+                Begin Label
+                    OverlapFlags =119
+                    TextFontCharSet =0
+                    Left =348
+                    Top =672
+                    Width =1812
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta1"
+                    Caption ="ISIN"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x14fd87ddccbeaf4e90fefcaf955e2940
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =348
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =2160
+                    LayoutCachedHeight =1056
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    Left =2232
+                    Top =672
+                    Width =1764
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta3"
+                    Caption ="SYM"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x49dc5ff4d9c7c64788dbe6754bb62f30
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =2232
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =3996
+                    LayoutCachedHeight =1056
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    Left =4068
+                    Top =672
+                    Width =672
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta5"
+                    Caption ="Qty"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x887caa29eeab334bad215e89493a63cd
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =4068
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =4740
+                    LayoutCachedHeight =1056
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    Left =4812
+                    Top =672
+                    Width =1440
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta7"
+                    Caption ="Buy"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x823b17b1b869bc429485569e1bcf6485
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =4812
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =6252
+                    LayoutCachedHeight =1056
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    Left =6324
+                    Top =672
+                    Width =1452
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta9"
+                    Caption ="Sell"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0xde83448613086d49a580f4cb0155f04f
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =6324
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =7776
+                    LayoutCachedHeight =1056
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    Left =8484
+                    Top =672
+                    Width =1440
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta11"
+                    Caption ="Total"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x5286c27e6e185444863df4840deb7dcb
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =8484
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =9924
+                    LayoutCachedHeight =1056
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    Left =9996
+                    Top =672
+                    Width =1440
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta13"
+                    Caption ="Total €"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x94b5768373fd624f9a540f76b5be2e33
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =9996
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =11436
+                    LayoutCachedHeight =1056
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontCharSet =0
+                    Left =7848
+                    Top =672
+                    Width =564
+                    Height =384
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =5054976
+                    Name ="Etichetta16"
+                    Caption ="Currency"
+                    FontName ="Segoe UI"
+                    GUID = Begin
+                        0x2707278a4ea48e4ba5fb07f24db3e201
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    LayoutCachedLeft =7848
+                    LayoutCachedTop =672
+                    LayoutCachedWidth =8412
+                    LayoutCachedHeight =1056
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =11790
+                    Top =690
+                    Width =765
+                    Height =315
+                    Name ="Etichetta19"
+                    Caption ="Change"
+                    GUID = Begin
+                        0xa78bcba114a4b346b397e2a47c478de5
+                    End
+                    LayoutCachedLeft =11790
+                    LayoutCachedTop =690
+                    LayoutCachedWidth =12555
+                    LayoutCachedHeight =1005
+                End
+            End
+        End
+        Begin Section
+            Height =453
+            Name ="Corpo"
+            GUID = Begin
+                0x2ac6e5e647ede84dbb5bcb895da30d47
+            End
+            AlternateBackColor =-2147483609
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =348
+                    Top =36
+                    Width =1812
+                    Height =360
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="ISIN"
+                    ControlSource ="ISIN"
+                    OnDblClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x52175d0aac08624d939f5d9f032baf59
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =348
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =2160
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2232
+                    Top =36
+                    Width =1764
+                    Height =360
+                    ColumnWidth =1770
+                    TabIndex =1
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="SYM"
+                    ControlSource ="SYM"
+                    GUID = Begin
+                        0xbf3d99b1f1513443b4322add7fa45c97
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =2232
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =3996
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =1
+                    ColumnEnd =1
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4068
+                    Top =36
+                    Width =672
+                    Height =360
+                    TabIndex =2
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Qta"
+                    ControlSource ="Qta"
+                    GUID = Begin
+                        0x3c750837707f4746b0ec9d360de0e726
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =4068
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =4740
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =2
+                    ColumnEnd =2
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4812
+                    Top =36
+                    Width =1440
+                    Height =360
+                    ColumnWidth =1815
+                    TabIndex =3
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Real NA"
+                    ControlSource ="Real NA"
+                    Format ="Standard"
+                    EventProcPrefix ="Real_NA"
+                    GUID = Begin
+                        0x5947868b3a70ac48b0353b039accd73f
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =4812
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =6252
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =3
+                    ColumnEnd =3
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6324
+                    Top =36
+                    Width =1452
+                    Height =360
+                    ColumnWidth =1815
+                    TabIndex =4
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Ricavo"
+                    ControlSource ="Ricavo"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xf8a0b76a0ce7314d90d2c2bc220777af
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =6324
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =7776
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =4
+                    ColumnEnd =4
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8484
+                    Top =36
+                    Width =1440
+                    Height =360
+                    ColumnWidth =1815
+                    TabIndex =6
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Total"
+                    ControlSource ="Total"
+                    Format ="Standard"
+                    GUID = Begin
+                        0x7f0c1ce54816e940a626d6c1b77655c6
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =8484
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =9924
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =6
+                    ColumnEnd =6
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9996
+                    Top =36
+                    Width =1440
+                    Height =360
+                    ColumnWidth =1815
+                    TabIndex =7
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="TotalE"
+                    ControlSource ="TotalE"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GUID = Begin
+                        0xb7ea9cae007f8241acf720002bfa92c8
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =9996
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =11436
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =7
+                    ColumnEnd =7
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =7848
+                    Top =36
+                    Width =564
+                    Height =360
+                    TabIndex =5
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Currency"
+                    ControlSource ="Currency"
+                    GUID = Begin
+                        0xed41cf055292f945b07fccf84a668e79
+                    End
+                    GroupTable =1
+                    RightPadding =36
+                    BottomPadding =36
+
+                    LayoutCachedLeft =7848
+                    LayoutCachedTop =36
+                    LayoutCachedWidth =8412
+                    LayoutCachedHeight =396
+                    RowStart =1
+                    RowEnd =1
+                    ColumnStart =5
+                    ColumnEnd =5
+                    LayoutGroup =1
+                    GroupTable =1
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =11622
+                    Top =56
+                    Width =1086
+                    Height =345
+                    TabIndex =8
+                    Name ="Valore"
+                    ControlSource ="Valore"
+                    Format ="General Number"
+                    GUID = Begin
+                        0x96156758a1a4a8469802a67c47c68d18
+                    End
+
+                    LayoutCachedLeft =11622
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =12708
+                    LayoutCachedHeight =401
+                End
+            End
+        End
+        Begin FormFooter
+            Height =1644
+            BackColor =15788753
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x429a6b380dfb8a4e8d77f036d59fff30
+            End
+            Begin
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =56
+                    Top =453
+                    Width =13271
+                    Height =514
+                    BackColor =5167783
+                    Name ="Casella24"
+                    GUID = Begin
+                        0x275c60633be4304799bc7774a70272f6
+                    End
+                    LayoutCachedLeft =56
+                    LayoutCachedTop =453
+                    LayoutCachedWidth =13327
+                    LayoutCachedHeight =967
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =11225
+                    Top =510
+                    Width =1974
+                    Height =330
+                    FontSize =14
+                    FontWeight =700
+                    BorderColor =12428870
+                    Name ="Testo14"
+                    ControlSource ="=Sum([TotalE])"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GUID = Begin
+                        0x308cef5e71a5a64b8c928e8d26bcc5f0
+                    End
+
+                    LayoutCachedLeft =11225
+                    LayoutCachedTop =510
+                    LayoutCachedWidth =13199
+                    LayoutCachedHeight =840
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3061
+                    Top =56
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =1
+                    BorderColor =12428870
+                    Name ="txtDol"
+                    Format ="#,###.##"
+                    GUID = Begin
+                        0xf7d2bbbfeb3965448301deb5406a9dc3
+                    End
+
+                    LayoutCachedLeft =3061
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =371
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5094
+                    Top =56
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =2
+                    BorderColor =12428870
+                    Name ="txtEur"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xcb80b63ba960e644b8e6e71d9e71d276
+                    End
+
+                    LayoutCachedLeft =5094
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =6959
+                    LayoutCachedHeight =371
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =7127
+                    Top =56
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =3
+                    BorderColor =12428870
+                    Name ="txtGb"
+                    Format ="Fixed"
+                    GUID = Begin
+                        0x8d0d6ed5e5c21c4e90e1df0edd468226
+                    End
+
+                    LayoutCachedLeft =7127
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =8992
+                    LayoutCachedHeight =371
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9160
+                    Top =56
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =4
+                    BorderColor =12428870
+                    Name ="txtYen"
+                    Format ="Standard"
+                    GUID = Begin
+                        0x1278a08d7f99c64698f54db3f0b8008f
+                    End
+
+                    LayoutCachedLeft =9160
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =11025
+                    LayoutCachedHeight =371
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13155
+                    Top =1020
+                    Width =576
+                    Height =576
+                    TabIndex =5
+                    Name ="cmdEsci"
+                    Caption ="Comando17"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Chiudi maschera"
+                    GUID = Begin
+                        0x3be06515e6319744aa99c88fcace02da
+                    End
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Close"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                    End
+
+                    LayoutCachedLeft =13155
+                    LayoutCachedTop =1020
+                    LayoutCachedWidth =13731
+                    LayoutCachedHeight =1596
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =3061
+                    Top =506
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =6
+                    BorderColor =12428870
+                    Name ="txtDolTE"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GUID = Begin
+                        0x7d6e33ed8bbc9f45b819cbbaf66af596
+                    End
+
+                    LayoutCachedLeft =3061
+                    LayoutCachedTop =506
+                    LayoutCachedWidth =4926
+                    LayoutCachedHeight =821
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5094
+                    Top =506
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =7
+                    BorderColor =12428870
+                    Name ="txtEurTE"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GUID = Begin
+                        0xde8852d82c77284389bf475091df9afa
+                    End
+
+                    LayoutCachedLeft =5094
+                    LayoutCachedTop =506
+                    LayoutCachedWidth =6959
+                    LayoutCachedHeight =821
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =7127
+                    Top =506
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =8
+                    BorderColor =12428870
+                    Name ="txtGbTE"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GUID = Begin
+                        0x12ed8dc19f542d4a96149eec28c2dd27
+                    End
+
+                    LayoutCachedLeft =7127
+                    LayoutCachedTop =506
+                    LayoutCachedWidth =8992
+                    LayoutCachedHeight =821
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =9160
+                    Top =506
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =9
+                    BorderColor =12428870
+                    Name ="txtYenTE"
+                    Format ="€ #,##0.00;-€ #,##0.00"
+                    GUID = Begin
+                        0xdd16569ceb2a74498bbc0727652aa9d6
+                    End
+
+                    LayoutCachedLeft =9160
+                    LayoutCachedTop =506
+                    LayoutCachedWidth =11025
+                    LayoutCachedHeight =821
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =120
+                    Top =60
+                    Width =2625
+                    Height =345
+                    FontSize =12
+                    FontWeight =700
+                    ForeColor =-2147483617
+                    Name ="Etichetta60"
+                    Caption ="Total realized profit/loss"
+                    GUID = Begin
+                        0x869efefcbd77414cab675e259907e7c9
+                    End
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =2745
+                    LayoutCachedHeight =405
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =120
+                    Top =510
+                    Width =2805
+                    Height =345
+                    FontSize =12
+                    FontWeight =700
+                    ForeColor =-2147483617
+                    Name ="Etichetta70"
+                    Caption ="Total realized profit/loss €"
+                    GUID = Begin
+                        0x3b8b273c6e444448b7f36374705ea30b
+                    End
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =510
+                    LayoutCachedWidth =2925
+                    LayoutCachedHeight =855
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Dim bcontrollo As Boolean
+
+Private Sub Form_AfterUpdate()
+'Cambio
+'CalcoloGuaData
+'Controllo
+
+
+End Sub
+
+Private Sub Form_Current()
+
+Cambio
+CalcoloGuaData
+Controllo
+If bcontrollo = True Then
+    bcontrollo = False
+    Me.Requery
+End If
+
+End Sub
+
+Private Sub Form_Load()
+ Dim f As Form
+
+ Set f = Forms(Me.Name)
+    If Not IsNull(f.OpenArgs) Then
+        sOpen = f.OpenArgs
+      
+        
+    Else
+       sOpen = ""
+    End If
+
+bcontrollo = True
+
+Cambio
+CalcoloGuaData
+Controllo
+End Sub
+
+
+Private Sub Controllo()
+'pulisco le variabili
+    txtDol = 0
+    txtEur = 0
+    txtGb = 0
+    txtYen = 0
+
+
+    txtDolTE = 0
+    txtEurTE = 0
+    txtGbTE = 0
+    txtYenTE = 0
+
+
+'Inserisco le variabili per la scrittura nella maschera
+  '  txtDol = sDolG
+  '  txtEur = sEurG
+  '  txtGb = sGbG
+  '  txtYen = sYenG
+
+    txtDol = Format$(sDolG, "$ #.##0,#")
+    txtEur = Format$(sEurG, "€ #.##0,#")
+    txtGb = Format$(sGbG, "£ #.##0,#")
+    txtYen = Format$(sYenG, "¥ #.##0,#")
+        
+    txtDolTE = sDolG / sDolT
+    txtEurTE = sEurG / 1
+    txtGbTE = sGbG / sGbT
+    txtYenTE = sYenG / sYenT
+   
+ '   txtTotal = txtDolTE + txtEurTE + txtGbTE + txtYenTE
+'    txtTotalLiveE = sTotaleLiveE
+
+
+End Sub
+
+Private Sub ISIN_DblClick(Cancel As Integer)
+    
+    Dim stDocName As String
+    Dim stLinkCriteria As String, sOpen As String
+
+    stDocName = "MFFifoData"
+    
+    'stLinkCriteria = "[ISIN]=" & "'" & Me![ISIN] & "'"
+    
+    sOpen = Me.ISIN
+    
+    DoCmd.OpenForm stDocName, , , , , , sOpen
+
+End Sub

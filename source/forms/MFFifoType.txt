@@ -1,0 +1,857 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =-1155655842
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =2
+    TabularFamily =48
+    BorderStyle =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    Cycle =1
+    GridY =10
+    Width =12869
+    DatasheetFontHeight =10
+    ItemSuffix =51
+    Left =1380
+    Right =14505
+    Bottom =9150
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x391dc78a5a04e540
+    End
+    RecordSource ="1ISIN"
+    Caption ="Fifo Stock Report"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DatasheetGridlinesColor12 =12632256
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+            BorderLineStyle =0
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+            AsianLineBreak =255
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =9163
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x39200ffe3e0f734ab97993f98f9532d5
+            End
+            Begin
+                Begin CommandButton
+                    FontItalic = NotDefault
+                    OverlapFlags =93
+                    TextFontFamily =66
+                    Left =10041
+                    Top =6296
+                    Width =2466
+                    Height =501
+                    FontSize =11
+                    FontWeight =700
+                    ForeColor =128
+                    Name ="Command0"
+                    Caption ="Stock Report"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Comic Sans MS"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Run Query"
+                    GUID = Begin
+                        0x7317a926ca8ed24a96604486e1cb1303
+                    End
+
+                    LayoutCachedLeft =10041
+                    LayoutCachedTop =6296
+                    LayoutCachedWidth =12507
+                    LayoutCachedHeight =6797
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =10037
+                    Top =6984
+                    Width =2481
+                    Height =501
+                    TabIndex =1
+                    Name ="Command1"
+                    Caption ="Command1"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Close Form"
+                    GUID = Begin
+                        0x866afd100a9f934ba3ce2460218f716f
+                    End
+
+                    LayoutCachedLeft =10037
+                    LayoutCachedTop =6984
+                    LayoutCachedWidth =12518
+                    LayoutCachedHeight =7485
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+                Begin ComboBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =10205
+                    Top =2099
+                    Width =2381
+                    Height =340
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    BackColor =0
+                    ForeColor =65535
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0xefe640ef352b4a4ea054a11bbc438222
+                    End
+                    Name ="Productid"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [1Region].Region, [1Region].Option FROM 1Region;"
+                    ColumnWidths ="1134;1441"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="=\"All\""
+
+                    LayoutCachedLeft =10205
+                    LayoutCachedTop =2099
+                    LayoutCachedWidth =12586
+                    LayoutCachedHeight =2439
+                End
+                Begin Subform
+                    OverlapFlags =87
+                    Left =127
+                    Top =1363
+                    Width =9660
+                    Height =1935
+                    TabIndex =3
+                    Name ="PurchaseDetail"
+                    SourceObject ="Form.MRPurchaseDetail"
+                    GUID = Begin
+                        0xfeb61e05abc4e94ea243cd9b496992fe
+                    End
+
+                    LayoutCachedLeft =127
+                    LayoutCachedTop =1363
+                    LayoutCachedWidth =9787
+                    LayoutCachedHeight =3298
+                End
+                Begin Subform
+                    OverlapFlags =247
+                    Left =120
+                    Top =3682
+                    Width =9660
+                    Height =1860
+                    TabIndex =4
+                    Name ="SaleDetail"
+                    SourceObject ="Form.MRSaleDetail"
+                    GUID = Begin
+                        0x1bb17184b5081641a39ee4b85830f793
+                    End
+
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =3682
+                    LayoutCachedWidth =9780
+                    LayoutCachedHeight =5542
+                End
+                Begin Subform
+                    OverlapFlags =87
+                    Left =120
+                    Top =5949
+                    Width =9660
+                    Height =1860
+                    TabIndex =5
+                    Name ="FifoStock"
+                    SourceObject ="Form.MRFifoStock"
+                    GUID = Begin
+                        0x51edb27277bd3b47923b65a7e322ebbe
+                    End
+
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =5949
+                    LayoutCachedWidth =9780
+                    LayoutCachedHeight =7809
+                End
+                Begin Label
+                    OverlapFlags =95
+                    Left =10205
+                    Top =1754
+                    Width =2385
+                    Height =350
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label12"
+                    Caption ="Select Region"
+                    GUID = Begin
+                        0x84346fd313b7404d8def99e22e56c271
+                    End
+                    LayoutCachedLeft =10205
+                    LayoutCachedTop =1754
+                    LayoutCachedWidth =12590
+                    LayoutCachedHeight =2104
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =120
+                    Top =1080
+                    Width =1110
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label13"
+                    Caption ="Purchases"
+                    GUID = Begin
+                        0x8cda80c584d2c1408c5132fd6b5ca547
+                    End
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =1080
+                    LayoutCachedWidth =1230
+                    LayoutCachedHeight =1365
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =120
+                    Top =3397
+                    Width =615
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label14"
+                    Caption ="Sales"
+                    GUID = Begin
+                        0xf2f60a8c47596f46b233fdc11778b93d
+                    End
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =3397
+                    LayoutCachedWidth =735
+                    LayoutCachedHeight =3682
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =120
+                    Top =5670
+                    Width =4410
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label15"
+                    Caption ="Available Stock By First in First Out Method"
+                    GUID = Begin
+                        0x078097833bb0ac498397c6f5289c0eb6
+                    End
+                    LayoutCachedLeft =120
+                    LayoutCachedTop =5670
+                    LayoutCachedWidth =4530
+                    LayoutCachedHeight =5955
+                End
+                Begin Rectangle
+                    OverlapFlags =247
+                    Left =10091
+                    Top =1700
+                    Width =2608
+                    Height =869
+                    Name ="Box16"
+                    GUID = Begin
+                        0x7af8fba640fbe649bfac8bcbbe6c52c2
+                    End
+                    LayoutCachedLeft =10091
+                    LayoutCachedTop =1700
+                    LayoutCachedWidth =12699
+                    LayoutCachedHeight =2569
+                End
+                Begin Rectangle
+                    OverlapFlags =215
+                    Left =9977
+                    Top =6236
+                    Width =2593
+                    Height =1289
+                    Name ="Box17"
+                    GUID = Begin
+                        0xd15175a370918142af21166263221a24
+                    End
+                    LayoutCachedLeft =9977
+                    LayoutCachedTop =6236
+                    LayoutCachedWidth =12570
+                    LayoutCachedHeight =7525
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =5835
+                    Top =3345
+                    Width =1228
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =6
+                    ForeColor =128
+                    Name ="Text18"
+                    ControlSource ="=[PurchaseDetail].[Form]![TQty]"
+                    Format ="Standard"
+                    GUID = Begin
+                        0x3ab403ebbc762f499aa6565d4c7b8d5d
+                    End
+
+                    LayoutCachedLeft =5835
+                    LayoutCachedTop =3345
+                    LayoutCachedWidth =7063
+                    LayoutCachedHeight =3630
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =4590
+                            Top =3345
+                            Width =1245
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Label19"
+                            Caption ="Total Qty P."
+                            GUID = Begin
+                                0x08f837e1dea49d4bbe7feb0df223d2d1
+                            End
+                            LayoutCachedLeft =4590
+                            LayoutCachedTop =3345
+                            LayoutCachedWidth =5835
+                            LayoutCachedHeight =3630
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =5850
+                    Top =5555
+                    Width =1228
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =7
+                    ForeColor =128
+                    Name ="Text20"
+                    ControlSource ="=IIf(IsError([SaleDetail].[Form]![TQty]),0,[SaleDetail].[Form]![TQty])"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xcafb50f7a7d6e2478e2f1de7d79d1180
+                    End
+
+                    LayoutCachedLeft =5850
+                    LayoutCachedTop =5555
+                    LayoutCachedWidth =7078
+                    LayoutCachedHeight =5840
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            Left =4365
+                            Top =5555
+                            Width =1485
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Label21"
+                            Caption ="Total Qty S."
+                            GUID = Begin
+                                0xfa6fea5d16f4bd489a93dbaac728dc28
+                            End
+                            LayoutCachedLeft =4365
+                            LayoutCachedTop =5555
+                            LayoutCachedWidth =5850
+                            LayoutCachedHeight =5840
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =4135
+                    Top =8089
+                    Width =1228
+                    Height =340
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =8
+                    ForeColor =128
+                    Name ="Text22"
+                    ControlSource ="=IIf(IsError([fifoStock].[Form]![TAvb]),[text18]-[text20],[fifoStock].[Form]![TA"
+                        "vb])"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xffae1f027d31cc41a18bfa3c45b353a3
+                    End
+
+                    LayoutCachedLeft =4135
+                    LayoutCachedTop =8089
+                    LayoutCachedWidth =5363
+                    LayoutCachedHeight =8429
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =3795
+                            Top =7815
+                            Width =1980
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Label23"
+                            Caption ="Total Qty Available"
+                            GUID = Begin
+                                0xd6a31dc952122944bc5b2e5a53642779
+                            End
+                            LayoutCachedLeft =3795
+                            LayoutCachedTop =7815
+                            LayoutCachedWidth =5775
+                            LayoutCachedHeight =8100
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    Left =1365
+                    Width =11385
+                    Height =1230
+                    TabIndex =9
+                    Name ="MISIN"
+                    SourceObject ="Form.MRISIN"
+                    GUID = Begin
+                        0x552c9a40dc9bc647b5b90907e88a3d2c
+                    End
+
+                    LayoutCachedLeft =1365
+                    LayoutCachedWidth =12750
+                    LayoutCachedHeight =1230
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =6290
+                    Top =8089
+                    Width =1228
+                    Height =340
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =10
+                    ForeColor =128
+                    Name ="TValue"
+                    ControlSource ="=IIf(IsError([fifoStock].[Form]![TValue]),0,[fifoStock].[Form]![TValue])"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xdfa19eb20c34f948ad963e8ffc5f9f8d
+                    End
+
+                    LayoutCachedLeft =6290
+                    LayoutCachedTop =8089
+                    LayoutCachedWidth =7518
+                    LayoutCachedHeight =8429
+                    Begin
+                        Begin Label
+                            OverlapFlags =95
+                            Left =5779
+                            Top =7815
+                            Width =2100
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Etichetta40"
+                            Caption ="Total Value Available"
+                            GUID = Begin
+                                0x93a848400b2ffd41aa562faf35c96a94
+                            End
+                            LayoutCachedLeft =5779
+                            LayoutCachedTop =7815
+                            LayoutCachedWidth =7879
+                            LayoutCachedHeight =8100
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =5850
+                    Top =3748
+                    Width =1228
+                    Height =340
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =11
+                    ForeColor =128
+                    Name ="Testo41"
+                    ControlSource ="=[PurchaseDetail].[Form]![TQty]"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xf8b90270bbfa4a4aad3c0c7593359107
+                    End
+
+                    LayoutCachedLeft =5850
+                    LayoutCachedTop =3748
+                    LayoutCachedWidth =7078
+                    LayoutCachedHeight =4088
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =3685
+                            Top =3754
+                            Width =2100
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Etichetta42"
+                            Caption ="Total Qty Purchased"
+                            GUID = Begin
+                                0x836d14cb2cce7d48b558af682f2e2508
+                            End
+                            LayoutCachedLeft =3685
+                            LayoutCachedTop =3754
+                            LayoutCachedWidth =5785
+                            LayoutCachedHeight =4039
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =5850
+                    Top =4208
+                    Width =1228
+                    Height =340
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =12
+                    ForeColor =128
+                    Name ="Testo43"
+                    ControlSource ="=[PurchaseDetail].[Form]![TQty]"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xea1076ddef561846b319764024568d13
+                    End
+
+                    LayoutCachedLeft =5850
+                    LayoutCachedTop =4208
+                    LayoutCachedWidth =7078
+                    LayoutCachedHeight =4548
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =3685
+                            Top =4214
+                            Width =2100
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Etichetta44"
+                            Caption ="Total Qty Purchased"
+                            GUID = Begin
+                                0xdf712fccd5a64e4ea48cf057f6464635
+                            End
+                            LayoutCachedLeft =3685
+                            LayoutCachedTop =4214
+                            LayoutCachedWidth =5785
+                            LayoutCachedHeight =4499
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =8508
+                    Top =3345
+                    Width =1228
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =13
+                    ForeColor =128
+                    Name ="TNetP"
+                    ControlSource ="=[PurchaseDetail].[Form]![TNetP]"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xb40b51df4e41a64795c37da28c684ab3
+                    End
+
+                    LayoutCachedLeft =8508
+                    LayoutCachedTop =3345
+                    LayoutCachedWidth =9736
+                    LayoutCachedHeight =3630
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =7143
+                            Top =3345
+                            Width =1365
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Etichetta46"
+                            Caption ="Total Rate P."
+                            GUID = Begin
+                                0x5e248af70fe6d34fbd9c81d6196df0cd
+                            End
+                            LayoutCachedLeft =7143
+                            LayoutCachedTop =3345
+                            LayoutCachedWidth =8508
+                            LayoutCachedHeight =3630
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =8508
+                    Top =5555
+                    Width =1228
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =14
+                    ForeColor =128
+                    Name ="TNetS"
+                    ControlSource ="=IIf(IsError([SaleDetail].[Form]![TNetS]),0,[SaleDetail].[Form]![TNetS])"
+                    Format ="Standard"
+                    GUID = Begin
+                        0x8a9891d6ec376f4e9419c32bc1d9c71a
+                    End
+
+                    LayoutCachedLeft =8508
+                    LayoutCachedTop =5555
+                    LayoutCachedWidth =9736
+                    LayoutCachedHeight =5840
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =7143
+                            Top =5555
+                            Width =1365
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Etichetta48"
+                            Caption ="Total Rate S."
+                            GUID = Begin
+                                0x1a9e359e99e02a4ab2dd234c80e669bb
+                            End
+                            LayoutCachedLeft =7143
+                            LayoutCachedTop =5555
+                            LayoutCachedWidth =8508
+                            LayoutCachedHeight =5840
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =8386
+                    Top =8089
+                    Width =1228
+                    Height =340
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =15
+                    ForeColor =128
+                    Name ="Testo49"
+                    ControlSource ="=IIf(IsError([SaleDetail].[Form]![TNetS]),[TValue],[TValue]-([TNetP]-[TNetS]))"
+                    Format ="Standard"
+                    GUID = Begin
+                        0x6e73632e9a398e439bb801c660a5f83a
+                    End
+
+                    LayoutCachedLeft =8386
+                    LayoutCachedTop =8089
+                    LayoutCachedWidth =9614
+                    LayoutCachedHeight =8429
+                    Begin
+                        Begin Label
+                            OverlapFlags =95
+                            Left =7875
+                            Top =7815
+                            Width =2100
+                            Height =285
+                            FontSize =10
+                            FontWeight =700
+                            ForeColor =128
+                            Name ="Etichetta50"
+                            Caption ="Total Value Available"
+                            GUID = Begin
+                                0x4e8356e3f311114aba062993f972df08
+                            End
+                            LayoutCachedLeft =7875
+                            LayoutCachedTop =7815
+                            LayoutCachedWidth =9975
+                            LayoutCachedHeight =8100
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Command0_Click()
+On Error GoTo Err_Command0_Click
+
+DoCmd.OpenReport "MFifoReportType", acViewPreview
+
+Exit_Command0_Click:
+    Exit Sub
+
+Err_Command0_Click:
+    MsgBox Err.Description
+    Resume Exit_Command0_Click
+    
+End Sub
+Private Sub Command1_Click()
+On Error GoTo Err_Command1_Click
+
+
+    DoCmd.Close
+
+Exit_Command1_Click:
+    Exit Sub
+
+Err_Command1_Click:
+    MsgBox Err.Description
+    Resume Exit_Command1_Click
+    
+End Sub
+Private Sub Form_Open(Cancel As Integer)
+'CalculateFifoStock
+CalculateFifoStockM
+
+
+
+Me.Refresh
+End Sub
+
+Private Sub Productid_AfterUpdate()
+Me.Refresh
+End Sub
+Private Sub ApriISIN_Click()
+On Error GoTo Err_ApriISIN_Click
+
+    Dim stDocName As String
+    Dim stLinkCriteria As String
+
+    stDocName = "MISINModify"
+    DoCmd.OpenForm stDocName, , , stLinkCriteria
+
+Exit_ApriISIN_Click:
+    Exit Sub
+
+Err_ApriISIN_Click:
+    MsgBox Err.Description
+    Resume Exit_ApriISIN_Click
+    
+End Sub

@@ -1,0 +1,802 @@
+Version =21
+VersionRequired =20
+PublishOption =1
+Checksum =-1613759391
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularCharSet =204
+    PictureSizeMode =1
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =13719
+    DatasheetFontHeight =11
+    ItemSuffix =27
+    Top =600
+    Right =13935
+    Bottom =6105
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x225cee899709e540
+    End
+    GUID = Begin
+        0xa3b156919168734bb42180eac09c4b05
+    End
+    RecordSource ="CashRocno"
+    OnCurrent ="[Event Procedure]"
+    AfterUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    OnLoad ="[Event Procedure]"
+    FilterOnLoad =0
+    ShowPageMargins =0
+    DisplayOnSharePointSite =1
+    DatasheetAlternateBackColor =16053492
+    PictureSizeMode =4
+    DatasheetGridlinesColor12 =15062992
+    FitToScreen =1
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =10
+            BorderColor =12428870
+            ForeColor =6631992
+            FontName ="Corbel"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =12428870
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+            BorderColor =12428870
+        End
+        Begin Image
+            BackStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =12428870
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontWeight =400
+            ForeColor =6631992
+            FontName ="Corbel"
+            BorderLineStyle =0
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =12428870
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            BackStyle =1
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =12428870
+        End
+        Begin BoundObjectFrame
+            SizeMode =3
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =12428870
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12428870
+            FontName ="Calibri"
+            AsianLineBreak =1
+        End
+        Begin ListBox
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12428870
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin ComboBox
+            TextFontCharSet =204
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =12428870
+            FontName ="Calibri"
+            AllowValueListEdits =1
+            InheritValueList =1
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =12428870
+        End
+        Begin UnboundObjectFrame
+            BackStyle =0
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =12428870
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =12428870
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontWeight =400
+            ForeColor =6631992
+            FontName ="Corbel"
+            BorderLineStyle =0
+        End
+        Begin Tab
+            TextFontCharSet =204
+            Width =5103
+            Height =3402
+            FontSize =11
+            FontName ="Calibri"
+            BorderLineStyle =0
+        End
+        Begin FormHeader
+            Height =1133
+            BackColor =6631992
+            Name ="IntestazioneMaschera"
+            GUID = Begin
+                0x33906fcaf1b04241953d779251e72c2e
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1288
+                    Top =60
+                    Width =1919
+                    Height =569
+                    FontSize =18
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =16777215
+                    Name ="Auto_Title0"
+                    Caption ="CashRocno"
+                    GUID = Begin
+                        0x3ecb85a5fca1cb4e821861a43cf0282b
+                    End
+                    LayoutCachedLeft =1288
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =3207
+                    LayoutCachedHeight =629
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =690
+                    Width =434
+                    Height =359
+                    FontSize =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =16777215
+                    Name ="Etichetta1"
+                    Caption ="IdC"
+                    GUID = Begin
+                        0x4932884bec002a4ba880313c0e346ae8
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =690
+                    LayoutCachedWidth =494
+                    LayoutCachedHeight =1049
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =690
+                    Top =690
+                    Width =764
+                    Height =359
+                    FontSize =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =16777215
+                    Name ="Etichetta3"
+                    Caption ="Datum"
+                    GUID = Begin
+                        0x6320eb3f9d7412428f2ada0d5c8f67fc
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =690
+                    LayoutCachedTop =690
+                    LayoutCachedWidth =1454
+                    LayoutCachedHeight =1049
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =1920
+                    Top =690
+                    Width =1184
+                    Height =359
+                    FontSize =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =16777215
+                    Name ="Etichetta5"
+                    Caption ="Description"
+                    GUID = Begin
+                        0xd00c1ecf8f1302408f1cdd68471e143c
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =1920
+                    LayoutCachedTop =690
+                    LayoutCachedWidth =3104
+                    LayoutCachedHeight =1049
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =4590
+                    Top =690
+                    Width =494
+                    Height =359
+                    FontSize =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =16777215
+                    Name ="Etichetta7"
+                    Caption ="Kdo"
+                    GUID = Begin
+                        0x48da4ecfd2af0343bc07b6662fbb0757
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =4590
+                    LayoutCachedTop =690
+                    LayoutCachedWidth =5084
+                    LayoutCachedHeight =1049
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =8160
+                    Top =690
+                    Width =689
+                    Height =359
+                    FontSize =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =16777215
+                    Name ="Etichetta9"
+                    Caption ="Denar"
+                    GUID = Begin
+                        0xf1af96d656a0084387519378e042477f
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =8160
+                    LayoutCachedTop =690
+                    LayoutCachedWidth =8849
+                    LayoutCachedHeight =1049
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =10110
+                    Top =705
+                    Width =885
+                    Height =330
+                    FontSize =11
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    ForeColor =16777215
+                    Name ="Etichetta11"
+                    Caption ="Opombe"
+                    GUID = Begin
+                        0x2f0f26612b75c740ada53096826bf414
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    LayoutCachedLeft =10110
+                    LayoutCachedTop =705
+                    LayoutCachedWidth =10995
+                    LayoutCachedHeight =1035
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =7320
+                    Top =735
+                    Width =675
+                    Height =270
+                    ForeColor =16777215
+                    Name ="Etichetta14"
+                    Caption ="Curr"
+                    GUID = Begin
+                        0x167c8e5168c64c4b95ba65d9a22051b9
+                    End
+                    LayoutCachedLeft =7320
+                    LayoutCachedTop =735
+                    LayoutCachedWidth =7995
+                    LayoutCachedHeight =1005
+                End
+            End
+        End
+        Begin Section
+            Height =510
+            BackColor =15724527
+            Name ="Corpo"
+            GUID = Begin
+                0x9a87fe403ee1fd408b7759c64e3e9ddc
+            End
+            AlternateBackColor =15724527
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =60
+                    Top =60
+                    Width =525
+                    Height =359
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="IdC"
+                    ControlSource ="IdCr"
+                    GUID = Begin
+                        0xa3010f145c8c414bafeffa5d054f1c40
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =60
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =585
+                    LayoutCachedHeight =419
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =690
+                    Top =60
+                    Width =1155
+                    Height =359
+                    TabIndex =1
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    GUID = Begin
+                        0x9ea1ac659de90f4ebecc0993f1f3c6c7
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =690
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =1845
+                    LayoutCachedHeight =419
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1920
+                    Top =60
+                    Width =2610
+                    Height =359
+                    TabIndex =2
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Description"
+                    ControlSource ="Description"
+                    GUID = Begin
+                        0x90eb37bb2b5eae40945e8200252963df
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =1920
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =4530
+                    LayoutCachedHeight =419
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8160
+                    Top =60
+                    Width =1650
+                    Height =359
+                    TabIndex =4
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Denar"
+                    ControlSource ="Denar"
+                    Format ="Standard"
+                    GUID = Begin
+                        0x062afa79b3a0f8468773ab3df990f7fb
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =8160
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =9810
+                    LayoutCachedHeight =419
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10095
+                    Top =60
+                    Width =3390
+                    Height =359
+                    TabIndex =5
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+                    Name ="Note"
+                    ControlSource ="Note"
+                    GUID = Begin
+                        0x84caf99fbe6b4640b5fd642702369a6c
+                    End
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+
+                    LayoutCachedLeft =10095
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =13485
+                    LayoutCachedHeight =419
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4590
+                    Top =60
+                    Width =2610
+                    Height =359
+                    TabIndex =3
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0x81ca4a12e5a6464791348bec459af303
+                    End
+                    Name ="Kdo"
+                    ControlSource ="Kdo"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT CashRocno.Kdo FROM CashRocno GROUP BY CashRocno.Kdo;"
+                    GridlineStyleLeft =1
+                    GridlineStyleTop =1
+                    GridlineStyleRight =1
+                    GridlineStyleBottom =1
+                    LeftMargin =22
+                    TopMargin =22
+                    RightMargin =22
+                    BottomMargin =22
+
+                    LayoutCachedLeft =4590
+                    LayoutCachedTop =60
+                    LayoutCachedWidth =7200
+                    LayoutCachedHeight =419
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =2880
+                    Left =7320
+                    Top =56
+                    Width =778
+                    Height =315
+                    TabIndex =6
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
+                    GUID = Begin
+                        0x6ae0866c5bb3ad44b92c8d7559ed1a25
+                    End
+                    Name ="CasellaCombinata15"
+                    ControlSource ="IdC"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [1Currency].IdC, [1Currency].Currency FROM 1Currency;"
+                    ColumnWidths ="0;1441"
+                    BaseInfo ="\"SELECT [1Currency].IdC, [1Currency].Currency FROM 1Currency;\";\"1Currency\";\""
+                        "\";\"IdC\";\"Currency\";\"PrimaryKey\""
+
+                    LayoutCachedLeft =7320
+                    LayoutCachedTop =56
+                    LayoutCachedWidth =8098
+                    LayoutCachedHeight =371
+                End
+            End
+        End
+        Begin FormFooter
+            Height =806
+            BackColor =15724527
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x9df9e62cc793ac4ab92a5564b8b3bd68
+            End
+            Begin
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3968
+                    Top =170
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    Name ="txtDol"
+                    Format ="#,###.##"
+                    GUID = Begin
+                        0x7c5096444e5940428a9c810b3bba5a58
+                    End
+
+                    LayoutCachedLeft =3968
+                    LayoutCachedTop =170
+                    LayoutCachedWidth =5833
+                    LayoutCachedHeight =485
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6001
+                    Top =170
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="txtEur"
+                    Format ="Standard"
+                    GUID = Begin
+                        0xc707c6743313bc43b447c38bf6dfa3a7
+                    End
+
+                    LayoutCachedLeft =6001
+                    LayoutCachedTop =170
+                    LayoutCachedWidth =7866
+                    LayoutCachedHeight =485
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8034
+                    Top =170
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="txtGb"
+                    Format ="Fixed"
+                    GUID = Begin
+                        0xef3a64a9cccbe648a49b73e73e0c29a6
+                    End
+
+                    LayoutCachedLeft =8034
+                    LayoutCachedTop =170
+                    LayoutCachedWidth =9899
+                    LayoutCachedHeight =485
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10067
+                    Top =170
+                    Width =1865
+                    Height =315
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="txtYen"
+                    Format ="Fixed"
+                    GUID = Begin
+                        0x7312e970fd67a3478bd23c808d0813dd
+                    End
+
+                    LayoutCachedLeft =10067
+                    LayoutCachedTop =170
+                    LayoutCachedWidth =11932
+                    LayoutCachedHeight =485
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12869
+                    Top =113
+                    Width =576
+                    Height =576
+                    TabIndex =4
+                    Name ="cmdEsci"
+                    Caption ="Comando25"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Chiudi maschera"
+                    GUID = Begin
+                        0xa6f1c960708f7a4380b38477687b1d32
+                    End
+                    OnClickEmMacro = Begin
+                        Version =196611
+                        ColumnsShown =8
+                        Begin
+                            Action ="Close"
+                            Argument ="-1"
+                            Argument =""
+                            Argument ="0"
+                        End
+                    End
+
+                    LayoutCachedLeft =12869
+                    LayoutCachedTop =113
+                    LayoutCachedWidth =13445
+                    LayoutCachedHeight =689
+                    WebImagePaddingLeft =3
+                    WebImagePaddingTop =3
+                    WebImagePaddingRight =2
+                    WebImagePaddingBottom =2
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Form_AfterUpdate()
+Calcolo
+Controllo
+
+
+End Sub
+
+Private Sub Form_Current()
+Calcolo
+Controllo
+End Sub
+
+Private Sub Form_Load()
+ Dim f As Form
+
+ Set f = Forms(Me.Name)
+    If Not IsNull(f.OpenArgs) Then
+        sOpen = f.OpenArgs
+      
+        
+    Else
+       sOpen = ""
+    End If
+
+CalculateFifoStockM
+Calcolo
+Controllo
+End Sub
+
+Private Sub Controllo()
+'pulisco le variabili
+    txtDol = 0
+    txtEur = 0
+    txtGb = 0
+    txtYen = 0
+
+
+'Inserisco le variabili per la scrittura nella maschera
+    txtDol = Format$(sDol, "$ #.##0,#")
+    txtEur = Format$(sEur, "€ #.##0,#")
+    txtGb = Format$(sGb, "£ #.##0,#")
+    txtYen = Format$(sYen, "¥ #.##0,#")
+
+
+
+
+End Sub

@@ -1,0 +1,2350 @@
+Option Compare Database
+Public db As Database
+Public sIdP As String
+Public sStarNow As String
+Public sDataN As String
+Public sIdPr As String
+Public sqlc As String
+Public rsR As Recordset
+Public rsR1 As Recordset
+Public sDol As Double
+Public sEur As Double
+Public sGb As Double
+Public sYen As Double
+Public sDolG As Double
+Public sEurG As Double
+Public sGbG As Double
+Public sYenG As Double
+Public sDolA As Double
+Public sDolALive As Double
+Public sEurA As Double
+Public sEurALive As Double
+Public sGbA As Double
+Public sYenA As Double
+Public sGbALive As Double
+Public sYenALive As Double
+Public sDolT As Double
+Public sGbT As Double
+Public sYenT As Double
+Public sEMA5 As Double
+Public sEMAO5 As Double
+Public sEMA10 As Double
+Public sEMAO10 As Double
+Public sEMA15 As Double
+Public sEMAO15 As Double
+Public sEMA20 As Double
+Public sEMAO20 As Double
+Public sEMA50 As Double
+Public sEMAO50 As Double
+Public sEMA100 As Double
+Public sEMAO100 As Double
+Public sEMA200 As Double
+Public sEMAO200 As Double
+
+
+
+Public fEma5 As Boolean
+Public fEma10 As Boolean
+Public fEma15 As Boolean
+Public fEma20 As Boolean
+Public fEma50 As Boolean
+Public fEma100 As Boolean
+Public fEma200 As Boolean
+Public fHistoric As Boolean
+
+
+
+Public sTotale As Double, sTotaleE As Double
+Public sTotaleLive As Double, sTotaleLiveE As Double
+Public sDir0 As Double, sDirE0 As Double, sDirLive0 As Double, sDirLiveE0 As Double
+Public sDir1 As Double, sDirE1 As Double, sDirLive1 As Double, sDirLiveE1 As Double
+Public sDir2 As Double, sDirE2 As Double, sDirLive2 As Double, sDirLiveE2 As Double
+Public sDirLiveLE0 As Double, sDirLiveLE1 As Double, sDirLiveLE2 As Double
+
+Public sSecE1 As Double, sSecLiveE1 As Double, sSecE2 As Double, sSecLiveE2 As Double
+Public sSecE3 As Double, sSecLiveE3 As Double, sSecE4 As Double, sSecLiveE4 As Double
+Public sSecE5 As Double, sSecLiveE5 As Double, sSecE6 As Double, sSecLiveE6 As Double
+Public sSecE7 As Double, sSecLiveE7 As Double, sSecE8 As Double, sSecLiveE8 As Double
+Public sSecE9 As Double, sSecLiveE9 As Double, sSecE10 As Double, sSecLiveE10 As Double
+Public sSecE11 As Double, sSecLiveE11 As Double, sSecE12 As Double, sSecLiveE12 As Double
+Public sSecE13 As Double, sSecLiveE13 As Double, sSecE14 As Double, sSecLiveE14 As Double
+Public sSecE15 As Double, sSecLiveE15 As Double, sSecE16 As Double, sSecLiveE16 As Double
+Public sSecE17 As Double, sSecLiveE17 As Double, sSecE18 As Double, sSecLiveE18 As Double
+Public sSecE19 As Double, sSecLiveE19 As Double, sSecE20 As Double, sSecLiveE20 As Double
+Public sSecE21 As Double, sSecLiveE21 As Double, sSecE22 As Double, sSecLiveE22 As Double
+Public sSecE23 As Double, sSecLiveE23 As Double, sSecE24 As Double, sSecLiveE24 As Double
+
+
+
+
+
+Public sAssE1 As Double, sAssLiveE1 As Double, sAssE2 As Double, sAssLiveE2 As Double
+Public sAssE3 As Double, sAssLiveE3 As Double, sAssE4 As Double, sAssLiveE4 As Double
+Public sAssE5 As Double, sAssLiveE5 As Double, sAssE6 As Double, sAssLiveE6 As Double
+Public sAssE7 As Double, sAssLiveE7 As Double, sAssE8 As Double, sAssLiveE8 As Double
+
+Public sDataCerca As Date
+Public sIsin As String
+Public dOpt As Double, dQuota As Double, dOptD3 As Double, dOptD1 As Double
+Public dOpt1 As Double, dOpt2 As Double, dOpt3 As Double, dOptA As Double
+Public dOpt4 As Double, dOpt5 As Double, dOpt6 As Double, dOptB As Double
+Public dOpt7 As Double, dOpt8 As Double, dOpt9 As Double, dOptC As Double
+Public dQuota1 As Double, dQuota2 As Double, dQuota3 As Double, dQuotaB As Double
+Public dQuota4 As Double, dQuota5 As Double, dQuota6 As Double, dQuotaC As Double
+Public dQuota7 As Double, dQuota8 As Double, dQuota9 As Double
+
+Public dSym As Double, sDirSym As Double
+Public sMsg As String, sMsgM As String, sMsgT As String, sMsgMT As String, sInvio As String, sInvioOld As String
+
+
+
+
+
+
+
+
+
+
+Function IsLoaded(ByVal strFormName As String) As Integer
+ ' Returns True if the specified form is open in Form view or Datasheet view.
+    
+    Const conObjStateClosed = 0
+    Const conDesignView = 0
+    
+    If SysCmd(acSysCmdGetObjectState, acForm, strFormName) <> conObjStateClosed Then
+        If Forms(strFormName).CurrentView <> conDesignView Then
+            IsLoaded = True
+        End If
+    End If
+    
+End Function
+Public Sub Calcolo()
+
+
+
+
+Set db = CurrentDb
+
+'Controllo dollaro
+
+sqlc = "SELECT IdCr, IdC, Denar " & _
+        "FROM CashRocno "
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sDol = 0
+    sEur = 0
+    sGb = 0
+    sYen = 0
+            
+'Apro il case per le varie opzioni
+
+Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDol = rsR("Denar") + sDol
+                    Case 2
+                       sEur = rsR("Denar") + sEur
+                    Case 3
+                       sGb = rsR("Denar") + sGb
+                    Case 4
+                        MsgBox "Non Money!!"
+                    Case 5
+                        sYen = rsR("Denar") + sYen
+                End Select
+            rsR.MoveNext
+        Loop
+
+    
+
+End Sub
+
+Public Sub CalcoloGua()
+
+
+Set db = CurrentDb
+
+'Controllo dollaro
+
+'sqlc = "SELECT IdCr, IdC, Denar " & _
+        "FROM CashRocno " & _
+        "WHERE IdC=1 "
+sqlc = "SELECT qRicavoGenerale.ISIN, [1ISIN].SYM, qRicavoGenerale.Qta, qRicavoGenerale.[Real NA], " & _
+            "qRicavoVendite.Ricavo, [1Currency].IdC, [1Currency].Currency, IIf([qta]=0,[real NA], " & _
+            "[ricavo]+[real NA]) AS Total, [total]/[Valore] AS TotalE, Change.[HST_CLOSE ( LIVEQUOTE )] AS Valore " & _
+        "FROM (((qRicavoGenerale LEFT JOIN qRicavoVendite ON qRicavoGenerale.ISIN = " & _
+            "qRicavoVendite.Prdt) INNER JOIN 1ISIN ON qRicavoGenerale.ISIN = [1ISIN].ISIN) " & _
+            "INNER JOIN 1Currency ON [1ISIN].IdC = [1Currency].IdC) INNER JOIN Change ON " & _
+            "[1ISIN].IdC = Change.IdC " & _
+        "WHERE (((IIf([qta]=0,[real NA],[ricavo]+[real NA]))<>0))"
+
+
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+    
+'pulisco le variabili
+    sDolG = 0
+    sEurG = 0
+    sGbG = 0
+    sYenG = 0
+    
+     Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDolG = rsR("Total") + sDolG
+                    Case 2
+                       sEurG = rsR("Total") + sEurG
+                    Case 3
+                       sGbG = rsR("Total") + sGbG
+                    Case 4
+                        MsgBox "Non Money!!"
+                    Case 5
+                        sYenG = rsR("Total") + sYenG
+                End Select
+            rsR.MoveNext
+        Loop
+        
+        
+'Formatto le variabili per la scrittura nella maschera
+ '   sDolG = Format$(sDolG, "$ #.##0,#")
+ '   sEurG = Format$(sEurG, "€ #.##0,#")
+ '   sGbG = Format$(sGbG, "£ #.##0,#")
+ '   sYenG = Format$(sYenG, "¥ #.##0,#")
+        
+
+End Sub
+
+Public Sub CalcoloAz()
+
+
+
+Set db = CurrentDb
+
+'sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, FifoStock.fDate AS [Receiving Date], FifoStock.PQty AS [Purchased Qty], " & _
+            "FifoStock.AvQty AS [In Stock], FifoStock.Rt AS Rate, [1Currency].IdC, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, [1Currency].Currency, ([Rt]/[PQty]*[AvQty]) AS [Value], " & _
+            "[value]/[change] AS Value€, [Value]/[avqty] AS PriceM, Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, " & _
+            "Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+        "FROM Realtick RIGHT JOIN ((FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) INNER JOIN 1Currency ON " & _
+            "[1ISIN].IdC = [1Currency].IdC) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN;"
+'
+'
+'Modifico la ricerca inserendo il cambio alla data attuale e non a qualla teorica
+'
+
+
+
+sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, [1ISIN].IdC, FifoStock.fDate AS [Receiving Date], FifoStock.PQty AS [Purchased Qty], " & _
+            "FifoStock.AvQty AS [In Stock], FifoStock.Rt AS Rate, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, ([Rt]/[PQty]*[AvQty]) AS [Value], " & _
+            "[value]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )] AS Value€,[live]*[avqty] AS ValueLive, " & _
+            "[Value]/[avqty] AS PriceM, Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, " & _
+            "Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = " & _
+            "[1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC;"
+
+
+
+'sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, [1ISIN].IdC, FifoStock.fDate AS [Receiving Date], " & _
+            "FifoStock.PQty AS [Purchased Qty], FifoStock.AvQty AS [In Stock], FifoStock.Rt AS Rate, " & _
+            "Realtick.[HSTCLSDATE ( LIVEQUOTE )], Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, " & _
+            "([Rt]/[PQty]*[AvQty]) AS [Value], [live]*[avqty] AS ValueLive, " & _
+            "[value]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )] AS Value€, [Value]/[avqty] AS PriceM, " & _
+            "Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, " & _
+            "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON " & _
+            "FifoStock.Prdt = [1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = " & _
+            "[1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC;"
+
+
+
+
+
+'
+'SELECT FifoStock.Prdt, [1ISIN].SYM, FifoStock.fDate AS [Receiving Date], " & _
+'            "FifoStock.PQty AS [Purchased Qty], FifoStock.AvQty AS [In Stock], " & _
+'            "FifoStock.Rt AS Rate,[1Currency].IdC, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+'            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, [1Currency].Currency, " & _
+'            "([Rt]/[PQty]*[AvQty]) AS [Value], [value]/[change] AS Value€, " & _
+'            "[Value]/[avqty] AS PriceM, Realtick.[CLOSE5DAVG_1D ( SECURITY )] AS Price5, " & _
+'            "Realtick.[CLOSE10DAVG_1D ( SECURITY )] AS Price10, " & _
+'            "Realtick.[CLOSE20DAVG_1D ( SECURITY )] AS Price20, " & _
+'            "Realtick.[CLOSE30DAVG_1D ( SECURITY )] AS Price30, " & _
+'            "Realtick.[CLOSE50DAVG_1D ( SECURITY )] AS Price50, " & _'
+'            "Realtick.[CLOSE90DAVG_1D ( SECURITY )] AS Price90, " & _
+'            "Realtick.[CLOSE200DAVG_1D ( SECURITY )] AS Price200, " & _
+ '           "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+'        "FROM Realtick RIGHT JOIN ((FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) " & _
+'            "INNER JOIN 1Currency ON [1ISIN].IdC = [1Currency].IdC) ON Realtick.[ISIN_NO " & _
+'            "( LIVEQUOTE )] = [1ISIN].ISIN"
+'
+
+ 
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+    
+'pulisco le variabili
+    sDolA = 0
+    sEurA = 0
+    sGbA = 0
+    sYenA = 0
+    sDolALive = 0
+'    sEurALive = 0
+    
+     Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDolA = rsR("Value") + sDolA
+                        sDolALive = rsR("ValueLive") + sDolALive
+                    Case 2
+                       sEurA = rsR("Value") + sEurA
+ '                      sEurALive = rsR("Valuelive") + sEurALive
+                    Case 3
+                       sGbA = rsR("Value") + sGbA
+                    Case 4
+                        MsgBox "Non Money!!"
+                    Case 5
+                        sYenA = rsR("Value") + sYenA
+                End Select
+            rsR.MoveNext
+        Loop
+        
+ 
+End Sub
+Public Sub Cambio()
+
+Set db = CurrentDb
+
+'Controllo dollaro
+
+sqlc = "SELECT Change.IdC, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS CambioLive " & _
+        "FROM Change;"
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sDolT = 0
+    sGbT = 0
+    sYenT = 0
+            
+'Apro il case per le varie opzioni
+
+Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDolT = rsR("CambioLive")
+                    Case 3
+                        sGbT = rsR("CambioLive")
+                    Case 5
+                        sYenT = rsR("CambioLive")
+                End Select
+            rsR.MoveNext
+        Loop
+
+        
+
+
+    
+
+End Sub
+
+Public Sub Portfolio()
+
+
+
+Set db = CurrentDb
+
+sqlc = "SELECT [1ISIN].ISIN, Sum(FifoStock.AvQty) AS [In Stock], Sum(([Rt]/[PQty]*[AvQty])) AS Valore, " & _
+            "Sum((([Rt]/[PQty]*[AvQty]))/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]) AS Value€, " & _
+            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]) AS ValueLive, " & _
+            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF " & _
+            "( LIVEQUOTE )]) AS ValueLive€, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Change " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt " & _
+            "= [1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC " & _
+        "GROUP BY [1ISIN].ISIN, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )];"
+
+
+'Controllo dollaro
+
+'sqlc = "SELECT Change.IdC, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS CambioLive " & _
+        "FROM Change;"
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sTotale = 0
+    sTotaleE = 0
+    sTotaleLive = 0
+    sTotaleLiveE = 0
+'Apro il case per le varie opzioni
+
+        Do While Not rsR.EOF
+                        sTotale = rsR("Valore") + sTotale
+                        sTotaleE = rsR("Value€") + sTotaleE
+                        sTotaleLive = rsR("ValueLive€") + sTotaleLive
+                        sTotaleLiveE = rsR("ValueLive€") + sTotaleLiveE
+            rsR.MoveNext
+        Loop
+
+
+
+
+End Sub
+
+Public Sub Direzione()
+
+Set db = CurrentDb
+
+' Bisogna creare un recordset con i dati del totale presi come nell sql qui sotto e
+' poi farci il group by direction coì abbiamo -1, +1 e 0
+' per tutte le monete
+
+
+
+'sqlc = "SELECT [1ISIN].ISIN, Sum(FifoStock.AvQty) AS [In Stock], Sum(([Rt]/[PQty]*[AvQty])) AS Valore, " & _
+'            "Sum((([Rt]/[PQty]*[AvQty]))/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]) AS Value€, " & _
+'            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]) AS ValueLive, " & _
+'            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF " & _
+'            "( LIVEQUOTE )]) AS ValueLive€, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Change,  [1ISIN].IdD " & _
+'        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt " & _
+'            "= [1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC " & _
+'        "GROUP BY [1ISIN].ISIN, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )], [1ISIN].IdD;"
+        
+'sqlc = "SELECT [1ISIN].ISIN, Sum(FifoStock.AvQty) AS [In Stock], Sum(([Rt]/[PQty]*[AvQty])) AS Valore, " & _
+'            "Sum((([Rt]/[PQty]*[AvQty]))/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]) AS Value€, " & _
+'            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]) AS ValueLive, " & _
+'            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]) AS ValueLive€, " & _
+'            "Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Change, [1ISIN].IdD, " & _
+ '           "(Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]))*[leverage] AS ValLeverage, " & _
+'            "[1ISIN].Leverage " & _
+'        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON " & _
+'            "FifoStock.Prdt = [1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON " & _
+'            "Change.IdC = [1ISIN].IdC " & _
+'        "GROUP BY [1ISIN].ISIN, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )], [1ISIN].IdD, [1ISIN].Leverage;"
+'
+        
+sqlc = "SELECT [1ISIN].ISIN, Sum(FifoStock.AvQty) AS [In Stock], Sum(([Rt]/[PQty]*[AvQty])) AS Valore, " & _
+            "Sum((([Rt]/[PQty]*[AvQty]))/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]) AS Value€, " & _
+            "IIf([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]=0,Sum([Realtick]![HST_CLOSE ( LIVEQUOTE )]*[AvQty]),Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty])) AS ValueLive, " & _
+            "IIf([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]=0,Sum([Realtick]![HST_CLOSE ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]),Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )])) AS ValueLive€, " & _
+            "Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Change, [1ISIN].IdD, " & _
+            "IIf([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]=0,(Sum([Realtick]![HST_CLOSE ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]))*[leverage],(Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]))*[leverage]) AS ValLeverage, " & _
+            "[1ISIN].Leverage, Realtick.[HST_CLOSE ( LIVEQUOTE )], Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) ON " & _
+            "Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC " & _
+        "GROUP BY [1ISIN].ISIN, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )], [1ISIN].IdD, [1ISIN].Leverage, Realtick.[HST_CLOSE ( LIVEQUOTE )], " & _
+            "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )];"
+        
+        
+        
+
+'Controllo dollaro [1ISIN].IdD
+
+'sqlc = "SELECT Change.IdC, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS CambioLive " & _
+        "FROM Change;"
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sDir0 = 0
+    sDirE0 = 0
+    sDirLive0 = 0
+    sDirLiveE0 = 0
+    sDirLiveLE0 = 0
+    sDir1 = 0
+    sDirE1 = 0
+    sDirLive1 = 0
+    sDirLiveE1 = 0
+    sDirLiveLE1 = 0
+    sDir2 = 0
+    sDirE2 = 0
+    sDirLive2 = 0
+    sDirLiveE2 = 0
+    sDirLiveLE2 = 0
+    
+'Apro il case per le varie opzioni
+Do While Not rsR.EOF
+                Select Case rsR("IdD")
+                    Case 1 '0
+                        sDir0 = rsR("Valore") + sDir0
+                        sDirE0 = rsR("Value€") + sDirE0
+                        sDirLive0 = rsR("ValueLive€") + sDirLive0
+                        sDirLiveE0 = rsR("ValueLive€") + sDirLiveE0
+                        sDirLiveLE0 = rsR("ValLeverage") + sDirLiveLE0
+                    Case 2 '+1
+                        sDir1 = rsR("Valore") + sDir1
+                        sDirE1 = rsR("Value€") + sDirE1
+                        sDirLive1 = rsR("ValueLive€") + sDirLive1
+                        sDirLiveE1 = rsR("ValueLive€") + sDirLiveE1
+                        sDirLiveLE1 = rsR("ValLeverage") + sDirLiveLE1
+                    Case 3 '-1
+                        sDir2 = rsR("Valore") + sDir2
+                        sDirE2 = rsR("Value€") + sDirE2
+                        sDirLive2 = rsR("ValueLive€") + sDirLive2
+                        sDirLiveE2 = rsR("ValueLive€") + sDirLiveE2
+                        sDirLiveLE2 = rsR("ValLeverage") + sDirLiveLE2
+                End Select
+            rsR.MoveNext
+        Loop
+
+
+
+
+
+End Sub
+
+Public Sub Assetto()
+
+Set db = CurrentDb
+
+' Bisogna creare un recordset con i dati del totale presi come nell sql qui sotto e
+' poi farci il group by direction coì abbiamo -1, +1 e 0
+' per tutte le monete
+
+
+
+sqlc = "SELECT [1ISIN].ISIN, Sum(FifoStock.AvQty) AS [In Stock], Sum(([Rt]/[PQty]*[AvQty])) AS Valore, " & _
+            "Sum((([Rt]/[PQty]*[AvQty]))/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]) AS Value€, " & _
+            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]) AS ValueLive, " & _
+            "Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF " & _
+            "( LIVEQUOTE )]) AS ValueLive€, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Change,  [1ISIN].IdA " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt " & _
+            "= [1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC " & _
+        "GROUP BY [1ISIN].ISIN, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )], [1ISIN].IdA;"
+        
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sAssE1 = 0
+    sAssLiveE1 = 0
+    sAssE2 = 0
+    sAssLiveE2 = 0
+    sAssE3 = 0
+    sAssLiveE3 = 0
+    sAssE4 = 0
+    sAssLiveE4 = 0
+    sAssE5 = 0
+    sAssLiveE5 = 0
+    sAssE6 = 0
+    sAssLiveE6 = 0
+    sAssE7 = 0
+    sAssLiveE7 = 0
+    sAssE8 = 0
+    sAssLiveE8 = 0
+    
+    
+    
+    
+'Apro il case per le varie opzioni
+Do While Not rsR.EOF
+                Select Case rsR("IdA")
+                    Case 1 '0
+                        sAssE1 = rsR("Value€") + sAssE1
+                        sAssLiveE1 = rsR("ValueLive€") + sAssLiveE1
+                    Case 2 '+1
+                        sAssE2 = rsR("Value€") + sAssE2
+                        sAssLiveE2 = rsR("ValueLive€") + sAssLiveE2
+                    Case 3 '-1
+                        sAssE3 = rsR("Value€") + sAssE3
+                        sAssLiveE3 = rsR("ValueLive€") + sAssLiveE3
+                    Case 4 '-1
+                        sAssE4 = rsR("Value€") + sAssE4
+                        sAssLiveE4 = rsR("ValueLive€") + sAssLiveE4
+                    Case 5 '-1
+                        sAssE5 = rsR("Value€") + sAssE5
+                        sAssLiveE5 = rsR("ValueLive€") + sAssLiveE5
+                    Case 6 '-1
+                        sAssE6 = rsR("Value€") + sAssE6
+                        sAssLiveE6 = rsR("ValueLive€") + sAssLiveE6
+                    Case 7 '-1
+                        sAssE7 = rsR("Value€") + sAssE7
+                        sAssLiveE7 = rsR("ValueLive€") + sAssLiveE7
+                    Case 8 '-1
+                        sAssE8 = rsR("Value€") + sAssE8
+                        sAssLiveE8 = rsR("ValueLive€") + sAssLiveE8
+                End Select
+            rsR.MoveNext
+        Loop
+
+
+
+
+
+End Sub
+
+Public Function DataDellaRicerca() As String
+
+ 
+
+   DataDellaRicerca = Format(DataCerca, "YYYY-MM-DD")
+
+ 
+
+End Function
+
+Public Sub CaricaDatiAcquisto()
+    
+    Set db = CurrentDb
+    
+'      If Not sIsin = "" Then
+'        If sIsin = " like '*" Then
+'            sIsin = sIsin
+'        Else
+'            sIsin = "='" & sIsin
+'        End If
+'    Else
+'        sIsin = " like '*"
+'    End If
+    
+' Creo sql dati provenineti dalla ricerca
+
+sqlc = "INSERT INTO AcquistoData ( ISIN, TicketID, TD, Side, Quantity, [Net Amount] ) " & _
+        "SELECT [1AKJ trade report].ISIN, [1AKJ trade report].TicketID, [1AKJ trade report].TD, " & _
+            "[1AKJ trade report].Side, [1AKJ trade report].Quantity, [1AKJ trade report].[Net Amount] " & _
+        "FROM [1AKJ trade report] " & _
+        "WHERE ((([1AKJ trade report].ISIN)='" & sIsin & "') AND " & _
+                    "(([1AKJ trade report].TD) <= #" & Format(sDataCerca, "yyyy-mm-dd") & "#) AND " & _
+                    "(([1AKJ trade report].Side)='buy')) " & _
+        "ORDER BY [1AKJ trade report].ISIN, [1AKJ trade report].TicketID;"
+        
+
+        
+' Cancello la tabella contenete i dati di acquisto
+        CurrentDb.Execute "delete * from AcquistoData", dbFailOnError ' to empty table before new insertion
+
+
+
+'ricreo i dati diacquisto
+     CurrentDb.Execute (sqlc) '
+
+
+
+
+        
+ '  Adesso carico i dati della query nella maschera
+'  Forms(PurchaseDetail).RecordSource = sqlc
+   
+ 
+
+ 
+ End Sub
+
+Public Sub RicavoGeneraleData()
+    
+    Set db = CurrentDb
+    
+' Creo sql dati provenineti dalla ricerca
+
+sqlc = "INSERT INTO RicavoGeneraleData ( ISIN, Qta, [Real NA] ) " & _
+        "SELECT [1AKJ trade report].ISIN, Sum(IIf([Side]='Sell',[Quantity]*-1,[Quantity])) " & _
+            "AS Qta, Sum(IIf([Side]='Sell',Round([Net Amount],3),Round([Net Amount]*-1,3))) " & _
+            "AS [Real NA] " & _
+        "FROM [1AKJ trade report] " & _
+        "WHERE ((([1AKJ trade report].TD) <= #" & Format(sDataCerca, "yyyy-mm-dd") & "#)) " & _
+        "GROUP BY [1AKJ trade report].ISIN;"
+
+
+'INSERT INTO RicavoGeneraleData ( ISIN, Qta, [Real NA] )
+'SELECT [1AKJ trade report].ISIN, Sum(IIf([Side]='Sell',[Quantity]*-1,[Quantity]))
+'AS Qta, Sum(IIf([Side]='Sell',Round([Net Amount],3),Round([Net Amount]*-1,3))) AS [Real NA]
+'FROM [1AKJ trade report]
+'WHERE ((([1AKJ trade report].TD) < #11/15/2017#))
+'GROUP BY [1AKJ trade report].ISIN;
+
+
+
+
+
+        
+' Cancello la tabella contenete i dati di acquisto
+        CurrentDb.Execute "delete * from RicavoGeneraleData", dbFailOnError ' to empty table before new insertion
+
+
+
+'ricreo i dati diacquisto
+     CurrentDb.Execute (sqlc) '
+
+
+ 
+ End Sub
+Public Sub RicavoVenditeData()
+    
+    Set db = CurrentDb
+    
+' Creo sql dati provenineti dalla ricerca
+
+sqlc = "INSERT INTO RicavoVenditeData ( Prdt, SommaDiAvQty, SommaDiRt, Resto, Ricavo ) " & _
+        "SELECT FifoStock.Prdt, Sum(FifoStock.AvQty) AS SommaDiAvQty, " & _
+            "Sum(FifoStock.Rt) AS SommaDiRt, Sum([pqty]-[avqty]) AS Resto, " & _
+            "Sum((([rt]/[pqty])*[avqty])) AS Ricavo " & _
+        "FROM FifoStock " & _
+        "GROUP BY FifoStock.Prdt;"
+
+
+        
+' Cancello la tabella contenete i dati di acquisto
+        CurrentDb.Execute "delete * from RicavoVenditeData", dbFailOnError ' to empty table before new insertion
+
+
+
+'ricreo i dati diacquisto
+     CurrentDb.Execute (sqlc) '
+
+
+ 
+ End Sub
+
+Public Sub GuadagnoGeneraleData()
+    
+    Set db = CurrentDb
+    
+' Creo sql dati provenineti dalla ricerca
+
+sqlc = "INSERT INTO GuadagnoGeneraleData ( ISIN, SYM, Qta, [Real NA], Ricavo, IdC, [Currency], " & _
+            "Total, TotalE, Valore ) " & _
+        "SELECT RicavoGeneraleData.ISIN, [1ISIN].SYM, RicavoGeneraleData.Qta, " & _
+            "RicavoGeneraleData.[Real NA], qRicavoVendite.Ricavo, [1Currency].IdC, " & _
+            "[1Currency].Currency, IIf([qta]=0,[Real NA],[ricavo]+[Real NA]) AS Total, " & _
+            "[total]/[Valore] AS TotalE, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Valore " & _
+        "FROM (((1ISIN INNER JOIN 1Currency ON [1ISIN].IdC = [1Currency].IdC) INNER JOIN Change ON " & _
+            "[1ISIN].IdC = Change.IdC) INNER JOIN RicavoGeneraleData ON " & _
+            "[1ISIN].ISIN = RicavoGeneraleData.ISIN) LEFT JOIN qRicavoVendite ON " & _
+            "RicavoGeneraleData.ISIN = qRicavoVendite.Prdt " & _
+        "WHERE (((IIf([qta]=0,[Real NA],[ricavo]+[Real NA]))<>0)); "
+
+
+
+
+
+
+
+
+        
+' Cancello la tabella contenete i dati di acquisto
+        CurrentDb.Execute "delete * from GuadagnoGeneraleData", dbFailOnError ' to empty table before new insertion
+
+
+
+'ricreo i dati diacquisto
+     CurrentDb.Execute (sqlc) '
+
+
+ 
+ End Sub
+
+
+
+Public Sub CalcoloGuaData()
+
+'GuadagnoGeneraleData
+RicavoGeneraleData
+
+Set db = CurrentDb
+
+'Controllo dollaro
+
+'sqlc = "SELECT IdCr, IdC, Denar " & _
+        "FROM CashRocno " & _
+        "WHERE IdC=1 "
+'sqlc = "SELECT RicavoGeneraleData.ISIN, [1ISIN].SYM, RicavoGeneraleData.Qta, " & _
+            "RicavoGeneraleData.[Real NA], qRicavoVendite.Ricavo, [1Currency].IdC, " & _
+            "[1Currency].Currency, IIf([qta]=0,[real NA],[ricavo]+[real NA]) AS Total, " & _
+            "[total]/[Valore] AS TotalE, Change.[HST_CLOSE ( LIVEQUOTE )] AS Valore " & _
+        "FROM (((1ISIN INNER JOIN 1Currency ON [1ISIN].IdC = [1Currency].IdC) " & _
+            "INNER JOIN Change ON [1ISIN].IdC = Change.IdC) INNER JOIN RicavoGeneraleData " & _
+            "ON [1ISIN].ISIN = RicavoGeneraleData.ISIN) LEFT JOIN qRicavoVendite " & _
+            "ON RicavoGeneraleData.ISIN = qRicavoVendite.Prdt " & _
+        "WHERE (((IIf([qta]=0,[real NA],[ricavo]+[real NA]))<>0));"
+        
+'Inserisco la data del cambio alla ricerca
+'
+'09 marzo 2019
+'
+
+
+sqlc = "SELECT RicavoGeneraleData.ISIN, [1ISIN].SYM, RicavoGeneraleData.Qta, " & _
+            "RicavoGeneraleData.[Real NA], qRicavoVendite.Ricavo, [1Currency].IdC, " & _
+            "[1Currency].Currency, IIf([qta]=0,[real NA],[ricavo]+[real NA]) AS Total, " & _
+            "[total]/[Valore] AS TotalE, ChangeTime.[HST_CLOSE ( LIVEQUOTE )] AS Valore " & _
+        "FROM ChangeTime INNER JOIN (((1ISIN INNER JOIN 1Currency ON [1ISIN].IdC = " & _
+            "[1Currency].IdC) INNER JOIN RicavoGeneraleData ON [1ISIN].ISIN = RicavoGeneraleData.ISIN) " & _
+            "LEFT JOIN qRicavoVendite ON RicavoGeneraleData.ISIN = qRicavoVendite.Prdt) ON " & _
+            "ChangeTime.IdC = [1ISIN].IdC " & _
+        "WHERE (((IIf([qta]=0,[real NA],[ricavo]+[real NA]))<>0));"
+
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+    
+'pulisco le variabili
+    sDolG = 0
+    sEurG = 0
+    sGbG = 0
+    sYenG = 0
+    
+     Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDolG = rsR("Total") + sDolG
+                    Case 2
+                       sEurG = rsR("Total") + sEurG
+                    Case 3
+                       sGbG = rsR("Total") + sGbG
+                    Case 4
+                        MsgBox "Non Money!!"
+                    Case 5
+                        sYenG = rsR("Total") + sYenG
+                End Select
+            rsR.MoveNext
+        Loop
+        
+        
+'Formatto le variabili per la scrittura nella maschera
+ '   sDolG = Format$(sDolG, "$ #.##0,#")
+ '   sEurG = Format$(sEurG, "€ #.##0,#")
+ '   sGbG = Format$(sGbG, "£ #.##0,#")
+ '   sYenG = Format$(sYenG, "¥ #.##0,#")
+        
+
+End Sub
+
+Public Sub CalcoloData()
+
+
+
+
+Set db = CurrentDb
+
+'Controllo dollaro
+
+sqlc = "SELECT CashRocno.IdCr, CashRocno.IdC, CashRocno.Denar, CashRocno.Datum " & _
+        "FROM CashRocno " & _
+        "WHERE (((CashRocno.Datum)<= #" & Format(sDataCerca, "yyyy-mm-dd") & "#));"
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sDol = 0
+    sEur = 0
+    sGb = 0
+    sYen = 0
+            
+'Apro il case per le varie opzioni
+
+Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDol = rsR("Denar") + sDol
+                    Case 2
+                       sEur = rsR("Denar") + sEur
+                    Case 3
+                       sGb = rsR("Denar") + sGb
+                    Case 4
+                        MsgBox "Non Money!!"
+                    Case 5
+                        sYen = rsR("Denar") + sYen
+                End Select
+            rsR.MoveNext
+        Loop
+
+    
+
+End Sub
+Public Sub CalcoloEMA()
+Dim sIsin As String
+Dim sIsinN As String
+
+
+
+Set db = CurrentDb
+
+'MsgBox "....ho quasi finito adesso calcolo ema e strategia..."
+
+
+'sqlc = "SELECT EMA.ISIN, EMA.Date, EMA.Close, EMA.SMA20, EMA.SMA50, EMA.SMA100, EMA.SMA200, " & _
+            "EMA.EMA20, EMA.EMA50, EMA.EMA100, EMA.EMA200 " & _
+        "FROM HistoricPriceEMA AS EMA " & _
+        "ORDER BY EMA.ISIN, EMA.Date;"
+ 'Correzione per eccesso dati
+ 
+        
+sqlc = "SELECT EMA.ISIN, EMA.Date, EMA.Close, EMA.SMA5, EMA.SMA10, " & _
+            "EMA.SMA15, EMA.SMA20, EMA.SMA50, EMA.SMA100, EMA.SMA200, " & _
+            "EMA.EMA5, EMA.EMA10, EMA.EMA15,EMA.EMA20, EMA.EMA50, EMA.EMA100, EMA.EMA200 " & _
+        "FROM HistoricPriceEMA AS EMA " & _
+        "WHERE (((EMA.Date) Between Date() And Date()-300)) " & _
+        "ORDER BY EMA.ISIN, EMA.Date;"
+
+
+        
+'Apro il recordset
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenDynaset)
+    
+'pulisco le variabili
+    sEMA5 = 0
+    sEMAO5 = 0
+    sEMA10 = 0
+    sEMAO10 = 0
+    sEMA15 = 0
+    sEMAO15 = 0
+    sEMA20 = 0
+    sEMAO20 = 0
+    sEMA50 = 0
+    sEMAO50 = 0
+    sEMA100 = 0
+    sEMAO100 = 0
+    sEMA200 = 0
+    sEMAO200 = 0
+    sIsinN = rsR("ISIN")
+    
+    
+'Apro il case per le varie opzioni
+
+ 
+    
+    
+'Apro il case per le varie opzioni
+
+    Do While Not rsR.EOF
+        sIsin = rsR("ISIN")
+        
+        If sIsin = sIsinN Then
+            
+           If Not IsNull(rsR("SMA5")) Then
+                rsR.Edit
+                    If fEma5 = 0 Then
+                        sEMA5 = rsR("SMA5")
+                        sEMAO5 = sEMA5
+                        rsR("EMA5") = sEMAO5
+                        fEma5 = -1
+                    Else
+                        sEMAO5 = ((rsR("close") - sEMA5) * 0.333) + sEMA5
+                        rsR("EMA5") = sEMAO5
+                        sEMA5 = sEMAO5
+                    End If
+                rsR.Update
+            End If
+            If Not IsNull(rsR("SMA10")) Then
+                          rsR.Edit
+                              If fEma10 = 0 Then
+                                  sEMA10 = rsR("SMA10")
+                                  sEMAO10 = sEMA10
+                                  rsR("EMA10") = sEMAO10
+                                  fEma5 = -1
+                              Else
+                                  sEMAO10 = ((rsR("close") - sEMA10) * 0.181) + sEMA10
+                                  rsR("EMA10") = sEMAO10
+                                  sEMA10 = sEMAO10
+                              End If
+                          rsR.Update
+                      End If
+            
+            If Not IsNull(rsR("SMA15")) Then
+                          rsR.Edit
+                              If fEma15 = 0 Then
+                                  sEMA15 = rsR("SMA15")
+                                  sEMAO15 = sEMA15
+                                  rsR("EMA15") = sEMAO15
+                                  fEma15 = -1
+                              Else
+                                  sEMAO15 = ((rsR("close") - sEMA15) * 0.125) + sEMA15
+                                  rsR("EMA15") = sEMAO15
+                                  sEMA15 = sEMAO15
+                              End If
+                          rsR.Update
+                      End If
+                      
+            If Not IsNull(rsR("SMA20")) Then
+                rsR.Edit
+                    If fEma20 = 0 Then
+                        sEMA20 = rsR("SMA20")
+                        sEMAO20 = sEMA20
+                        rsR("EMA20") = sEMAO20
+                        fEma20 = -1
+                    Else
+                        sEMAO20 = ((rsR("close") * 0.1) + (sEMA20 * (1 - 0.1)))
+                        rsR("EMA20") = sEMAO20
+                        sEMA20 = sEMAO20
+                    End If
+                rsR.Update
+            End If
+            
+            If Not IsNull(rsR("SMA50")) Then
+                rsR.Edit
+                    If fEma50 = 0 Then
+                        sEMA50 = rsR("SMA50")
+                        sEMAO50 = sEMA50
+                        rsR("EMA50") = sEMAO50
+                        fEma50 = -1
+                    Else
+                        sEMAO50 = ((rsR("close") * 0.039) + (sEMA50 * (1 - 0.039)))
+                        rsR("EMA50") = sEMAO50
+                        sEMA50 = sEMAO50
+                    End If
+                rsR.Update
+            End If
+            If Not IsNull(rsR("SMA100")) Then
+                rsR.Edit
+                    If fEma100 = 0 Then
+                        sEMA100 = rsR("SMA100")
+                        sEMAO100 = sEMA100
+                        rsR("EMA100") = sEMAO100
+                        fEma100 = -1
+                    Else
+                        sEMAO100 = ((rsR("close") * 0.0198) + (sEMA100 * (1 - 0.0198)))
+                        rsR("EMA100") = sEMAO100
+                        sEMA100 = sEMAO100
+                    End If
+                rsR.Update
+            End If
+               
+            If Not IsNull(rsR("SMA200")) Then
+                rsR.Edit
+                    If fEma200 = 0 Then
+                        sEMA200 = rsR("SMA200")
+                        sEMAO200 = sEMA200
+                        rsR("EMA200") = sEMAO200
+                        fEma200 = -1
+                    Else
+                        sEMAO200 = ((rsR("close") * 0.0099) + (sEMA200 * (1 - 0.0099)))
+                        rsR("EMA200") = sEMAO200
+                        sEMA200 = sEMAO200
+                    End If
+                rsR.Update
+            End If
+        Else
+       ' MsgBox "Test"
+            sEMA5 = 0
+            sEMAO5 = 0
+            sEMA10 = 0
+            sEMAO10 = 0
+            sEMA15 = 0
+            sEMAO15 = 0
+            sEMA20 = 0
+            sEMAO20 = 0
+            sEMA50 = 0
+            sEMAO50 = 0
+            sEMA100 = 0
+            sEMAO100 = 0
+            sEMA200 = 0
+            sEMAO200 = 0
+            fEma5 = 0
+            fEma10 = 0
+            fEma15 = 0
+            fEma20 = 0
+            fEma50 = 0
+            fEma100 = 0
+            fEma200 = 0
+        
+        End If
+        
+        sIsinN = rsR("ISIN")
+
+        
+        rsR.MoveNext
+        Loop
+
+        fEma5 = 0
+        fEma10 = 0
+        fEma15 = 0
+        fEma20 = 0
+        fEma50 = 0
+        fEma100 = 0
+        fEma200 = 0
+       
+       
+       
+'pulisco le variabili
+'    sEMA = 0
+ '   sEMAO = 0
+    
+'Apro il case per le varie opzioni EMA20
+
+ 
+End Sub
+
+
+
+Public Function LineNum(lngFldVal As Long, strSource As String, strKey As String) As Long
+Dim strCrit As String
+strCrit = "[" & strKey & "] < " & CStr(lngFldVal)
+LineNum = Nz(DCount(strKey, strSource, strCrit)) + 1
+End Function
+
+Public Function GetRecNum() As Long
+    On Error GoTo erh
+    With CodeContextObject.RecordsetClone
+        If Not (.BOF And .EOF) Then
+            .Bookmark = CodeContextObject.Bookmark
+            GetRecNum = .AbsolutePosition + 1
+        End If
+    End With
+ext:
+    Exit Function
+
+erh:
+    GetRecNum = 0
+End Function
+Public Sub CalcoloIndice()
+Dim sIsin As String
+Dim sIsinN As String
+Dim dIndice As Double
+
+
+
+Set db = CurrentDb
+
+sqlc = "SELECT HistoricPrice.ISIN, HistoricPrice.Date, HistoricPrice.Close, HistoricPrice.Indice " & _
+        "FROM HistoricPrice INNER JOIN 1ISIN ON HistoricPrice.ISIN = [1ISIN].ISIN " & _
+        "ORDER BY HistoricPrice.ISIN, HistoricPrice.Date;"
+
+        
+'Apro il recordset
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenDynaset)
+    
+'pulisco le variabili
+dIndice = 0
+sIsin = rsR("ISIN")
+
+    
+    
+    
+'Apro il case per le varie opzioni
+rsR.MoveLast
+rsR.MoveFirst
+        Do While Not rsR.EOF
+           
+                rsR.Edit
+                
+                
+                sIsin = rsR("ISIN")
+                
+                        If sIsin = sIsinN Then
+                            dIndice = dIndice + 1
+                            If IsNull(rsR("Indice")) Then
+                                rsR("Indice") = dIndice
+                            End If
+                            sIsinN = rsR("ISIN")
+                          
+                                                   
+                        Else
+                            dIndice = 1
+                            rsR("Indice") = dIndice
+                            sIsinN = rsR("ISIN")
+                                                  
+                        
+                        End If
+                rsR.Update
+            rsR.MoveNext
+        Loop
+
+
+ 
+End Sub
+
+
+Public Sub AggiornaPrice2()
+
+ Set db = CurrentDb
+    
+    
+ MsgBox "Buon giorno!...Aspetta un momento sto facendo i conti..."
+ 
+ sqlc = "DELETE HistoricPrice.ISIN, HistoricPrice.Date, HistoricPrice.Close, HistoricPrice.Indice " & _
+        "FROM HistoricPrice " & _
+        "WHERE (((HistoricPrice.Date) Between Date() And Date()-199)); "
+   
+  
+'Aggiorno i prezzi
+     CurrentDb.Execute (sqlc) '
+    
+    
+' Verifico se alla data cercata esistono dei prezzi
+sqlc = "INSERT INTO HistoricPrice ( ISIN, [Date], [Close] ) " & _
+        "SELECT Historic.F3, Historic.F1, Historic.F2 " & _
+        "FROM Historic INNER JOIN 1ISIN ON Historic.F3 = [1ISIN].ISIN " & _
+        "GROUP BY Historic.F3, Historic.F1, Historic.F2 " & _
+        "HAVING (((Historic.F3)<>'') AND ((Historic.F1)>#1/1/2010#)) " & _
+        "ORDER BY Historic.F3, Historic.F1;"
+        
+       
+
+
+
+'Aggiorno i prezzi
+     CurrentDb.Execute (sqlc) '
+
+ 'MsgBox "Ecco ho finito!!! Buon lavoro..."
+
+
+
+End Sub
+
+
+
+Public Sub StrategiaLive()
+
+ Dim sData As String
+ 
+ 
+ Set db = CurrentDb
+ 
+    
+'1 Passaggio
+' Elimino tutti i prezzi con data di
+'Definisco la data ultima di realtick e isin da eliminare
+'sqlc = "SELECT HistoricPrice.ISIN, HistoricPrice.Date, HistoricPrice.Close, HistoricPrice.Indice INTO HistoricPassaggio " & _
+        "FROM HistoricPrice INNER JOIN Realtick ON HistoricPrice.ISIN = Realtick.[ISIN_NO ( LIVEQUOTE )] " & _
+        "WHERE (((HistoricPrice.Date)=CDate([Realtick]![BID_DATE ( LIVEQUOTE )])));"
+
+'Aggiorno Historic Price
+'     CurrentDb.Execute (sqlc) '
+'
+
+
+
+
+
+sqlc = "DELETE DISTINCTROW HistoricPrice.*, HistoricPrice.Date " & _
+        "FROM HistoricPrice INNER JOIN Realtick ON HistoricPrice.ISIN = Realtick.[ISIN_NO ( LIVEQUOTE )] " & _
+        "WHERE (((HistoricPrice.Date)=[Realtick]![DataL]));"
+
+'Aggiorno Historic Price
+     CurrentDb.Execute (sqlc) '
+'2 Passaggio
+'trasformo la data odierna in una strnga cosi da essere inserita nella query
+sData = Month(Now()) & "/" & Day(Now()) & "/" & Year(Now())
+
+' inserisco il prezzo live di tutti gli isin
+
+sqlc = "INSERT INTO HistoricPrice ( ISIN, [Date], [Close] ) " & _
+        "SELECT Realtick.[ISIN_NO ( LIVEQUOTE )], Realtick.DataL, Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] " & _
+        "FROM Realtick INNER JOIN [1AKJ trade report] ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1AKJ trade report].ISIN " & _
+        "GROUP BY Realtick.[ISIN_NO ( LIVEQUOTE )], Realtick.DataL, Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )];"
+
+'Aggiorno Historic Price
+     CurrentDb.Execute (sqlc) '
+    
+     
+     
+     
+     
+
+
+End Sub
+
+Public Sub test()
+Dim s As String
+
+s = Format(Date, "mm/dd/yyyy")
+s = CStr(Date)
+
+Debug.Print s
+
+End Sub
+
+
+
+
+Public Sub CalcoloSMA()
+
+
+ 
+ Set db = CurrentDb
+ 
+ 
+ 'MsgBox "un po' di pazienza sto facendo le medie..."
+ 
+'Pulisco i dati live gia memorizzati
+sqlc = "DELETE HistoricPriceEMA.ISIN, HistoricPriceEMA.Date, HistoricPriceEMA.Close, HistoricPriceEMA.LIVE, " & _
+            "HistoricPriceEMA.SMA5, HistoricPriceEMA.SMA10, HistoricPriceEMA.SMA15,HistoricPriceEMA.SMA20, " & _
+            "HistoricPriceEMA.SMA50, HistoricPriceEMA.SMA100, HistoricPriceEMA.SMA200, " & _
+            "HistoricPriceEMA.EMA5, HistoricPriceEMA.EMA10, HistoricPriceEMA.EMA15, HistoricPriceEMA.EMA20, " & _
+            "HistoricPriceEMA.EMA50, HistoricPriceEMA.EMA100, HistoricPriceEMA.EMA200 " & _
+        "FROM HistoricPriceEMA " & _
+        "WHERE (((HistoricPriceEMA.Date) Between " & "Date() And Date()-49" & "));" '49 GIORNI
+
+ 'Aggiorno Historic Price
+     CurrentDb.Execute (sqlc) '
+    
+ 
+    
+' Faccio la SMA Con tutti i prezzi usando come media l'indice che ho inserito prima
+
+sqlc = "INSERT INTO HistoricPriceEMA ( isin, [Date], [Close], SMA5,SMA10, SMA15, SMA20, SMA50, SMA100, SMA200 ) " & _
+        "SELECT o.isin, o.Date, o.Close, " & _
+                "(SELECT avg(Close) FROM HistoricPrice i WHERE i.ISIN = o.ISIN And i.Indice <= o.Indice " & _
+                    "AND i.indice >= (o.indice - 4) having count(*) >=5 ) AS SMA5, " & _
+                "(SELECT avg(Close) FROM HistoricPrice i WHERE i.ISIN = o.ISIN And i.Indice <= o.Indice " & _
+                    "AND i.indice >= (o.indice - 9) having count(*) >=10 ) AS SMA10, " & _
+                "(SELECT avg(Close) FROM HistoricPrice i WHERE i.ISIN = o.ISIN And i.Indice <= o.Indice " & _
+                    "AND i.indice >= (o.indice - 14) having count(*) >=15 ) AS SMA15, " & _
+                "(SELECT avg(Close) FROM HistoricPrice i WHERE i.ISIN = o.ISIN And i.Indice <= o.Indice " & _
+                    "AND i.indice >= (o.indice - 19) having count(*) >=20 ) AS SMA20, " & _
+                "(SELECT avg(Close)FROM HistoricPrice i WHERE i.ISIN = o.ISIN And i.Indice <= o.Indice " & _
+                    "AND i.indice >= (o.indice - 49) having count(*) >=50 ) AS SMA50, " & _
+                "(SELECT avg(Close) FROM HistoricPrice i WHERE i.ISIN = o.ISIN And i.Indice <= o.Indice " & _
+                    "AND i.indice >= (o.indice - 99) having count(*) >=100 ) AS SMA100, " & _
+                "(SELECT avg(Close) FROM HistoricPrice i WHERE i.ISIN = o.ISIN And i.Indice <= o.Indice " & _
+                    "AND i.indice >= (o.indice - 199) having count(*) >=200 ) AS SMA200 " & _
+            "FROM  HistoricPrice AS o INNER JOIN 1ISIN ON o.ISIN = [1ISIN].ISIN " & _
+            "WHERE (((o.Date) > Now() - 299)) " & _
+            "ORDER BY o.isin, o.Date;"
+
+
+
+'Aggiorno Historic Price
+     CurrentDb.Execute (sqlc) '
+
+
+
+
+
+End Sub
+
+
+
+Public Sub CalcoloUltimo()
+
+ 
+ Set db = CurrentDb
+ 
+    
+'1 Passaggio
+' Elimino la tabella historic priceEMALAST
+
+  CurrentDb.Execute "delete * from HistoricPriceEMALast", dbFailOnError ' to empty table before new insertion
+
+
+'tutti i prezzi con data di oggi
+
+sqlc = "INSERT INTO HistoricPriceEMALast ( ISIN, UltimoDiDate, UltimoDiClose, " & _
+            "S5, S10, S15, S20, S50, S100, S200, E5, E10, E15, E20, E50, E100, E200 ) " & _
+        "SELECT TEMA.ISIN, TEMA.Date AS UltimoDiDate, TEMA.Close AS UltimoDiClose, " & _
+            "TEMA.SMA5 AS S5, TEMA.SMA10 AS S10, TEMA.SMA15 AS S15, TEMA.SMA20 AS S20, TEMA.SMA50 AS S50, " & _
+            "TEMA.SMA100 AS S100, TEMA.SMA200 AS S200, " & _
+            "TEMA.EMA5 AS E5, TEMA.EMA10 AS E10, TEMA.EMA15 AS E15, TEMA.EMA20 AS E20, TEMA.EMA50 AS E50, " & _
+            "TEMA.EMA100 AS E100, TEMA.EMA200 AS E200 " & _
+        "FROM HistoricPriceEMA AS TEMA INNER JOIN Realtick ON (TEMA.Date = Realtick.DataL) AND " & _
+            "(TEMA.ISIN = Realtick.[ISIN_NO ( LIVEQUOTE )]) " & _
+        "ORDER BY TEMA.ISIN;"
+
+
+
+'Aggiorno Historic Price
+     CurrentDb.Execute (sqlc) '
+
+     
+     
+
+
+End Sub
+
+
+
+
+Public Sub CalcoloStategia()
+
+ 
+ Set db = CurrentDb
+ 
+    
+'1 Passaggio
+' Elimino tutti i prezzi con data di oggi
+
+sqlc = "SELECT Last.*, IIf([UltimoDiClose]>[last].[s5],([StrategyLine]![W5]*[StrategyLine]![S5]*100),0) AS L5, " & _
+            "IIf([UltimoDiClose]>[last].[s10],([StrategyLine]![W10]*[StrategyLine]![S10]*100),0) AS L10, " & _
+            "IIf([UltimoDiClose]>[last].[s15],([StrategyLine]![W15]*[StrategyLine]![S15]*100),0) AS L15, " & _
+            "IIf([UltimoDiClose]>[last].[s20],([StrategyLine]![W20]*[StrategyLine]![S20]*100),0) AS L20, " & _
+            "IIf([UltimoDiClose]>[last].[s50],([StrategyLine]![W50]*[StrategyLine]![S50]*100),0) AS L50, " & _
+            "IIf([UltimoDiClose]>[last].[s100],([StrategyLine]![W100]*[StrategyLine]![S100]*100),0) AS L100, " & _
+            "IIf([UltimoDiClose]>[last].[s200],([StrategyLine]![W200]*[StrategyLine]![S200]*100),0) AS L200, " & _
+            "IIf([UltimoDiClose]>[last].[E5],([StrategyLine]![W5]*[StrategyLine]![E5]*100),0) AS LE5, " & _
+            "IIf([UltimoDiClose]>[last].[E10],([StrategyLine]![W10]*[StrategyLine]![E10]*100),0) AS LE10, " & _
+            "IIf([UltimoDiClose]>[last].[E15],([StrategyLine]![W15]*[StrategyLine]![E15]*100),0) AS LE15, " & _
+            "IIf([UltimoDiClose]>[last].[E20],([StrategyLine]![W20]*[StrategyLine]![E20]*100),0) AS LE20, " & _
+            "IIf([UltimoDiClose]>[last].[E50],([StrategyLine]![W50]*[StrategyLine]![E50]*100),0) AS LE50, " & _
+            "IIf([UltimoDiClose]>[last].[E100],([StrategyLine]![W100]*[StrategyLine]![E100]*100),0) AS LE100, " & _
+            "IIf([UltimoDiClose]>[last].[E200],([StrategyLine]![W200]*[StrategyLine]![E200]*100),0) AS LE200, " & _
+            "IIf([last].[E20]>[last].[s20],([StrategyLine]![W20]*[StrategyLine]![E20/S20]*100),0) AS LES20, " & _
+            "IIf([last].[E50]>[last].[s50],([StrategyLine]![W50]*[StrategyLine]![E50/S50]*100),0) AS LES50, " & _
+            "IIf([last].[E100]>[last].[s100],([StrategyLine]![W100]*[StrategyLine]![E100/S100]*100),0) AS LES100, " & _
+            "IIf([last].[E200]>[last].[s200],([StrategyLine]![W200]*[StrategyLine]![E200/S200]*100),0) AS LES200, " & _
+            "IIf([last].[S20]>[last].[s50],([StrategyLine]![W50]*[StrategyLine]![S20/S50]*100),0) AS LSS50, " & _
+            "IIf([last].[S20]>[last].[s100],([StrategyLine]![W100]*[StrategyLine]![S20/S100]*100),0) AS LSS20S100, " & _
+            "IIf([last].[S50]>[last].[s100],([StrategyLine]![W100]*[StrategyLine]![S50/S100]*100),0) AS LSS50S100, " & _
+            "IIf([last].[S20]>[last].[s200],([StrategyLine]![W200]*[StrategyLine]![S20/S200]*100),0) AS LSS20S200, " & _
+            "IIf([last].[S50]>[last].[s200],([StrategyLine]![W200]*[StrategyLine]![S50/S200]*100),0) AS LSS50S200, " & _
+            "IIf([last].[S100]>[last].[s200],([StrategyLine]![W200]*[StrategyLine]![S100/S200]*100),0) AS LSS100S200, [L20]+[LE20]+[LES20] AS T20, [L50]+[LE50]+[LES50]+[LSS50] AS T50, [L100]+[LE100]+[LES100]+[LSS20S100]+[LSS50S100] AS T100, " & _
+            "[L200]+[LE200]+[LES200]+[LSS20S200]+[LSS50S200]+[LSS100S200] AS T200, [T20]+[T50]+[T100]+[T200] AS TT FROM HistoricPriceEMALast AS [Last], StrategyLine;"
+    
+'Aggiorno Historic Price
+     CurrentDb.Execute (sqlc) '
+
+
+
+End Sub
+
+
+Public Sub CalcoloOpt()
+
+
+
+
+Set db = CurrentDb
+
+'sqlc = "SELECT [1ISIN].ISIN, [1ISIN].Quote as Quota, qStrategy.TT, [quote]*[tt] AS Opt " & _
+        "FROM 1ISIN INNER JOIN qStrategy ON [1ISIN].ISIN = qStrategy.ISIN;"
+
+'
+'
+'Aggiorno quote solo di quello presente a stock
+'10 marzo 2019
+'
+'
+'
+
+'sqlc = "SELECT [1ISIN].ISIN, [1ISIN].Quote AS Quota, qStrategy.TT, [quote]*[tt] AS Opt " & _
+        "FROM (1ISIN INNER JOIN qStrategy ON [1ISIN].ISIN = qStrategy.ISIN) INNER JOIN " & _
+            "FifoStock ON [1ISIN].ISIN = FifoStock.Prdt " & _
+        "GROUP BY [1ISIN].ISIN, [1ISIN].Quote, qStrategy.TT;"
+
+'sqlc = "SELECT [1ISIN].ISIN, [1ISIN].Quote AS Quota, qStrategy.TT, [quote]*[tt] AS Opt, [1ISIN].ICc " & _
+        "FROM (1ISIN INNER JOIN qStrategy ON [1ISIN].ISIN = qStrategy.ISIN) INNER JOIN " & _
+            "FifoStock ON [1ISIN].ISIN = FifoStock.Prdt " & _
+        "GROUP BY [1ISIN].ISIN, [1ISIN].Quote, qStrategy.TT, [1ISIN].ICc;"
+
+
+sqlc = "SELECT [1ISIN].ISIN, [1ISIN].Quote AS Quota, qStrategy.TT, [quote]*[tt] AS Opt, [1ISIN].ICc, [1ISIN].IdD " & _
+        "FROM (1ISIN INNER JOIN qStrategy ON [1ISIN].ISIN = qStrategy.ISIN) INNER JOIN " & _
+            "FifoStock ON [1ISIN].ISIN = FifoStock.Prdt " & _
+        "GROUP BY [1ISIN].ISIN, [1ISIN].Quote, qStrategy.TT, [1ISIN].ICc, [1ISIN].IdD;"
+
+
+        
+'Apro il recordset
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenDynaset)
+    
+'pulisco le variabili
+dOpt = 0
+dQuota = 0
+dOpt1 = 0
+dOpt2 = 0
+dOpt3 = 0
+dQuota1 = 0
+dQuota2 = 0
+dQuota3 = 0
+dOptA = 0
+
+dOptD3 = 0
+dOpt4 = 0
+dOpt5 = 0
+dOpt6 = 0
+dOptB = 0
+dQuota4 = 0
+dQuota5 = 0
+dQuota6 = 0
+dQuotaB = 0
+
+
+dOptD1 = 0
+dOpt7 = 0
+dOpt8 = 0
+dOpt9 = 0
+dOptC = 0
+dQuota7 = 0
+dQuota8 = 0
+dQuota9 = 0
+dQuotaC = 0
+
+
+
+'sIsin = rsR("ISIN")
+
+    
+    
+    
+'Apro il case per le varie opzioni
+rsR.MoveLast
+rsR.MoveFirst
+  '      Do While Not rsR.EOF
+           
+'                rsR.Edit
+                
+  '              If Not IsNull(rsR("Opt")) Then
+  '
+  '                  dOpt = rsR("Opt") + dOpt
+  '              End If
+  '              If Not IsNull(rsR("Quota")) Then
+  '
+  '                  dQuota = rsR("Quota") + dQuota
+  '              End If
+  '
+  '
+  '          rsR.MoveNext
+  '      Loop
+
+
+'Apro il case per le varie opzioni
+Do While Not rsR.EOF
+                'Optimale conDirection +1
+                
+    Select Case rsR("IdD")
+        Case 1 'Optimale conDirection 0
+        
+               If Not IsNull(rsR("Opt")) Then
+                    dOptD1 = rsR("Opt") + dOptD1
+                End If
+                If Not IsNull(rsR("Quota")) Then
+                    dQuotaC = rsR("Quota") + dQuotaC
+                End If
+
+
+                Select Case rsR("ICc")
+                    Case 1 '1
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt7 = rsR("Opt") + dOpt7
+                        End If
+                          If Not IsNull(rsR("Opt")) Then
+                            dOptC = rsR("Opt") + dOptC
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota7 = rsR("Quota") + dQuota7
+                        End If
+                    Case 2 '2
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt8 = rsR("Opt") + dOpt8
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota8 = rsR("Quota") + dQuota8
+                        End If
+                    Case 3 '3
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt9 = rsR("Opt") + dOpt9
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota9 = rsR("Quota") + dQuota9
+                        End If
+                    End Select
+                    
+                    
+            Case 2 'Optimale conDirection +1
+             
+                If Not IsNull(rsR("Opt")) Then
+                    dOpt = rsR("Opt") + dOpt
+                End If
+                If Not IsNull(rsR("Quota")) Then
+                    dQuota = rsR("Quota") + dQuota
+                End If
+
+
+                Select Case rsR("ICc")
+                    Case 1 '1
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt1 = rsR("Opt") + dOpt1
+                        End If
+                          If Not IsNull(rsR("Opt")) Then
+                            dOptA = rsR("Opt") + dOptA
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota1 = rsR("Quota") + dQuota1
+                        End If
+                    Case 2 '2
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt2 = rsR("Opt") + dOpt2
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota2 = rsR("Quota") + dQuota2
+                        End If
+                    Case 3 '3
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt3 = rsR("Opt") + dOpt3
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota3 = rsR("Quota") + dQuota3
+                        End If
+                    End Select
+   
+             
+             
+            Case 3 'Optimale conDirection -1
+            
+            
+               If Not IsNull(rsR("Opt")) Then
+                    dOptD3 = rsR("Opt") + dOptD3
+                End If
+                If Not IsNull(rsR("Quota")) Then
+                    dQuotaB = rsR("Quota") + dQuotaB
+                End If
+
+
+                Select Case rsR("ICc")
+                    Case 1 '1
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt4 = rsR("Opt") + dOpt4
+                        End If
+                          If Not IsNull(rsR("Opt")) Then
+                            dOptB = rsR("Opt") + dOptB
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota4 = rsR("Quota") + dQuota4
+                        End If
+                    Case 2 '2
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt5 = rsR("Opt") + dOpt5
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota5 = rsR("Quota") + dQuota5
+                        End If
+                    Case 3 '3
+                        If Not IsNull(rsR("Opt")) Then
+                            dOpt6 = rsR("Opt") + dOpt6
+                        End If
+                        If Not IsNull(rsR("Quota")) Then
+                            dQuota6 = rsR("Quota") + dQuota6
+                        End If
+                    End Select
+            
+        End Select
+                    
+     rsR.MoveNext
+     Loop
+
+
+
+ 
+End Sub
+
+
+
+Public Sub CalcoloSym()
+
+
+
+
+Set db = CurrentDb
+
+sqlc = "SELECT [1ISIN].SYM, qStrategy.TT " & _
+        "FROM 1ISIN LEFT JOIN qStrategy ON [1ISIN].ISIN = qStrategy.ISIN " & _
+        "WHERE ((([1ISIN].SYM)='SPY'));"
+
+
+        
+'Apro il recordset
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenDynaset)
+    
+'pulisco le variabili
+dSym = 0
+
+
+'sIsin = rsR("ISIN")
+
+    
+    
+    
+'Apro il case per le varie opzioni
+rsR.MoveLast
+rsR.MoveFirst
+        Do While Not rsR.EOF
+           
+'                rsR.Edit
+                
+                If rsR("SYM") = "SPY" Then
+                
+                    dSym = rsR("TT")
+                    
+                End If
+                          
+            
+            rsR.MoveNext
+        Loop
+
+
+ 
+End Sub
+
+Public Sub MessStrategy()
+
+
+
+
+
+
+Set db = CurrentDb
+
+
+'questo invia i messaggi di tutte le azioni che sono state comprate e vendute storicamente
+
+'sqlc = "SELECT HistoricPriceEMALast.ISIN, [1ISIN].SYM, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )], HistoricPriceEMALast.UltimoDiDate AS [Date], " & _
+            "HistoricPriceEMALast.UltimoDiClose AS [Close], HistoricPriceEMALast.S5, HistoricPriceEMALast.S10, " & _
+            "HistoricPriceEMALast.S15, HistoricPriceEMALast.S20, HistoricPriceEMALast.S50, " & _
+            "HistoricPriceEMALast.S100, HistoricPriceEMALast.S200, HistoricPriceEMALast.E5, " & _
+            "HistoricPriceEMALast.E10, HistoricPriceEMALast.E15, HistoricPriceEMALast.E20, " & _
+            "HistoricPriceEMALast.E50, HistoricPriceEMALast.E100, HistoricPriceEMALast.E200 " & _
+        "FROM (1ISIN INNER JOIN HistoricPriceEMALast ON [1ISIN].ISIN = HistoricPriceEMALast.ISIN) " & _
+            "INNER JOIN Realtick ON HistoricPriceEMALast.ISIN = Realtick.[ISIN_NO ( LIVEQUOTE )];"
+
+
+'Questo invia i messaggi di solo le ayioni che in questo momento sono a stock
+
+sqlc = "SELECT HistoricPriceEMALast.ISIN, [1ISIN].SYM, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )], HistoricPriceEMALast.UltimoDiDate AS [Date], " & _
+            "HistoricPriceEMALast.UltimoDiClose AS [Close], HistoricPriceEMALast.S5, HistoricPriceEMALast.S10, " & _
+            "HistoricPriceEMALast.S15, HistoricPriceEMALast.S20, HistoricPriceEMALast.S50, HistoricPriceEMALast.S100, " & _
+            "HistoricPriceEMALast.S200, HistoricPriceEMALast.E5, HistoricPriceEMALast.E10, HistoricPriceEMALast.E15, " & _
+            "HistoricPriceEMALast.E20, HistoricPriceEMALast.E50, HistoricPriceEMALast.E100, HistoricPriceEMALast.E200 " & _
+        "FROM FifoStock INNER JOIN ((1ISIN INNER JOIN HistoricPriceEMALast ON [1ISIN].ISIN = HistoricPriceEMALast.ISIN) " & _
+            "INNER JOIN Realtick ON HistoricPriceEMALast.ISIN = Realtick.[ISIN_NO ( LIVEQUOTE )]) ON FifoStock.Prdt = [1ISIN].ISIN " & _
+        "GROUP BY HistoricPriceEMALast.ISIN, [1ISIN].SYM, Realtick.[HSTCLSDATE ( LIVEQUOTE )], Realtick.[HST_CLOSE ( LIVEQUOTE )], " & _
+            "HistoricPriceEMALast.UltimoDiDate, HistoricPriceEMALast.UltimoDiClose, HistoricPriceEMALast.S5, HistoricPriceEMALast.S10, " & _
+            "HistoricPriceEMALast.S15, HistoricPriceEMALast.S20, HistoricPriceEMALast.S50, HistoricPriceEMALast.S100, " & _
+            "HistoricPriceEMALast.S200, HistoricPriceEMALast.E5, HistoricPriceEMALast.E10, HistoricPriceEMALast.E15, " & _
+            "HistoricPriceEMALast.E20, HistoricPriceEMALast.E50, HistoricPriceEMALast.E100, HistoricPriceEMALast.E200;"
+
+'Questo serve a ridurre il numero di messaggi nelle mail
+
+
+
+        
+'Apro il recordset
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenDynaset)
+    
+'pulisco le variabili
+'dSym = 0
+sMsg = ""
+sMsgM = ""
+sMsgT = ""
+sMsgMT = ""
+
+
+'sIsin = rsR("ISIN")
+
+    
+    
+    
+'Apro il case per le varie opzioni
+rsR.MoveLast
+rsR.MoveFirst
+        Do While Not rsR.EOF
+           
+'                rsR.Edit
+'               Aggiungi il controllo della data ora e 1 decimale sul prezzo e strategia con la qta
+'
+        sMsg = ""
+        sMsgM = ""
+                
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("S5"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "SMA5,  " '& Now()
+                   sMsgM = sMsgM & sMsg
+                    
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("S10"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "SMA10,  " '& Now()
+                   sMsgM = sMsgM & sMsg
+                    
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("S15"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "SMA15,  " '& Now()
+                   sMsgM = sMsgM & sMsg
+                    
+                End If
+          
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("S20"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "SMA20,  " '& Now()
+                   sMsgM = sMsgM & sMsg
+                    
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("S50"), "#,##0.00") Then
+                
+                    sMsg = sMsg & "SMA50,  " '& Now()
+                 '  sMsgM = sMsgM & "<p align='center'>" & sMsg & "</p>"
+                    sMsgM = sMsgM & sMsg
+
+                    
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("S100"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "SMA100,  " '& Now()
+                   'sMsgM = sMsgM & "<p align='center'>" & sMsg & "</p>"
+                   sMsgM = sMsgM & sMsg
+
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("S200"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "SMA200,  " '& Now()
+'                   sMsgM = sMsgM & "<p align='center'>" & sMsg & "</p>"
+                   sMsgM = sMsgM & sMsg
+                  
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("E5"), "#,##0.00") Then
+                
+                    sMsg = sMsg & "EMA5,  " '& Now()
+                    sMsgM = sMsgM & sMsg
+                   
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("E10"), "#,##0.00") Then
+                
+                    sMsg = sMsg & "EMA10,  " '& Now()
+                    sMsgM = sMsgM & sMsg
+                   
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("E15"), "#,##0.00") Then
+                
+                    sMsg = sMsg & "EMA15,  " '& Now()
+                    sMsgM = sMsgM & sMsg
+                   
+                End If
+                 
+                 If Format(rsR("Close"), "#,##0.00") = Format(rsR("E20"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "EMA20,  " '& Now()
+'                   sMsgM = sMsgM & "<p align='center'>" & sMsg & "</p>"
+                    sMsgM = sMsgM & sMsg
+                   
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("E50"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "EMA50,  " '& Now()
+'                   sMsgM = sMsgM & "<p align='center'>" & sMsg & "</p>"
+                    sMsgM = sMsgM & sMsg
+                   
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("E100"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "EMA100,  " '& Now()
+'                   sMsgM = sMsgM & "<p align='center'>" & sMsg & "</p>"
+                    sMsgM = sMsgM & sMsg
+                   
+                End If
+                If Format(rsR("Close"), "#,##0.00") = Format(rsR("E200"), "#,##0.00") Then
+                
+                   sMsg = sMsg & "EMA200,  " '& Now()
+'                   sMsgM = sMsgM & "<p align='center'>" & sMsg & "</p>"
+                    sMsgM = sMsgM & sMsg
+                   
+                End If
+                
+                If Not sMsg = "" Then
+                    sMsgT = sMsgT & vbCrLf & rsR("SYM") & " - " & IIf(rsR("Close") = rsR("[HST_CLOSE ( LIVEQUOTE )]"), "HOLD", IIf(rsR("Close") > rsR("[HST_CLOSE ( LIVEQUOTE )]"), "BUY", "SELL")) & "  -  " & Format(rsR("[HSTCLSDATE ( LIVEQUOTE )]"), "dd/mm/yyyy") & " - Price Close  " & Format(rsR("[HST_CLOSE ( LIVEQUOTE )]"), "#,##0.00") & "  - Price Live  " & Format(rsR("Close"), "#,##0.00") & "  =  " & sMsg & vbCrLf
+                    
+                Else
+                    sMsg = ""
+                   
+                End If
+                
+                If Not sMsgM = "" Then
+                    
+                    sMsgMT = sMsgMT & "<br />" & rsR("SYM") & " - " & IIf(rsR("Close") = rsR("[HST_CLOSE ( LIVEQUOTE )]"), "HOLD", IIf(rsR("Close") > rsR("[HST_CLOSE ( LIVEQUOTE )]"), "BUY", "SELL")) & "  -  " & Format(rsR("[HSTCLSDATE ( LIVEQUOTE )]"), "dd/mm/yyyy") & " - Price Close  " & Format(rsR("[HST_CLOSE ( LIVEQUOTE )]"), "#,##0.00") & "  - Price Live  " & Format(rsR("Close"), "#,##0.00") & "  =  " & sMsgM & "<br />" & "<br />"
+                Else
+                    
+                    sMsgM = ""
+                End If
+             
+              
+                
+                
+            rsR.MoveNext
+        Loop
+
+' MsgBox sMsgT, vbExclamation
+
+ 
+'        If Not sMsg = "" Then
+'           InviaMail
+'      End If
+ 
+End Sub
+
+
+
+Public Sub InviaMail()
+
+Dim OutApp As Object    ' late binding
+Dim OutMail As Object  ' late binding
+Dim strMsg As String ' contiene il testo del messaggio
+Dim strDest As String ' contiene l'indirizzo email
+
+
+
+
+Set OutApp = CreateObject("Outlook.Application")
+Set OutMail = OutApp.CreateItem(0) ' creo una email vuota
+
+strMsg = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>"
+strMsg = strMsg & "<html xmlns='http://www.w3.org/1999/xhtml'>"
+strMsg = strMsg & "<body>"
+strMsg = strMsg & "<br /><br />ma dove XXXXO sei!!!!!</p>" & Now()
+'strMsg = strMsg & "<br /><p align='center'>" & sMsgMT & "</p>"
+strMsg = strMsg & "<br />" & sMsgMT & "<br />"
+
+
+'strMsg = strMsg & "<table width='800px' border='1' cellpadding='0'>"
+'strMsg = strMsg & "<tr>"
+'strMsg = strMsg & "<td ><p align='center'><strong>Data</strong></p></td>"
+'strMsg = strMsg & "<td ><p align='center'><strong>ISIN</strong></p></td>"
+'strMsg = strMsg & "<td ><p align='center'><strong>Ora</strong></p></td>"
+'strMsg = strMsg & "<td ><p align='center'><strong>Note</strong></p></td>"
+'strMsg = strMsg & "</tr>"
+'strMsg = strMsg & "<tr>"
+'strMsg = strMsg & "<td><p align='center'>" & Format(Now(), "dd/mmm/yyyy") & "</p></td>"
+'strMsg = strMsg & "<td><p align='center'>" & sMsgMT & "</p></td>"
+'strMsg = strMsg & "<td><p align='center'><strong>" & Format(Now(), "dd-MMM-yyyy hh:nn AM/PM") & "</strong></p></td>"
+'strMsg = strMsg & "<td><p align='center'><font color=red>" & Format(txtDataScadenza, "dd/mm/yyyy") & "</font></p></td>"
+'strMsg = strMsg & "</tr>"
+'strMsg = strMsg & "</table>"
+strMsg = strMsg & "<br />"
+strMsg = strMsg & "</body>"
+strMsg = strMsg & "</html>"
+ 
+ 
+ strDest = "user@example.com"
+ 
+ With OutMail
+ .To = strDest
+ .CC = "user@example.com"
+ .BCC = "user@example.com"
+ .Subject = "Alert price ISIN!!!!!"
+ .HTMLBody = strMsg
+' .Display
+ .Send
+End With
+ 
+Set OutMail = Nothing
+Set OutApp = Nothing
+ 
+ 
+End Sub
+
+
+Private Sub Settore()
+
+
+
+
+sqlc = "SELECT [1ISIN].ISIN, [1ISIN].IdS, Sum(FifoStock.AvQty) AS [In Stock], Sum(([Rt]/[PQty]*[AvQty])) AS Valore, " & _
+            "Sum((([Rt]/[PQty]*[AvQty]))/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]) AS Value€, " & _
+            "IIf([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]=0,Sum([Realtick]![HST_CLOSE ( LIVEQUOTE )]*[AvQty]),Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty])) AS ValueLive, " & _
+            "IIf([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]=0,Sum([Realtick]![HST_CLOSE ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]),Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )])) AS ValueLive€, " & _
+            "Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Change, [1ISIN].IdD, " & _
+            "IIf([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]=0,(Sum([Realtick]![HST_CLOSE ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]))*[leverage],(Sum([Realtick]![C_LAST_PRICE_REF ( LIVEQUOTE )]*[AvQty]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )]))*[leverage]) AS ValLeverage, " & _
+            "[1ISIN].Leverage, Realtick.[HST_CLOSE ( LIVEQUOTE )], Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Espr1 " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) ON " & _
+            "Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC " & _
+        "GROUP BY [1ISIN].ISIN, [1ISIN].IdS, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )], " & _
+            "[1ISIN].IdD, [1ISIN].Leverage, Realtick.[HST_CLOSE ( LIVEQUOTE )], " & _
+            "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )];"
+        
+        
+        
+
+'Controllo dollaro [1ISIN].IdD
+
+'sqlc = "SELECT Change.IdC, Change.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS CambioLive " & _
+        "FROM Change;"
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sSecE1 = 0
+    ssSecLiveE1 = 0
+    sSecE2 = 0
+    ssSecLiveE2 = 0
+    sSecE3 = 0
+    ssSecLiveE3 = 0
+    sSecE4 = 0
+    ssSecLiveE4 = 0
+    sSecE5 = 0
+    ssSecLiveE5 = 0
+    sSecE6 = 0
+    ssSecLiveE6 = 0
+    sSecE7 = 0
+    ssSecLiveE7 = 0
+    sSecE8 = 0
+    ssSecLiveE8 = 0
+    sSecE9 = 0
+    ssSecLiveE9 = 0
+    sSecE10 = 0
+    ssSecLiveE10 = 0
+    sSecE11 = 0
+    ssSecLiveE11 = 0
+    sSecE11 = 0
+    ssSecLiveE12 = 0
+    sSecE13 = 0
+    ssSecLiveE13 = 0
+    sSecE14 = 0
+    ssSecLiveE14 = 0
+    sSecE15 = 0
+    ssSecLiveE15 = 0
+    sSecE16 = 0
+    ssSecLiveE16 = 0
+    sSecE17 = 0
+    ssSecLiveE17 = 0
+    sSecE18 = 0
+    ssSecLiveE17 = 0
+    sSecE19 = 0
+    ssSecLiveE19 = 0
+    sSecE20 = 0
+    ssSecLiveE20 = 0
+    sSecE21 = 0
+    ssSecLiveE21 = 0
+    sSecE22 = 0
+    ssSecLiveE22 = 0
+    sSecE23 = 0
+    ssSecLiveE23 = 0
+    sSecE24 = 0
+    ssSecLiveE24 = 0
+    
+'Apro il case per le varie opzioni
+Do While Not rsR.EOF
+                Select Case rsR("IdD")
+                    Case 1 '0
+                        sDirS0 = rsR("Valore") + sDirS0
+                        sDirSE0 = rsR("Value€") + sDirE0
+                        sDirLiveS0 = rsR("ValueLive€") + sDirLiveS0
+                        sDirLiveSE0 = rsR("ValueLive€") + sDirLiveSE0
+                        sDirLiveSLE0 = rsR("ValLeverage") + sDirLiveSLE0
+                    Case 2 '+1
+                        sDirS1 = rsR("Valore") + sDir1
+                        sDirSE1 = rsR("Value€") + sDirE1
+                        sDirLiveS1 = rsR("ValueLive€") + sDirLiveS1
+                        sDirLiveSE1 = rsR("ValueLive€") + sDirLiveSE1
+                        sDirLiveSLE1 = rsR("ValLeverage") + sDirLiveSLE1
+                    Case 3 '-1
+                        sDirS2 = rsR("Valore") + sDirS2
+                        sDirSE2 = rsR("Value€") + sDirSE2
+                        sDirLiveS2 = rsR("ValueLive€") + sDirLiveS2
+                        sDirLiveSE2 = rsR("ValueLive€") + sDirLiveSE2
+                        sDirLiveSLE2 = rsR("ValLeverage") + sDirLiveSLE2
+                End Select
+            rsR.MoveNext
+        Loop
+
+
+
+
+
+
+
+End Sub
+
+
+Public Sub SenMail()
+
+Dim Mail As New Message
+Dim config As Configuration
+Dim strMailTo As String, strSubject As String, strHtmlBody As String
+Dim strMsg As String ' contiene il testo del messaggio
+Dim strDest As String ' contiene l'indirizzo email
+
+
+
+Set config = Mail.Configuration
+
+config(cdoSendUsingMethod) = cdoSendUsingPort
+config(cdoSMTPServer) = "smtp.gmail.com"
+config(cdoSMTPServerPort) = 25
+config(cdoSMTPAuthenticate) = cdoBasic
+config(cdoSMTPUseSSL) = True
+config(cdoSendUserName) = "user@example.com"
+config(cdoSendPassword) = "YOUR_PASSWORD"
+config.Fields.Update
+
+strMsg = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>"
+strMsg = strMsg & "<html xmlns='http://www.w3.org/1999/xhtml'>"
+strMsg = strMsg & "<body>"
+strMsg = strMsg & "<br /><br />ma dove XXXXO sei!!!!!</p>" & Now()
+'strMsg = strMsg & "<br /><p align='center'>" & sMsgMT & "</p>"
+strMsg = strMsg & "<br />" & sMsgMT & "<br />"
+
+
+'strMsg = strMsg & "<table width='800px' border='1' cellpadding='0'>"
+'strMsg = strMsg & "<tr>"
+'strMsg = strMsg & "<td ><p align='center'><strong>Data</strong></p></td>"
+'strMsg = strMsg & "<td ><p align='center'><strong>ISIN</strong></p></td>"
+'strMsg = strMsg & "<td ><p align='center'><strong>Ora</strong></p></td>"
+'strMsg = strMsg & "<td ><p align='center'><strong>Note</strong></p></td>"
+'strMsg = strMsg & "</tr>"
+'strMsg = strMsg & "<tr>"
+'strMsg = strMsg & "<td><p align='center'>" & Format(Now(), "dd/mmm/yyyy") & "</p></td>"
+'strMsg = strMsg & "<td><p align='center'>" & sMsgMT & "</p></td>"
+'strMsg = strMsg & "<td><p align='center'><strong>" & Format(Now(), "dd-MMM-yyyy hh:nn AM/PM") & "</strong></p></td>"
+'strMsg = strMsg & "<td><p align='center'><font color=red>" & Format(txtDataScadenza, "dd/mm/yyyy") & "</font></p></td>"
+'strMsg = strMsg & "</tr>"
+'strMsg = strMsg & "</table>"
+strMsg = strMsg & "<br />"
+strMsg = strMsg & "</body>"
+strMsg = strMsg & "</html>"
+ 
+ 
+ strDest = "user@example.com"
+ 
+ With Mail
+ .To = strDest
+ .From = config(cdoSendUserName)
+ .CC = "user@example.com"
+ .BCC = "user@example.com"
+ .Subject = "Alert price ISIN!!!!!"
+ .HTMLBody = strMsg
+' .Display
+ .Send
+End With
+
+'Mail.To = "user@example.com"
+'Mail.From = config(cdoSendUserName)
+'Mail.Subject = "Subject from VBA"
+'Mail.HTMLBody = "<b>Body from VBA<b/>"
+
+'mail.AddAttachment = "scrivere link"
+
+'On Error Resume Next
+'Mail.Send
+
+'If Err.Number <> 0 Then
+'    MsgBox Err.Description, vbCritical, "C'è stato un errore"
+'End If
+
+'Set OutMail = Nothing
+'Set OutApp = Nothing
+ 
+
+
+End Sub
+
+
+Public Sub CalcoloAzData()
+
+
+
+Set db = CurrentDb
+
+'sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, FifoStock.fDate AS [Receiving Date], FifoStock.PQty AS [Purchased Qty], " & _
+            "FifoStock.AvQty AS [In Stock], FifoStock.Rt AS Rate, [1Currency].IdC, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, [1Currency].Currency, ([Rt]/[PQty]*[AvQty]) AS [Value], " & _
+            "[value]/[change] AS Value€, [Value]/[avqty] AS PriceM, Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, " & _
+            "Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+        "FROM Realtick RIGHT JOIN ((FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) INNER JOIN 1Currency ON " & _
+            "[1ISIN].IdC = [1Currency].IdC) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN;"
+'
+'
+'Modifico la ricerca inserendo il cambio alla data attuale e non a qualla teorica
+'
+
+
+
+sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, FifoStock.fDate AS [Receiving Date], " & _
+            "FifoStock.PQty AS [Purchased Qty], FifoStock.AvQty AS [In Stock], " & _
+            "FifoStock.Rt AS Rate, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, ([Rt]/[PQty]*[AvQty]) AS [Value], " & _
+            "[value]/[ChangeTime]![C_LAST_PRICE_REF ( LIVEQUOTE )] AS Value€, [Value]/[avqty] AS PriceM, " & _
+            "Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, " & _
+            "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live, [1ISIN].IdC " & _
+        "FROM ChangeTime INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON " & _
+            "FifoStock.Prdt = [1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON " & _
+            "ChangeTime.IdC = [1ISIN].IdC " & _
+        "WHERE (((FifoStock.fDate)<= #" & Format(sDataCerca, "yyyy-mm-dd") & "#));"
+
+
+
+
+
+'
+'SELECT FifoStock.Prdt, [1ISIN].SYM, FifoStock.fDate AS [Receiving Date], " & _
+'            "FifoStock.PQty AS [Purchased Qty], FifoStock.AvQty AS [In Stock], " & _
+'            "FifoStock.Rt AS Rate,[1Currency].IdC, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+'            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, [1Currency].Currency, " & _
+'            "([Rt]/[PQty]*[AvQty]) AS [Value], [value]/[change] AS Value€, " & _
+'            "[Value]/[avqty] AS PriceM, Realtick.[CLOSE5DAVG_1D ( SECURITY )] AS Price5, " & _
+'            "Realtick.[CLOSE10DAVG_1D ( SECURITY )] AS Price10, " & _
+'            "Realtick.[CLOSE20DAVG_1D ( SECURITY )] AS Price20, " & _
+'            "Realtick.[CLOSE30DAVG_1D ( SECURITY )] AS Price30, " & _
+'            "Realtick.[CLOSE50DAVG_1D ( SECURITY )] AS Price50, " & _'
+'            "Realtick.[CLOSE90DAVG_1D ( SECURITY )] AS Price90, " & _
+'            "Realtick.[CLOSE200DAVG_1D ( SECURITY )] AS Price200, " & _
+ '           "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+'        "FROM Realtick RIGHT JOIN ((FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) " & _
+'            "INNER JOIN 1Currency ON [1ISIN].IdC = [1Currency].IdC) ON Realtick.[ISIN_NO " & _
+'            "( LIVEQUOTE )] = [1ISIN].ISIN"
+'
+
+ 
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+    
+'pulisco le variabili
+    sDolA = 0
+    sEurA = 0
+    sGbA = 0
+    sYenA = 0
+    
+    
+    
+     Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDolA = rsR("Value") + sDolA
+                    Case 2
+                       sEurA = rsR("Value") + sEurA
+                    Case 3
+                       sGbA = rsR("Value") + sGbA
+                    Case 4
+                        MsgBox "Non Money!!"
+                    Case 5
+                        sYenA = rsR("Value") + sYenA
+                End Select
+            rsR.MoveNext
+        Loop
+        
+ 
+End Sub
+
+
+Public Sub CambioData()
+
+Set db = CurrentDb
+
+'Controllo dollaro
+
+sqlc = "SELECT ChangeTime.IdC, ChangeTime.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS CambioLive " & _
+        "FROM ChangeTime;"
+       
+    
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+'pulisco le variabili
+    sDolT = 0
+    sGbT = 0
+    sYenT = 0
+            
+'Apro il case per le varie opzioni
+
+Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDolT = rsR("CambioLive")
+                    Case 3
+                        sGbT = rsR("CambioLive")
+                    Case 5
+                        sYenT = rsR("CambioLive")
+                End Select
+            rsR.MoveNext
+        Loop
+
+        
+
+
+    
+
+End Sub
+
+Public Sub CalcoloAzLive()
+
+
+
+Set db = CurrentDb
+
+'sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, FifoStock.fDate AS [Receiving Date], FifoStock.PQty AS [Purchased Qty], " & _
+            "FifoStock.AvQty AS [In Stock], FifoStock.Rt AS Rate, [1Currency].IdC, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, [1Currency].Currency, ([Rt]/[PQty]*[AvQty]) AS [Value], " & _
+            "[value]/[change] AS Value€, [Value]/[avqty] AS PriceM, Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, " & _
+            "Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+        "FROM Realtick RIGHT JOIN ((FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) INNER JOIN 1Currency ON " & _
+            "[1ISIN].IdC = [1Currency].IdC) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN;"
+'
+'
+'Modifico la ricerca inserendo il cambio alla data attuale e non a qualla teorica
+'
+
+
+
+'sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, [1ISIN].IdC, FifoStock.fDate AS [Receiving Date], FifoStock.PQty AS [Purchased Qty], " & _
+            "FifoStock.AvQty AS [In Stock], FifoStock.Rt AS Rate, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, ([Rt]/[PQty]*[AvQty]) AS [Value], " & _
+            "[value]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )] AS Value€, " & _
+            "[Value]/[avqty] AS PriceM, Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, " & _
+            "Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = " & _
+            "[1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = [1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC;"
+sqlc = "SELECT FifoStock.Prdt, [1ISIN].SYM, [1ISIN].IdC, FifoStock.fDate AS [Receiving Date], " & _
+            "FifoStock.PQty AS [Purchased Qty], FifoStock.AvQty AS [In Stock], FifoStock.Rt AS Rate, " & _
+            "Realtick.[HSTCLSDATE ( LIVEQUOTE )], Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, " & _
+            "([Rt]/[PQty]*[AvQty]) AS [Value], [live]*[avqty] AS ValueLive, " & _
+            "[value]/[Change]![C_LAST_PRICE_REF ( LIVEQUOTE )] AS Value€, [Value]/[avqty] AS PriceM, " & _
+            "Realtick.[CLOSE_1M_TD ( SECURITY )] AS PriceMTD, Realtick.[CLOSE_1W_TD ( SECURITY )] AS PriceWTD, " & _
+            "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+        "FROM Change INNER JOIN (Realtick RIGHT JOIN (FifoStock INNER JOIN 1ISIN ON " & _
+            "FifoStock.Prdt = [1ISIN].ISIN) ON Realtick.[ISIN_NO ( LIVEQUOTE )] = " & _
+            "[1ISIN].ISIN) ON Change.IdC = [1ISIN].IdC;"
+
+
+
+
+
+'
+'SELECT FifoStock.Prdt, [1ISIN].SYM, FifoStock.fDate AS [Receiving Date], " & _
+'            "FifoStock.PQty AS [Purchased Qty], FifoStock.AvQty AS [In Stock], " & _
+'            "FifoStock.Rt AS Rate,[1Currency].IdC, Realtick.[HSTCLSDATE ( LIVEQUOTE )], " & _
+'            "Realtick.[HST_CLOSE ( LIVEQUOTE )] AS PriceR, [1Currency].Currency, " & _
+'            "([Rt]/[PQty]*[AvQty]) AS [Value], [value]/[change] AS Value€, " & _
+'            "[Value]/[avqty] AS PriceM, Realtick.[CLOSE5DAVG_1D ( SECURITY )] AS Price5, " & _
+'            "Realtick.[CLOSE10DAVG_1D ( SECURITY )] AS Price10, " & _
+'            "Realtick.[CLOSE20DAVG_1D ( SECURITY )] AS Price20, " & _
+'            "Realtick.[CLOSE30DAVG_1D ( SECURITY )] AS Price30, " & _
+'            "Realtick.[CLOSE50DAVG_1D ( SECURITY )] AS Price50, " & _'
+'            "Realtick.[CLOSE90DAVG_1D ( SECURITY )] AS Price90, " & _
+'            "Realtick.[CLOSE200DAVG_1D ( SECURITY )] AS Price200, " & _
+ '           "Realtick.[C_LAST_PRICE_REF ( LIVEQUOTE )] AS Live " & _
+'        "FROM Realtick RIGHT JOIN ((FifoStock INNER JOIN 1ISIN ON FifoStock.Prdt = [1ISIN].ISIN) " & _
+'            "INNER JOIN 1Currency ON [1ISIN].IdC = [1Currency].IdC) ON Realtick.[ISIN_NO " & _
+'            "( LIVEQUOTE )] = [1ISIN].ISIN"
+'
+
+ 
+    Set rsR = db.OpenRecordset(sqlc, dbOpenSnapshot)
+    
+    
+'pulisco le variabili
+    sDolALive = 0
+    sEurALive = 0
+    sGbALive = 0
+    sYenALive = 0
+    
+    
+    
+     Do While Not rsR.EOF
+                Select Case rsR("IdC")
+                    Case 1
+                        sDolALive = rsR("Valuelive") + sDolALive
+                    Case 2
+                       sEurALive = rsR("Valuelive") + sEurALive
+                    Case 3
+                       sGbALive = rsR("Valuelive") + sGbALive
+                    Case 4
+                        MsgBox "Non Money!!"
+                    Case 5
+                        sYenALive = rsR("Valuelive") + sYenALive
+                End Select
+            rsR.MoveNext
+        Loop
+        
+ 
+End Sub

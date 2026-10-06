@@ -1,0 +1,301 @@
+    Option Compare Database
+
+'Public Sub CalculateFifoStock()
+'    Dim cn As ADODB.Connection
+'    Dim rs1 As ADODB.Recordset
+'    Dim rs2 As ADODB.Recordset
+'    Dim Prid
+'    Dim iTot As Long
+'
+'    Prid = ""
+'    iTot = 0
+'
+'    DelFifo     ' check sub procedure below
+'
+'    Set cn = CurrentProject.Connection
+'    Set rs1 = New ADODB.Recordset
+'    Set rs2 = New ADODB.Recordset
+'
+'    rs1.Open "zx", cn, adOpenForwardOnly, adLockReadOnly    ' quantity purchased and quantity
+'                                                            'consumed is calculated in this query
+'
+'    rs2.Open "FifoStock", cn, adOpenDynamic, adLockOptimistic
+'        Do While Not rs1.EOF
+'
+'            If rs1![prd] = Prid Then
+'            iTot = iTot + rs1![pr]
+'            Else
+'            Prid = rs1![prd]
+'            iTot = rs1![pr]
+'            End If
+'
+'        If iTot <= rs1!sold Then
+'        Else                        'if total quantity purchased does not exceed consumed
+'        rs2.AddNew
+'
+''       *********************** Assign purchase details
+'        rs2!fdate = rs1!xdate
+'        rs2!doc = rs1!doct
+'        rs2!Prdt = rs1!prd
+'        rs2!PQty = rs1!pr
+'        rs2!RQty = iTot
+'        rs2!Rt = rs1!Pp
+'
+''       *********************** Assign available quantity
+'        If iTot - rs1!sold > rs1!pr Then
+'        rs2!avQty = rs1!pr
+'        Else
+'        rs2!avQty = iTot - rs1!sold
+'        End If
+''       ***********************
+'
+'        rs2.Update
+'        End If
+'        rs1.MoveNext
+'        Loop
+'    rs1.Close
+'    rs2.Close
+'    cn.Close
+'
+'    Set rs1 = Nothing
+'    Set rs2 = Nothing
+'    Set cn = Nothing
+'
+'End Sub
+
+Private Sub DelFifo()
+CurrentDb.Execute "delete * from fifoStock", dbFailOnError ' to empty table before new insertion
+End Sub
+
+Public Sub CalculateFifoStockM()
+'   Public db As Database
+Dim sqlc1 As String
+Dim sqlc2 As String
+Dim rs1 As Recordset
+Dim rs2 As Recordset
+'Dim cn As ADODB.Connection
+'Dim rs1 As ADODB.Recordset
+'Dim rs2 As ADODB.Recordset
+Dim Prid
+Dim iTot As Long
+    
+    Set db = CurrentDb
+    
+  ' Apro il primo rs legato alla query zx
+
+sqlc1 = "SELECT [1AKJ trade report].ISIN AS Prd, [1AKJ trade report].TD AS xDate, " & _
+            "[1AKJ trade report].TicketID AS Doct, [1AKJ trade report].Quantity AS Pr, " & _
+            "[1AKJ trade report].[Net amount] AS PP, nz([SumOfQty],0) AS Sold, [1AKJ trade report].Side " & _
+        "FROM [1AKJ trade report] LEFT JOIN SalesTotal ON [1AKJ trade report].ISIN = SalesTotal.ISIN " & _
+        "WHERE ((([1AKJ trade report].Side) = 'buy')) " & _
+        "ORDER BY [1AKJ trade report].ISIN, [1AKJ trade report].TD, [1AKJ trade report].TicketID;"
+
+    
+    Set rs1 = db.OpenRecordset(sqlc1, dbOpenSnapshot)
+ 
+    
+     ' Apro il secondo rs legato alla form fifostock
+
+sqlc2 = "SELECT FifoStock.FifoId, FifoStock.fDate, FifoStock.Doc, " & _
+            "FifoStock.Prdt, FifoStock.PQty, FifoStock.RQty, FifoStock.AvQty, FifoStock.Rt " & _
+        "FROM FifoStock;"
+
+    
+    Set rs2 = db.OpenRecordset(sqlc2, dbOpenDynaset)
+ 
+    
+    
+    
+    
+    Prid = ""
+    iTot = 0
+    
+    DelFifo     ' check sub procedure below
+    
+'    Set cn = CurrentProject.Connection
+'    Set rs1 = New ADODB.Recordset
+'    Set rs2 = New ADODB.Recordset
+  
+ 
+'    rs1.Open "zx", cn, adOpenForwardOnly, adLockReadOnly    ' quantity purchased and quantity
+                                                            'consumed is calculated in this query
+    
+ '   rs2.Open "FifoStock", cn, adOpenDynamic, adLockOptimistic
+        Do While Not rs1.EOF
+            
+            If rs1![prd] = Prid Then
+            iTot = iTot + rs1![pr]
+            Else
+            Prid = rs1![prd]
+            iTot = rs1![pr]
+            End If
+        
+        If iTot <= rs1!sold Then
+        Else                        'if total quantity purchased does not exceed consumed
+        rs2.AddNew
+        
+'       *********************** Assign purchase details
+        rs2!fdate = rs1!xdate
+        rs2!doc = rs1!doct
+        rs2!Prdt = rs1!prd
+        rs2!PQty = rs1!pr
+        rs2!RQty = iTot
+        rs2!Rt = rs1!Pp
+
+'       *********************** Assign available quantity
+        If iTot - rs1!sold > rs1!pr Then
+        rs2!AvQty = rs1!pr
+        Else
+        rs2!AvQty = iTot - rs1!sold
+        End If
+'       ***********************
+        
+        rs2.Update
+        End If
+        rs1.MoveNext
+        Loop
+    rs1.Close
+    rs2.Close
+ '   cn.Close
+    
+    Set rs1 = Nothing
+    Set rs2 = Nothing
+'    Set cn = Nothing
+    
+End Sub
+
+
+Public Sub CalculateFifoStockMData()
+'   Public db As Database
+Dim sqlc0 As String
+Dim sqlc1 As String
+Dim sqlc2 As String
+Dim rs0 As Recordset
+Dim rs1 As Recordset
+Dim rs2 As Recordset
+'Dim cn As ADODB.Connection
+'Dim rs1 As ADODB.Recordset
+'Dim rs2 As ADODB.Recordset
+Dim Prid
+Dim iTot As Long
+    
+    Set db = CurrentDb
+    
+' Creo la tabella SalesTotalData
+' Contemporaneamente cancello quella precedente
+'   Devo cancellare la tabella
+    CurrentDb.Execute "delete * from SalesTotalData", dbFailOnError ' to empty table before new insertion
+
+
+sqlc0 = "INSERT INTO SalesTotalData ( ISIN, SumOfQty )" & _
+        "SELECT [1AKJ trade report].ISIN, Sum([1AKJ trade report].Quantity) AS SumOfQty " & _
+        "FROM [1AKJ trade report] " & _
+        "WHERE ((([1AKJ trade report].TD) <= #" & Format(sDataCerca, "yyyy-mm-dd") & "#)) " & _
+        "GROUP BY [1AKJ trade report].ISIN, [1AKJ trade report].Side " & _
+        "HAVING ((([1AKJ trade report].Side)='sell'));"
+
+
+
+'INSERT INTO SalesTotalData ( ISIN, SumOfQty, TD ) " & _
+'        "SELECT [1AKJ trade report].ISIN, Sum([1AKJ trade report].Quantity) AS SumOfQty, " & _
+'            "[1AKJ trade report].TD " & _
+'        "FROM [1AKJ trade report] " & _
+'        "GROUP BY [1AKJ trade report].ISIN, [1AKJ trade report].Side, [1AKJ trade report].TD " & _
+'        "HAVING ((([1AKJ trade report].Side)='sell') AND (([1AKJ trade report].TD)<#" & _
+'         Format(sDataCerca, "yyyy-mm-dd") & "#));"
+
+ '  Adesso devo accodare i dati alla tabella
+   
+    CurrentDb.Execute (sqlc0) ' to empty table before new insertion
+
+    
+    
+   'Devo modificare le query seguenti per legarle alal data della ricerca e
+   'nel contempo aggiornare id product di quando apro il file della ricerca
+   
+    
+    
+    
+    
+  ' Apro il primo rs legato alla query zx
+
+sqlc1 = "SELECT [1AKJ trade report].ISIN AS Prd, [1AKJ trade report].TD AS xDate, " & _
+            "[1AKJ trade report].TicketID AS Doct, [1AKJ trade report].Quantity AS Pr, " & _
+            "[1AKJ trade report].[Net amount] AS PP, nz([SumOfQty],0) AS Sold, [1AKJ trade report].Side " & _
+        "FROM [1AKJ trade report] LEFT JOIN SalesTotalData ON [1AKJ trade report].ISIN = SalesTotalData.ISIN " & _
+        "WHERE ((([1AKJ trade report].TD)<=#" & Format(sDataCerca, "yyyy-mm-dd") & "#) AND (([1AKJ trade report].Side)='buy')) " & _
+        "ORDER BY [1AKJ trade report].ISIN, [1AKJ trade report].TD, [1AKJ trade report].TicketID; "
+
+    
+    Set rs1 = db.OpenRecordset(sqlc1, dbOpenSnapshot)
+ 
+    
+     ' Apro il secondo rs legato alla form fifostock
+
+sqlc2 = "SELECT FifoStock.FifoId, FifoStock.fDate, FifoStock.Doc, " & _
+            "FifoStock.Prdt, FifoStock.PQty, FifoStock.RQty, FifoStock.AvQty, FifoStock.Rt " & _
+        "FROM FifoStock;"
+
+    
+    Set rs2 = db.OpenRecordset(sqlc2, dbOpenDynaset)
+ 
+    
+    
+    
+    
+    Prid = ""
+    iTot = 0
+    
+    DelFifo     ' check sub procedure below
+    
+'    Set cn = CurrentProject.Connection
+'    Set rs1 = New ADODB.Recordset
+'    Set rs2 = New ADODB.Recordset
+  
+ 
+'    rs1.Open "zx", cn, adOpenForwardOnly, adLockReadOnly    ' quantity purchased and quantity
+                                                            'consumed is calculated in this query
+    
+ '   rs2.Open "FifoStock", cn, adOpenDynamic, adLockOptimistic
+        Do While Not rs1.EOF
+            
+            If rs1![prd] = Prid Then
+            iTot = iTot + rs1![pr]
+            Else
+            Prid = rs1![prd]
+            iTot = rs1![pr]
+            End If
+        
+        If iTot <= rs1!sold Then
+        Else                        'if total quantity purchased does not exceed consumed
+        rs2.AddNew
+        
+'       *********************** Assign purchase details
+        rs2!fdate = rs1!xdate
+        rs2!doc = rs1!doct
+        rs2!Prdt = rs1!prd
+        rs2!PQty = rs1!pr
+        rs2!RQty = iTot
+        rs2!Rt = rs1!Pp
+
+'       *********************** Assign available quantity
+        If iTot - rs1!sold > rs1!pr Then
+        rs2!AvQty = rs1!pr
+        Else
+        rs2!AvQty = iTot - rs1!sold
+        End If
+'       ***********************
+        
+        rs2.Update
+        End If
+        rs1.MoveNext
+        Loop
+    rs1.Close
+    rs2.Close
+ '   cn.Close
+    
+    Set rs1 = Nothing
+    Set rs2 = Nothing
+'    Set cn = Nothing
+    
+End Sub
