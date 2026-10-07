@@ -4,7 +4,7 @@
 
 *Contabilità FIFO di un portafoglio titoli e segnali di trading tecnici*
 
-**Microsoft Access** · 2017–2020 · version 160  
+**db** · 2017–2020 · version 160  
 Author: **Massimo Sbarbaro** ([ORCID 0009-0006-8965-9013](https://orcid.org/0009-0006-8965-9013))
 
 ## Overview
@@ -47,7 +47,7 @@ The database is published **empty**: every table has been emptied and the file c
 
 Use the citation metadata in [`CITATION.cff`](CITATION.cff) (GitHub: *Cite this repository*). The release is archived on Zenodo with the DOI [10.5281/zenodo.23205222](https://doi.org/10.5281/zenodo.23205222).
 
-> Sbarbaro, Massimo. 2020. *FIFO portfolio accounting and technical trading signals*. Software (Microsoft Access, 2017–2020), version 160. Zenodo. https://doi.org/10.5281/zenodo.23205222.
+> Sbarbaro, Massimo. 2020. *FIFO portfolio accounting and technical trading signals*. Software (db, 2017–2020), version 160. Zenodo. https://doi.org/10.5281/zenodo.23205222.
 
 ## License
 

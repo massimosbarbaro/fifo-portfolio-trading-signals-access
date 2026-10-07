@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you refer to this software, please cite it as below."
 type: software
-title: "FIFO portfolio accounting and technical trading signals (Microsoft Access, 2017–2020)"
+title: "FIFO portfolio accounting and technical trading signals (db, 2017–2020)"
 version: "160"
 abstract: "This application keeps the accounts of a private portfolio of shares and ETFs and produces technical trading signals. Broker trade reports are imported and classified by ISIN; open positions are valued with the FIFO method; realised and unrealised profit and loss are computed in euro using exchange rates and live prices from the Realtick market-data terminal. Historical prices feed simple and exponential moving averages and Bollinger bands, which a configurable strategy turns into buy, hold and sell indications and e-mail alerts."
 authors:

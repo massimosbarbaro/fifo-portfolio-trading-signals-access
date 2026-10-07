@@ -1,8 +1,8 @@
 {
-  "title": "FIFO portfolio accounting and technical trading signals (Microsoft Access, 2017–2020)",
+  "title": "FIFO portfolio accounting and technical trading signals (db, 2017–2020)",
   "upload_type": "software",
   "publication_date": "2020-01-29",
-  "description": "<p><em>Contabilità FIFO di un portafoglio titoli e segnali di trading tecnici</em></p><p>This application keeps the accounts of a private portfolio of shares and ETFs and produces technical trading signals. Broker trade reports are imported and classified by ISIN; open positions are valued with the FIFO method; realised and unrealised profit and loss are computed in euro using exchange rates and live prices from the Realtick market-data terminal. Historical prices feed simple and exponential moving averages and Bollinger bands, which a configurable strategy turns into buy, hold and sell indications and e-mail alerts.</p><p>Designed and programmed by Massimo Sbarbaro in 2017–2020 (Microsoft Access). Published in 2026; all original data and the names of client organisations have been removed.</p>",
+  "description": "<p><em>Contabilità FIFO di un portafoglio titoli e segnali di trading tecnici</em></p><p>This application keeps the accounts of a private portfolio of shares and ETFs and produces technical trading signals. Broker trade reports are imported and classified by ISIN; open positions are valued with the FIFO method; realised and unrealised profit and loss are computed in euro using exchange rates and live prices from the Realtick market-data terminal. Historical prices feed simple and exponential moving averages and Bollinger bands, which a configurable strategy turns into buy, hold and sell indications and e-mail alerts.</p><p>Designed and programmed by Massimo Sbarbaro in 2017–2020 (db). Published in 2026; all original data and the names of client organisations have been removed.</p>",
   "creators": [
     {
       "name": "Sbarbaro, Massimo",
