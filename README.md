@@ -1,5 +1,7 @@
 # FIFO portfolio accounting and technical trading signals
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23205222.svg)](https://doi.org/10.5281/zenodo.23205222)
+
 *Contabilità FIFO di un portafoglio titoli e segnali di trading tecnici*
 
 **Microsoft Access** · 2017–2020 · version 160  
@@ -43,9 +45,9 @@ The database is published **empty**: every table has been emptied and the file c
 
 ## How to cite
 
-Use the citation metadata in [`CITATION.cff`](CITATION.cff) (GitHub: *Cite this repository*). Each release is archived on Zenodo with its own DOI.
+Use the citation metadata in [`CITATION.cff`](CITATION.cff) (GitHub: *Cite this repository*). The release is archived on Zenodo with the DOI [10.5281/zenodo.23205222](https://doi.org/10.5281/zenodo.23205222).
 
-> Sbarbaro, Massimo. *FIFO portfolio accounting and technical trading signals (Microsoft Access, 2017–2020)*. Software, version 160. GitHub: https://github.com/massimosbarbaro/fifo-portfolio-trading-signals-access
+> Sbarbaro, Massimo. 2020. *FIFO portfolio accounting and technical trading signals*. Software (Microsoft Access, 2017–2020), version 160. Zenodo. https://doi.org/10.5281/zenodo.23205222.
 
 ## License
 
